@@ -1,0 +1,61 @@
+/* overriding CSS */
+
+/*Hero Title */
+.solid h2 {
+  font-family: Arial Narrow,Arial,Sans-Serif;
+}
+/*Product Finder */
+.product-finder a {
+  font-family: Arial Narrow,Arial,Sans-Serif;
+}
+/*Tool callout */
+.tool-callout a {
+font-family: Arial Narrow,Arial,Sans-Serif;
+}
+#Filter{
+	width: auto !important;
+}
+
+.right-item{
+	width: auto !important;
+	position: absolute;
+    right: 0;
+}
+#Sort{
+	width: auto !important;
+}
+.top-pagination .page-item{
+	width: 87% !important;
+	position: relative;
+}
+.left-item{
+	width: 322px !important;
+	min-width: 322px !important;
+	float: none;
+	position: absolute;
+	right: 268px;
+}
+
+#ColorsCount{
+	width: 12% !important;
+}
+.right-item .ui-widget .ui-selectmenu-btn.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-icon-secondary{
+	width: calc(100% + 12px) !important;
+}
+ul#SortBy-list{
+	width: 150px !important;
+}
+
+.left-item2 .ui-widget .ui-selectmenu-btn.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-icon-secondary{
+	width: calc(100% + 12px) !important;
+}
+.page-item .ui-state-default .ui-icon{
+	background-position: -60px -17px;
+}
+.prev, .next{
+	display: none;
+}
+.padding-right {
+	padding-right: 50px;
+}
+

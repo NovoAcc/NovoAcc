@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="Brand Template - T.4.0a"
+    jcr:primaryType="cq:Template"
+    jcr:title="Brand Template"
+    allowedPaths="[/content(/.*)?]"
+    ranking="{Long}60">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="dupont/phoenix/components/pages/brand"
+        contentType="brand"
+		videoMediaGalleryUpgraded="{Boolean}true"
+		imageMediaGalleryUpgraded="{Boolean}true"
+        isCurated="true">
+        <featuredb
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/featuredb">
+            <selectedtool
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dupont/phoenix/components/linklistcurated"
+                isCurated="true"/>
+        </featuredb>
+        <hlm-pressreleases
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/hlm"
+            contentType="pressrelease"/>
+        <hlm-subbrands
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/hlm"
+            contentType="subbrand"/>
+        <hlm-usesapplications
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/hlm"
+            contentType="usesapplication"/>
+        <featuredc
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/featuredb">
+            <selectedtool
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dupont/phoenix/components/linklistcurated"
+                isCurated="true"/>
+        </featuredc>
+        <hlm-products
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/hlm"
+            contentType="product"
+            recommendedContentTypes="product,brand"/>
+        <hlm-casestudies
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/hlm"
+            contentType="casestudy"/>
+        <hlm-industries
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/hlm"
+            contentType="industry"
+            recommendedContentTypes="industry,subindustry"/>
+        <viewallcontent jcr:primaryType="nt:unstructured">
+            <querybuilder
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dupont/phoenix/components/viewall/querybuilder">
+                <left jcr:primaryType="nt:unstructured">
+                    <options
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="dupont/phoenix/components/viewall/predicates/options"/>
+                </left>
+            </querybuilder>
+        </viewallcontent>
+        <introbodytext
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/introbodytext"
+            hideInlineCallout="{Boolean}true"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,56 @@
+/* Auto Prop Tool */
+#value-proposition-module-html { padding:0 0 50px 0;}
+#value-proposition-module-html { margin-left:0; width:1100px; margin-top:50px; }
+#value-proposition-module-html .valuePropositionModuleWrapper {width:960px; padding:37px 0; border:1px solid #eaeaea; margin:0 70px;}
+#value-proposition-module-html .valuePropositionModule {width:92%; height:280px;background-color:#fff; margin-left:37px; background-position:center right; background-repeat:no-repeat;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav {width:30%;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav ul{list-style:none; margin:0; padding:0;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav ul li{list-style-type:none; margin:0; padding:0; display:block; border-bottom:1px solid #fff; background-image:url(../images/valuePropShading.png); background-repeat: repeat-x; background-position:bottom; vertical-align:bottom}
+#value-proposition-module-html .valuePropositionModule .valuePropNav ul li.active a{background-position:center right}
+#value-proposition-module-html .valuePropositionModule .valuePropNav ul li a {display:block; color:#fff; text-transform:uppercase; text-align:center; font-size:14px; font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif; padding:10px 0;background:url(../images/valuePropArrow.gif) no-repeat top right; padding-right:16px; font-weight:normal; cursor:pointer;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav ul li a:hover span, #value-proposition-module-html .valuePropositionModule .valuePropNav ul li.active a span {color:#fff;}
+#value-proposition-module-html .valuePropositionModule .valuePropContentWrap {width:54%; padding-top:55px;}
+#value-proposition-module-html .valuePropositionModule .valuePropContent {width: 69.6%; float:right;}
+#value-proposition-module-html .valuePropositionModule .valuePropContent h2{font-size: 32px; font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif; padding-left: 24px; line-height:32px; font-weight:600; display:block; background-color:#fff; width:90%; letter-spacing:-0.25px}
+#value-proposition-module-html .valuePropositionModule .valuePropContent p{padding:10px 0 10px 24px; font-size:16px; font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif; width:291px; display:block; background-color:#fff;}
+#value-proposition-module-html .valuePropositionModule .nextStepLink {font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif; background:url(/etc/designs/dupont/phoenix/clientlibs/source/images/right-arrow-action.png) no-repeat right 8px; padding-right:22px; color:#474747; text-decoration:none; font-size:18px;}
+#value-proposition-module-html .valuePropositionModule .nextStepLink:hover {color:#C6001E;}
+#value-proposition-module-html .valuePropositionModule .mainImage {float:right; padding: 32px 45px 0 0; margin:0;}
+#value-proposition-module-html .valuePropositionModule .valuePropContent{display:none;}
+#value-proposition-module-html .valuePropositionModule .visible {display:block;}
+#value-proposition-module-html .valuePropositionModule.state-default {background-image:url(../images/auto_module_illustration_default.gif); background-position:244px -32px;}
+#value-proposition-module-html .valuePropositionModule p sub {line-height:0;}
+#value-proposition-module-html .valuePropositionModule .state-default h2 {color:#6e6e6e;}
+#value-proposition-module-html .valuePropositionModule .state-default p {background:none;}
+#value-proposition-module-html .valuePropositionModule .state-default p span {background:#fff;line-height:22px;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav ul li.state-one {background-color:#39939b; }
+#value-proposition-module-html .valuePropositionModule .state-one h2 {color:#39939b;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav .state-one span {color:#a5cdd0;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav ul li.state-two {background-color:#215352;}
+#value-proposition-module-html .valuePropositionModule .state-two h2 {color:#215352;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav .state-two span {color:#9ab0b0;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav ul li.state-three {background-color:#729bc7;}
+#value-proposition-module-html .valuePropositionModule .state-three h2 {color:#729bc7;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav .state-three span {color:#bed1e4;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav ul li.state-four {background-color:#aa9f4f;}
+#value-proposition-module-html .valuePropositionModule .state-four h2 {color:#aa9f4f;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav .state-four span {color:#dcd7b7;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav ul li.state-five {background-color:#f6af15;}
+#value-proposition-module-html .valuePropositionModule .state-five h2 {color:#f6af15;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav .state-five span {color:#f9d995;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav ul li.state-six {background-color:#e03a3e;}
+#value-proposition-module-html .valuePropositionModule .state-six h2 {color:#f0a5a7;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav .state-six span {color:#ea888a;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav ul li.state-seven {background-color:#8b1f03;}
+#value-proposition-module-html .valuePropositionModule .state-seven h2 {color:#8b1f03;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav .state-seven span {color:#c9998c;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav ul li.state-eight {background-color:#4e326d;}
+#value-proposition-module-html .valuePropositionModule .state-eight h2 {color:#4e326d;}
+#value-proposition-module-html .valuePropositionModule .valuePropNav .state-eight span {color:#afa3bc;}
+#value-proposition-module-html .state-default .valuePropNav {width:28.2%;}
+#value-proposition-module-html .state-default .valuePropNav ul li a {background-position:0 -400px; padding-left:16px;}
+
+.cn h2{
+	font-family: atrament-web-lf,SimHei, Sans-Serif !important;
+}
+

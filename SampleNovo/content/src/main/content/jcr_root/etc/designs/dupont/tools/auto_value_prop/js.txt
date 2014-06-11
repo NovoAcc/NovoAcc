@@ -1,0 +1,4 @@
+#base=source/js
+
+auto-prop-tool.js
+

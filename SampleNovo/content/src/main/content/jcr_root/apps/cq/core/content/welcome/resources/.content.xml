@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="nt:unstructured">
+    <cloudservices
+        jcr:description="Connect to Adobe Digital Marketing Suite"
+        jcr:mixinTypes="[sling:Redirect]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Cloud Services"
+        sling:resourceType="sling:redirect"
+        sling:target="/etc/cloudservices"/>
+    <workflows
+        jcr:description="Model and manage workflows"
+        jcr:mixinTypes="[sling:Redirect]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Workflows"
+        sling:resourceType="sling:redirect"
+        sling:target="/libs/cq/workflow/content/console"/>
+    <replication
+        jcr:description="Create and manage multiple websites."
+        jcr:mixinTypes="[sling:Redirect]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Replication"
+        sling:resourceType="sling:redirect"
+        sling:target="/etc/replication"/>
+    <reports
+        jcr:description="Create and monitor custom reports"
+        jcr:mixinTypes="[sling:Redirect]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Reports"
+        sling:resourceType="sling:redirect"
+        sling:target="/miscadmin#/etc/reports"/>
+</jcr:root>

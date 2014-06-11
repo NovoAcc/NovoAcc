@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="M.18.0 – Featured"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="General">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <pagePaths
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Press + to add additional content. If more than 2 items are added, the Row Call Out will be hidden automatically."
+                        fieldLabel="Content"
+                        name="./selectetPagePaths"
+                        width="1000"
+                        xtype="custommultifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            limit="4"
+                            xtype="pathfield"/>
+                    </pagePaths>
+                    <hiderowcallout
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Hide Row Call Out?"
+                        inputValue="{Boolean}true"
+                        name="./showHideRowCallout"
+                        type="checkbox"
+                        xtype="selection">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            selectionchanged="function(field, value, checked) {Dupont.listeners.showHideHLMRowCallout(this, field, checked);}"/>
+                    </hiderowcallout>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Widget"
+                title="Row Call Out"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <tool
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Module"
+                        name="./selectedTool"
+                        optionsProvider="Dupont.hlm.allowedToolsOptions"
+                        type="select"
+                        xtype="selection"/>
+                </items>
+            </tab2>
+        </items>
+        <listeners
+            jcr:primaryType="nt:unstructured"
+            beforesubmit="function(dialog){return Dupont.listeners.validateHLMRowCallout(dialog);}"
+            loadContent="function(dialog){Dupont.contentTypes.loadSelectionOptions(dialog);return true;}"/>
+    </items>
+</jcr:root>

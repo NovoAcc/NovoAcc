@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2013-03-05T01:22:02.496Z"
+        cq:lastModifiedBy="wchoi"
+        cq:lastReplicated="{Date}2013-03-06T01:51:54.584Z"
+        cq:lastReplicatedBy="wchoi"
+        cq:lastReplicationAction="Activate"
+        cq:template="/libs/wcm/core/templates/designpage"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="US Live Site Design"
+        sling:resourceType="wcm/core/components/designer">
+        <homepage jcr:primaryType="nt:unstructured">
+            <siteconfig
+                jcr:lastModified="{Date}2012-12-19T23:43:22.815Z"
+                jcr:lastModifiedBy="jappling"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dupont/phoenix/components/siteconfig"/>
+        </homepage>
+        <siteconfig jcr:primaryType="nt:unstructured">
+            <general
+                jcr:primaryType="nt:unstructured"
+                countryselectorURL="http://www2.dupont.com/DuPont_Home/en_US/country_selector.html"
+                externalsiteprefix="http://www.dupont.com"
+                extSearchURL="http://dupontsearch.asp.dupont.com/search"
+                megatrendFolderPath="/content/en_us/home/global-links/our-approach/global-challenges"
+                searchCountryLangCombo="en_US"/>
+            <footer
+                jcr:primaryType="nt:unstructured"
+                copyrightText="Copyright © 2013 DuPont. All rights reserved. The DuPont Oval Logo, DuPont™, The miracles of science™ and all products denoted with ® or ™ are trademarks or registered trademarks of E. I. du Pont de Nemours and Company or its affiliates."
+                corporateFolderPath="/content/en_us/home/global-links/corporate-links"
+                utilityLinksFolderPath="/content/en_us/home/global-links/utility-links"/>
+            <hlm
+                jcr:primaryType="nt:unstructured"
+                allowedTools="[dupont/phoenix/components/megatrendscallout,dupont/phoenix/components/productfindercallout,dupont/phoenix/components/linklistcurated,dupont/phoenix/components/touttool]"
+                article="INFORMATION &amp; IDEAS"
+                brand="DUPONT BRAND OFFERINGS"
+                casestudy="CASE STUDIES"
+                corporatecontent="CORPORATE CONTENTS"
+                corporatecontentdetail="CORPORATE CONTENT DETAILS"
+                corporatecontentvideodetail="CORPORATE CONTENT VIDEO DETAILS"
+                corporatesubcontent="CORPORATE SUB CONTENTS"
+                corporatesubsubcontent="CORPORATE SUB SUB CONTENTS"
+                event="EVENTS"
+                industry="INDUSTRIES"
+                maxDisplayItemsWithCallout="6"
+                maxDisplayItemsWithoutCallout="12"
+                maxItemsViewAllWithCallout="2"
+                maxItemsViewAllWithoutCallout="4"
+                newsletter="NEWSLETTERS"
+                pressrelease="NEWS"
+                product="DUPONT PRODUCTS &amp; SERVICES"
+                productcat="PRODUCT AND SERVICE CATEGORIES"
+                productcatgroup="PRODUCT AND SERVICE CATEGORY GROUPS"
+                subbrand="SUB BRANDS"
+                subindustry="INDUSTRY SEGMENTS"
+                subproduct="SUB PRODUCTS"
+                usesapplication="USES AND APPLICATIONS"
+                video="VIDEOS"/>
+            <socialmedia
+                jcr:primaryType="nt:unstructured"
+                sharemedia="[facebook,youtube,linkedin,twitter]"
+                socialchannels="[{&quot;socialChannel&quot;:&quot;linkedin&quot;\,&quot;socialChannelURL&quot;:&quot;http://www.linkedin.com/jsearch?page_num=1&amp;sortCriteria=DD&amp;keepFacets=&amp;facet_COMPANY=2155&quot;},{&quot;socialChannel&quot;:&quot;youtube&quot;\,&quot;socialChannelURL&quot;:&quot;http://www.youtube.com/dupont&quot;},{&quot;socialChannel&quot;:&quot;twitter&quot;\,&quot;socialChannelURL&quot;:&quot;https://twitter.com/dupont_news&quot;},{&quot;socialChannel&quot;:&quot;facebook&quot;\,&quot;socialChannelURL&quot;:&quot;https://www.facebook.com/dupontco&quot;}]"
+                socialmediachannellist="/etc/designs/dupont/phoenix/socialmediachannels"/>
+            <globalnav
+                jcr:primaryType="nt:unstructured"
+                inclusiveinnovationnode="/content/en_us/home/global-links/our-approach"
+                industrynode="/content/en_us/home/industries"
+                prodservicesnode="/content/en_us/home/products-and-services-menu"/>
+            <contenttabs
+                jcr:primaryType="nt:unstructured"
+                article="INFORMATION &amp; IDEAS"
+                brand="DUPONT BRAND OFFERINGS"
+                casestudy="CASE STUDIES"
+                corporatecontent="CORPORATE CONTENTS"
+                corporatecontentdetail="CORPORATE CONTENT DETAILS"
+                corporatecontentvideodetail="CORPORATE CONTENT VIDEO DETAILS"
+                corporatesubcontent="CORPORATE SUB CONTENTS"
+                corporatesubsubcontent="CORPORATE SUB SUB CONTENTS"
+                event="EVENTS"
+                industry="INDUSTRIES"
+                newsletter="NEWSLETTERS"
+                pressrelease="NEWS"
+                product="DUPONT PRODUCTS &amp; SERVICES"
+                productcat="PRODUCT AND SERVICE CATEGORIES"
+                productcatgroup="PRODUCT AND SERVICE CATEGORY GROUPS"
+                subbrand="SUB BRANDS"
+                subindustry="INDUSTRY SEGMENTS"
+                subproduct="SUB PRODUCTS"
+                usesapplication="USES AND APPLICATIONS"
+                video="VIDEOS"/>
+            <videogallery
+                jcr:primaryType="nt:unstructured"
+                galleryVideoPlayerId="1556011873001"
+                galleryVideoPlayerKey="AQ~~,AAABJqdYFmk~,f1SbQtPvE6XBeV1iNs1gHBt8IDxUYLpf"/>
+            <videoplayer
+                jcr:primaryType="nt:unstructured"
+                videoPlayerId="1400500751001"
+                videoPlayerKey="AQ~~,AAABJqdYFmk~,f1SbQtPvE6XcFQcCMxJKIu6s3eIicTgA"/>
+            <viewallfacets
+                jcr:primaryType="nt:unstructured"
+                collapse="level1"/>
+            <linklistdynamic
+                jcr:primaryType="nt:unstructured"
+                article="RELATED ARTICLES"
+                casestudy="OTHER CASE STUDIES"
+                newsletter="OTHER NEWS RELEASES"
+                pressrelease="OTHER PRESS RELEASES"
+                product="RELATED PRODUCTS"
+                video="OTHER VIDEOS"/>
+            <imagegallery
+                jcr:primaryType="nt:unstructured"
+                imageGalleryFolderPath="/content/en_us/home/global-links/image-gallery"/>
+            <featured
+                jcr:primaryType="nt:unstructured"
+                allowedTools="[dupont/phoenix/components/megatrendscallout,dupont/phoenix/components/productfindercallout,dupont/phoenix/components/touttool,dupont/phoenix/components/featureda]"/>
+        </siteconfig>
+        <base jcr:primaryType="nt:unstructured">
+            <siteconfig
+                jcr:lastModified="{Date}2013-03-01T23:11:31.999Z"
+                jcr:lastModifiedBy="wchoi"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dupont/phoenix/components/siteconfig"/>
+        </base>
+        <productcatgroup jcr:primaryType="nt:unstructured">
+            <siteconfig
+                jcr:lastModified="{Date}2013-03-05T01:22:02.478Z"
+                jcr:lastModifiedBy="wchoi"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dupont/phoenix/components/siteconfig"/>
+        </productcatgroup>
+        <articledetail jcr:primaryType="nt:unstructured">
+            <siteconfig
+                jcr:lastModified="{Date}2013-03-04T19:38:00.847Z"
+                jcr:lastModifiedBy="wchoi"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dupont/phoenix/components/siteconfig"/>
+        </articledetail>
+    </jcr:content>
+    <static.css/>
+    <favicon_0.ico/>
+</jcr:root>

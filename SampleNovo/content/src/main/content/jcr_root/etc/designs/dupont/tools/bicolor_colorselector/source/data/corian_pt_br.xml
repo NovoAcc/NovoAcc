@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<Colors>
+		<color id="1" name="Designer White" sortOrder="60" image="Corian_Designer_White_300x150_0.jpg" productUrl="designer-white.html">
+			<collections>
+				<collection id="C1"/>
+			</collections>
+			<hues>
+				<hue id="H7"/>
+			</hues>
+			<usesandapplications>
+
+			</usesandapplications>
+		</color>
+		<color id="2" name="Glacier White" sortOrder="2" image="Corian_Glacier_White_300x150.jpg" productUrl="glacier-white.html">
+			<collections>
+				<collection id="C1"/>
+			</collections>
+			<hues>
+				<hue id="H7"/>
+			</hues>
+			<usesandapplications>
+	
+			</usesandapplications>
+		</color>
+		<color id="6" name="Cameo White" sortOrder="70" image="Corian_Cameo_White_300x150.jpg"  productUrl="cameo-white.html" >
+			<collections>
+				<collection id="C1"/>
+			</collections>
+			<hues>
+				<hue id="H7"/>
+			</hues>
+			<usesandapplications>
+
+			</usesandapplications>
+		</color>
+		<color id="7" name="Glacier Ice" sortOrder="50" image="Corian_Glacier_Ice_300x150.jpg" productUrl="glacier-ice.html">
+		<collections>
+				<collection id="C2"/>
+			</collections>
+			<hues>
+				<hue id="H7"/>
+			</hues>
+			<usesandapplications>
+
+			</usesandapplications>
+		</color>
+		<color id="13" name="Vanilla" sortOrder="85" image="Corian_Vanilla_300x150.jpg"  productUrl="vanilla.html" >
+			<collections>
+				<collection id="C1"/>
+			</collections>
+			<hues>
+				<hue id="H7"/>
+			</hues>
+			<usesandapplications>
+
+			</usesandapplications>
+		</color>
+		<color id="15" name="Clam Shell" sortOrder="87" image="ClamShell_690x345_300x150_0.jpg"  productUrl="clam-shell.html" >
+			<collections>
+				<collection id="C1"/>
+				<collection id="C5"/>
+			</collections>
+			<hues>
+				<hue id="H1"/>
+			</hues>
+			<usesandapplications>
+
+			</usesandapplications>
+		</color>
+		<color id="33" name="Medea" sortOrder="100" image="Corian_Medea_690x345_300x150.jpg"  productUrl="medea.html" >
+			<collections>
+				<collection id="C3"/>
+			</collections>
+			<hues>
+				<hue id="H4"/>
+			</hues>
+			<usesandapplications>
+			</usesandapplications>
+		</color>
+		<color id="41" name="Dove" sortOrder="97" image="Dove_690x345_300x150_1.jpg"  productUrl="dove.html" >
+			<collections>
+				<collection id="C3"/>
+				<collection id="C1"/>
+			</collections>
+			<hues>
+				<hue id="H4"/>
+			</hues>
+			<usesandapplications>
+
+			</usesandapplications>
+		</color>
+		<color id="48" name="Night Sky" sortOrder="104" image="Corian_Night_Sky_690x345_300x150.jpg"  productUrl="night-sky.html" >
+			<collections>
+			</collections>
+			<hues>
+				<hue id="H4"/>
+			</hues>
+			<usesandapplications>
+			</usesandapplications>
+		</color>
+		<color id="49" name="Nocturne" sortOrder="105" image="Corian_Nocturne_690x345_300x150.jpg"  productUrl="nocturne.html" >
+			<collections>
+				<collection id="C3"/>
+			</collections>
+			<hues>
+				<hue id="H4"/>
+			</hues>
+			<usesandapplications>
+			</usesandapplications>
+		</color>
+		<color id="50" name="Aurora" sortOrder="88" image="Aurora_690x345_300x150_1.jpg"  productUrl="aurora.html" >
+			<collections>
+				<collection id="C1"/>
+			</collections>
+			<hues>
+				<hue id="H1"/>
+			</hues>
+			<usesandapplications>
+			</usesandapplications>
+		</color>
+		<color id="57" name="Diamond Blue" sortOrder="92" image="DiamondBlue_300x150_1.jpg"  productUrl="diamond-blue.html" >
+			<collections>
+			</collections>
+			<hues>
+				<hue id="H2"/>
+			</hues>
+			<usesandapplications>
+			</usesandapplications>
+		</color>
+		<color id="60" name="Serpentine Green" sortOrder="93" image="SerpentineGreen_690x345_300x150.jpg"  productUrl="serpentine-green.html" >
+			<collections>
+			</collections>
+			<hues>
+				<hue id="H5"/>
+			</hues>
+			<usesandapplications>
+			</usesandapplications>
+		</color>
+		<color id="65" name="Chic Aubergine" sortOrder="103" image="ChicAubergine_690x345_300x150_1.jpg"  productUrl="chic-aubergine.html" >
+			<collections>
+			</collections>
+			<hues>
+				<hue id="H3"/>
+			</hues>
+			<usesandapplications>
+			</usesandapplications>
+		</color>
+		<color id="69" name="Elegant Gray" sortOrder="95" image="ElegantGray_690x345_300x150.jpg"  productUrl="elegant-gray.html" >
+			<collections>
+			</collections>
+			<hues>
+				<hue id="H4"/>
+			</hues>
+			<usesandapplications>
+			</usesandapplications>
+		</color>
+		<color id="119" name="Silver Gray" sortOrder="94" image="SilverGray_300x150_1.jpg"  productUrl="silver-gray.html" >
+			<collections>
+			</collections>
+			<hues>
+				<hue id="H4"/>
+			</hues>
+			<usesandapplications>
+			</usesandapplications>
+		</color>
+		<color id="77" name="Hot" sortOrder="91" image="Corian_Hot_300x150.jpg"  productUrl="hot.html" >
+			<collections>
+				</collections>
+			<hues>
+				<hue id="H6"/>
+			</hues>
+			<usesandapplications>
+			</usesandapplications>
+		</color>
+		<color id="31" name="Whisper" sortOrder="86" image="Corian_Whisper_690x345_300x150.jpg" productUrl="whisper.html" >
+			<collections>
+				<collection id="C3"></collection>
+				<collection id="C1"/>
+			</collections>
+			<hues>
+				<hue id="H1"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="46" name="Tumbleweed" sortOrder="99" image="Corian_Tumbleweed_690x345_300x150_2.jpg" productUrl="tumbleweed.html" >
+			<collections>
+				<collection id="C1"></collection>
+				<collection id="C5"></collection>
+			</collections>
+			<hues>
+				<hue id="H1"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="54" name="Sun" sortOrder="89" image="Corian_Sun_690x345_300x150_7.jpg" productUrl="sun.html" >
+			<collections> </collections>
+			<hues>
+				<hue id="H6"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="82" name="Suede" sortOrder="101" image="Corian_Suede_690x345_300x150_0.jpg" productUrl="suede.html" >
+			<collections>
+				<collection id="C3"></collection>
+			</collections>
+			<hues>
+				<hue id="H3"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="10" name="Rice Paper" sortOrder="80" image="Corian_Rice_Paper_690x345_300x150.jpg" productUrl="rice-paper.html" >
+			<collections>
+				<collection id="C3"></collection>
+				<collection id="C1"></collection>
+			</collections>
+			<hues>
+				<hue id="H7"></hue>
+			</hues>
+			<usesandapplications>
+			</usesandapplications>
+		</color>
+				<color id="58" name="Natural Gray" sortOrder="96" image="Corian_Natural_Gray_690x345_300x150_0.jpg" productUrl="natural-gray.html" >
+			<collections>
+				<collection id="C5"></collection>
+			</collections>
+			<hues>
+				<hue id="H4"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="122" name="Deep Nocturne" sortOrder="106" image="DeepNocturne_thumbnail.jpg" productUrl="deep-nocturne.html" >
+			<collections>
+				<collection id="C7"></collection>
+			</collections>
+			<hues>
+				<hue id="H4"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="36" name="Concrete" sortOrder="98" image="Corian_Concrete_690x345_300x150_0.jpg" productUrl="concrete.html" >
+			<collections> </collections>
+			<hues>
+				<hue id="H4"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="37" name="Mandarin" sortOrder="90" image="Corian_Mandarin_300x150.jpg"  productUrl="mandarin.html" priceGroup="c" >
+			<collections>
+			</collections>
+			<hues>
+				<hue id="H6"/>
+			</hues>
+		</color>
+		<color id="8" name="Cirrus White" sortOrder="75" image="DSP_Corian_PC_Color Chip_Cirrus_White_300x150.jpg" productUrl="cirrus-white.html" priceGroup="pc">
+			<collections>
+				<collection id="C1"/>
+				<collection id="C5"/>
+			</collections>
+			<hues>
+				<hue id="H7"/>
+			</hues>
+		</color>
+	</Colors>
+	<Collections>
+		<collection id="C1" displayName="Cozinhas" sysName="solid-colours" descriptionTitle="Cores sólidas Corian ®" description="" />
+		<collection id="C2" displayName="Illumination" sysName="illumination" descriptionTitle="Corian ® Illumination Series" description="" />
+		<collection id="C3" displayName="Terra" sysName="terra" descriptionTitle="Corian ® Terra Coleção" description="" />
+		<collection id="C5" displayName="privado" sysName="private" descriptionTitle="Corian ® colecção privada" description="" />
+		<collection id="C7" displayName="Deep Color™ " sysName="DeepColor" descriptionTitle="Corian ® Tecnologia DeepColorTM" description="" />
+
+	</Collections>
+	<Hues>
+		<hue id="H0" displayName="Todas as Tonalidades" sysName="all-hues" />
+		<hue id="H1" displayName="Beges" sysName="beige" />
+		<hue id="H2" displayName="Azuis" sysName="blue" />
+		<hue id="H3" displayName="Marrons, Roxos" sysName="brown-purple" />
+		<hue id="H4" displayName="Cinzas, Pretos" sysName="gray-black" />
+		<hue id="H5" displayName="Verdes" sysName="green" />
+		<hue id="H6" displayName="Amarelos, Laranjas, Vermelhos" sysName="yellow-red" />
+		<hue id="H7" displayName="Brancos" sysName="white" />
+	</Hues>	
+	<PriceGroups>
+	</PriceGroups>
+	<SortOptions>
+		<sort id="0" displayName="Claro para Escuro" sysName="light-dark"></sort>
+		<sort id="1" displayName="Escuro para Claro" sysName="dark-light"></sort>
+		<sort id="2" displayName="A-Z" sysName="alpha"></sort>
+	</SortOptions>
+	<UsesAndApplications>
+		<ua id="ua14" displayName="Corian® Application— Lighting" collectionId="C2" pageURL="lighting.html"></ua>
+		<ua id="ua16" displayName="Corian® Market Segment— Healthcare" collectionId="C4" pageURL="solid-surface-healthcare.html"></ua>
+		<ua id="ua30" displayName="Corian® Technique — Corian® &amp; Light" collectionId="C2" pageURL="using-light.html"></ua>
+	</UsesAndApplications>
+	<Configuration>
+		<PriceGroupsEnabled>false</PriceGroupsEnabled>
+		<ProductType>Corian</ProductType>
+		<ImageBasePath>/etc/designs/dupont/tools/bicolor_colorselector/source/images/</ImageBasePath>
+		<AllColorPageBasePath>../products/</AllColorPageBasePath>
+		<AllColorPageName>corian-all-colors.html</AllColorPageName>
+		<ColorPageBasePath>../products/corian-all-colors/sub-products/</ColorPageBasePath>
+	</Configuration>  
+	<Translations>
+		<ShowMeLabel value="MOSTRE-ME:"></ShowMeLabel>
+		<ColorString value="cor"></ColorString>
+		<AllColorsLabel value="Todas as Cores"></AllColorsLabel>
+		<CollectionsLabel value="COLEÇÕES"></CollectionsLabel>
+		<ColorsCountLabel value="Visualizando {0} Cores"></ColorsCountLabel>
+		<FilterLabel value="FILTRAR POR:"></FilterLabel>
+		<SortLabel value="ORDENAR POR:"></SortLabel>
+		<NoResultsMsg value="Não há cores correspondentes aos filtros que você selecionou. Por favor tente uma combinação de filtros diferente ou veja Todas as Cores."></NoResultsMsg>
+		<NoResultsLinkText value="Todas as Cores"></NoResultsLinkText>
+		<BackToTopLink value="Voltar ao topo"></BackToTopLink>
+		<AllColorsPageLinkText value="Colors of Corian®"></AllColorsPageLinkText>
+		<RelatedColorsTitle value="Cores Relacionadas"></RelatedColorsTitle>
+		<RelatedHuesLabel value="VEJA AS TONALIDADES RELACIONADAS: "></RelatedHuesLabel>
+		<RecommendedColorsTitle value="Cores Recomendadas"></RecommendedColorsTitle>
+		<RecommendedColorsLabel value="VEJA COLEÇÕES RELACIONADAS: "></RecommendedColorsLabel>
+        <AllPriceReset value="All Price Groups"></AllPriceReset>
+        <HueReset value="Todas as Tonalidades"></HueReset>
+        <SortReset value="Claro para Escuro"></SortReset>
+	</Translations>
+</data>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Text"
+    title="Text"
+    xtype="tabpanel">
+    <items
+        jcr:primaryType="cq:WidgetCollection"
+        xtype="tabpanel">
+        <tab1
+            jcr:primaryType="cq:Panel"
+            title="Content Detail Headline">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <pagetitle
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Page Title"
+                    fieldSubLabel="Long Headline"
+                    name="./pageTitle"
+                    xtype="richtext"
+                    height="60">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/dupont/phoenix/components/contentdetailheadline/rteplugins.infinity.json"
+                            xtype="cqinclude"/>
+                </pagetitle>
+                <createdate
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Date"
+                    fieldDescription="Date format will vary depending on Page Locale."
+                    format="d.m.y"
+                    editable="{Boolean}false"
+                    name="./createdate"
+                    xtype="datefield"/>
+                <showhidedate
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Hide Date"
+                    name="./hide"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

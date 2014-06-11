@@ -1,0 +1,258 @@
+.subproduct_navigation_tool {
+    padding-left:70px;
+    width:960px;
+}
+
+.resultsLeftCol {
+    float: left;
+    font-size:12px;
+    margin-right: 50px;
+    width: 195px;
+}
+
+.label {
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    color: #474747;
+    font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif;
+    font-weight: 700;
+    font-size: 12px;
+    position: relative;
+    top: 2px;
+}
+
+.showme, .onlyshowme {
+    border: 1px solid #EAEAEA;
+    border-radius: 5px 5px 5px 5px;
+    margin: 12px 0 20px;
+    padding: 10px 10px 14px 20px;
+}
+
+.showtop {
+    color: #6E6E6E;
+    position: relative;
+    top: -20px;
+}
+
+.showme span, .facetgroup {
+    background-color: #FFFFFF;
+    font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    margin: 0 0 0 -5px;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+
+.subproductArrow {
+    background: url("../images/sprite1.png") repeat scroll -10px -367px transparent;
+    display: inline-block;
+    height: 7px;
+    margin: 0 6px 1px -10px;
+    width: 4px;
+}
+
+#PrimaryFilterList {
+    margin-top: -17px;
+}
+
+.resultsLeftCol li {
+    margin-bottom: 0;
+    margin-top: 12px;
+}
+
+.primary-filter-link {
+    color: #6E6E6E;
+}
+
+.top-pagination {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 12px;
+    height:50px;
+    margin-top: -5px;
+    padding: 0 0 4px;
+}
+
+#SubProductCount {
+    color: #000000;
+    float: left;
+    font-size: 14px;
+    margin: 12px 0 0 0;
+    width:14%
+}
+
+.page-item, .pane-service-links-service-links {
+    float: left;
+    text-transform: uppercase;
+}
+
+.top-pagination .page-item {
+    float: left;
+    margin-left: 1%;
+    width:82%
+}
+
+.left-item {
+    float: left;
+    min-width:65%;
+    width:auto;
+}
+
+#Filter,
+#Sort {
+    float:left;
+    margin:5px 5px 0 0;
+    padding-top: 7px;
+    max-width: 80px;
+}
+
+#Sort {
+    word-wrap: break-word;
+}
+
+.left-item1, 
+.left-item2 {
+    overflow: hidden;
+    float: left;
+    background: url(../images/down_arrow.png) no-repeat 95% center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.right-item1 {
+    overflow: hidden;
+    float: right;
+    background: url(../images/down_arrow.png) no-repeat 95% center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.left-item select,
+.right-item select{
+    background: transparent;
+    width: auto;
+    font-family: Arial,Segoe UI,Sans-Serif;
+    font-size: 12px;
+    border: 0;
+    height: 34px;
+    padding-right: 12px;
+    -webkit-appearance: none;
+}
+
+.right-item {
+    float:right;
+}
+
+#primaryFilterDescription {
+    display: none;
+    margin-bottom: -20px;
+    padding-top: 55px;
+}
+
+#primaryFilterDescription #descriptionTitle {
+    font-size: 24px;
+}
+
+#primaryFilterDescription #description {
+    color: #333333;
+    font-family: Arial, Segoe UI, Sans-Serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+}
+
+#noResults {
+    display: none;
+    margin-bottom: -20px;
+    min-height: 230px;
+    padding-top: 55px;
+}
+#noResults span {
+    color: #6E6E6E;
+    font-size: 12px;
+}
+#noResults span a {
+    color: #992A10;
+    font-weight: 200;
+    text-decoration: underline;
+}
+#noResults span a:hover {
+    color: #992A10;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+.resultsRightCol {
+    float: left;
+    width: 715px;
+}
+
+#SubProductThumbnails {
+    border-bottom: 1px solid #EAEAEA;
+    font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif;
+    letter-spacing: normal;
+    margin: 20px 0 30px;
+}
+
+.subproduct-box {
+    float: left;
+    margin: 20px 30px 25px 0;
+    width: 217px;
+    height: 143px;
+}
+
+.subproduct-box a.color-link img {
+    border: 0 none;
+    margin-bottom: 16px;
+    width: 218px;
+}
+
+.last {
+    margin-right: 0;
+}
+
+.pagination {
+    border-top: 1px solid #CCCCCC;
+    bottom: -36px;
+    float: left;
+    margin-top: 30px;
+    padding: 10px 0;
+    position: absolute;
+    text-align: center;
+    width: 715px;
+}
+
+#backToTop {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    font-family: Arial,sans-serif;
+    font-size: 11px;
+    margin: -14px 0 25px;
+}
+
+#backToTopText {
+    float:left;
+}
+
+#backToTop img {
+    display: block;
+    float: right;
+    height: 4px;
+    margin: 3px 0 0 7px;
+    width: 7px;
+}
+
+.pager li {
+	float: left;
+	margin: 0 1%;
+}
+
+.pagination_next_btn, .pagination_prev_btn {
+	float: left;
+}
+
+.active_page {
+	font-weight: bold;
+}

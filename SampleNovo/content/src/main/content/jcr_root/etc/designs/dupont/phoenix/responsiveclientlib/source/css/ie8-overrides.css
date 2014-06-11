@@ -1,0 +1,147 @@
+/* HTML5 */
+header,nav,article,footer,section,aside,figure,figcaption{display:block}
+
+*:first-child+html .group {
+  min-height: 1px;
+}
+#bg-container,
+#main-container {
+  width:1250px;
+  overflow-x: visible;
+}
+.msds-finder-box {
+  padding-left:5px;
+}
+ul.row-4col li {
+  margin-right: 29px;
+  width: 233px;
+}
+
+ul.row-3col li {
+  width: 321px;
+}
+
+/* Global Navigation - No Box shadow available */
+.menu-dropdown-content {
+  border:1px solid #cccccc;
+}
+
+.menu-dropdown .sub_menu li {
+  float:left;
+  margin-right:20px;
+}
+
+/* Global Navigation ~ Set height on CQ generated div */
+.globalnav {
+  height:50px;
+  position:relative;
+}
+.country-selector {
+  top:0;
+}
+
+/* Content Tabs */
+.nav-tabs-2>li + li {
+  border-right:none;
+}
+.nav-tabs-3>li + li + li {
+  border-right:none;
+}
+.nav-tabs-4>li + li + li + li {
+  border-right:none;
+}
+.nav-tabs-5>li + li + li + li + li {
+  border-right:none;
+}
+.nav-tabs-6>li + li + li + li + li + li {
+  border-right:none;
+}
+
+/* Content Tabs - Add border-radius on last LI */
+.nav-tabs-2>li + li.selected {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.nav-tabs-3>li + li + li.selected {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.nav-tabs-4>li + li + li + li.selected {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.nav-tabs-5>li + li + li + li + li.selected {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.nav-tabs-6>li + li + li + li + li + li.selected {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* MSDS Finder */
+.msds-finder {
+  clear:both;
+  float:left;
+}
+.msds-finder-box {
+  line-height:28px;
+}
+.msds-finder-title {
+  padding-top:5px;
+}
+
+.header-top-bar-logo {
+  background:#e31836 url('../images/header-top-bar-logo.jpg') no-repeat 100% 0%;
+  color:transparent;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/header-top-bar-logo.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/header-top-bar-logo.jpg', sizingMethod='scale')";
+  float:left;
+  height: 100%;
+  text-indent:-9999px;
+  width:19.54545%;
+}
+
+.header-top-bar-nav .menu-container {
+    height: 50px;
+}
+
+#multimedia-container .s7videoplayer {
+    float: left;
+    width: 630px;
+    z-index: 1200;
+}
+
+#multimedia-container .s7swatches {
+    width: 425px;
+}
+
+#multimedia-container .s7controlbar, #videoplayerid .s7controlbar  {
+    z-index: 1201;
+}
+
+#videoplayerid .s7videoplayer{
+    z-index: 1200;
+}
+
+.videoplayer .s7container {
+	width: 715px;
+}
+
+#multimedia-viewall .cta-arrow {
+	top: -19px;
+        right: -122px;   
+}
+
+h2.posleft {
+        top: -285px;
+}
+
+.featuredcallout .featureda > img {
+	width: 100%;
+	max-width: auto;
+}
+
+.featuredcallout .featureda {
+	width: 100%;
+}

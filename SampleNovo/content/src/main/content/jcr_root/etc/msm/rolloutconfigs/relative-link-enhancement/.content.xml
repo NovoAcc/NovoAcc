@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:defaultView="html"
+        cq:lastModified="{Date}2013-01-31T11:50:58.754+05:30"
+        cq:lastModifiedBy="admin"
+        cq:rolloutConfigId53="cq:trigger=rollout#updateContent/status=true####"
+        cq:template="/libs/wcm/msm/templates/rolloutconfig"
+        cq:trigger="rollout"
+        jcr:description="Standard rollout configuration which allows to start rollout process on rollout trigger and runs actions: create, update, delete content and order children nodes."
+        jcr:lastModified="{Date}2010-08-17T12:02:06.015+02:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Relative Link Enhancement Rollout"
+        sling:resourceType="wcm/msm/components/rolloutconfig">
+        <contentUpdate
+            jcr:primaryType="cq:LiveSyncAction"
+            enabled="true"/>
+        <contentCopy
+            jcr:primaryType="cq:LiveSyncAction"
+            enabled="true"/>
+        <contentDelete
+            jcr:primaryType="cq:LiveSyncAction"
+            enabled="true"/>
+        <orderChildren
+            jcr:primaryType="cq:LiveSyncAction"
+            enabled="true"/>
+        <notify
+            jcr:primaryType="cq:LiveSyncAction"
+            enabled="true"/>
+        <relativeLinkUpdate
+            jcr:primaryType="cq:LiveSyncAction"
+            enabled="true"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Panel"
+    title="HLM / Tab Labels ">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <contenttypes
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}true"
+            collapsible="{Boolean}true"
+            fieldDescription="Content Type name is displayed as Title within HLM component."
+            title="HLM Display Labels"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <industry
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Industries"
+                    fieldLabel="Industry"
+                    name="./../../siteconfig/hlm/industry"
+                    value="Industries"
+                    xtype="textfield"/>
+                <subindustry
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Sub Industries"
+                    fieldLabel="Sub Industry"
+                    name="./../../siteconfig/hlm/subindustry"
+                    value="Sub Industries"
+                    xtype="textfield"/>
+                <productcategorygroup
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Product and Service Category Groups"
+                    fieldLabel="Product and Service Category Group"
+                    name="./../../siteconfig/hlm/productcatgroup"
+                    value="Product and Service Category Groups"
+                    xtype="textfield"/>
+                <productcategory
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Product and Service Categories"
+                    fieldLabel="Product and Service Category"
+                    name="./../../siteconfig/hlm/productcat"
+                    value="Product and Service Categories"
+                    xtype="textfield"/>
+                <brand
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Brands"
+                    fieldLabel="Brand"
+                    name="./../../siteconfig/hlm/brand"
+                    value="Brands"
+                    xtype="textfield"/>
+                <subbrand
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Sub Brands"
+                    fieldLabel="Sub Brand"
+                    name="./../../siteconfig/hlm/subbrand"
+                    value="Sub Brands"
+                    xtype="textfield"/>
+                <productdetail
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Products"
+                    fieldLabel="Product and Service Detail"
+                    name="./../../siteconfig/hlm/product"
+                    value="Products"
+                    xtype="textfield"/>
+                <subproductdetail
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Sub Products"
+                    fieldLabel="Sub Product and Service Detail"
+                    name="./../../siteconfig/hlm/subproduct"
+                    value="Sub Products"
+                    xtype="textfield"/>
+                <usesapplication
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Uses and Applications"
+                    fieldLabel="Uses and Applications"
+                    name="./../../siteconfig/hlm/usesapplication"
+                    value="Uses and Applications"
+                    xtype="textfield"/>
+                <article
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Articles"
+                    fieldLabel="Article Detail"
+                    name="./../../siteconfig/hlm/article"
+                    value="Articles"
+                    xtype="textfield"/>
+                <event
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Events"
+                    fieldLabel="Events"
+                    name="./../../siteconfig/hlm/event"
+                    value="Events"
+                    xtype="textfield"/>
+                <casestudy
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Case Studies"
+                    fieldLabel="Case Study"
+                    name="./../../siteconfig/hlm/casestudy"
+                    value="Case Studies"
+                    xtype="textfield"/>
+                <pressrelease
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Press Releases"
+                    fieldLabel="Press Release"
+                    name="./../../siteconfig/hlm/pressrelease"
+                    value="Press Releases"
+                    xtype="textfield"/>
+                <video
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Videos"
+                    fieldLabel="Video"
+                    name="./../../siteconfig/hlm/video"
+                    value="Videos"
+                    xtype="textfield"/>
+                <newsletter
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Newsletters"
+                    fieldLabel="Newsletter"
+                    name="./../../siteconfig/hlm/newsletter"
+                    value="Newsletters"
+                    xtype="textfield"/>
+                <corporatecontent
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Corporate Contents"
+                    fieldLabel="Corporate Content"
+                    name="./../../siteconfig/hlm/corporatecontent"
+                    value="Corporate Contents"
+                    xtype="textfield"/>
+                <corporatesubcontent
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Corporate Sub Contents"
+                    fieldLabel="Corporate Sub Content"
+                    name="./../../siteconfig/hlm/corporatesubcontent"
+                    value="Corporate Sub Contents"
+                    xtype="textfield"/>
+                <corporatesubsubcontent
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Corporate Sub Sub Contents"
+                    fieldLabel="Corporate Sub Sub Content"
+                    name="./../../siteconfig/hlm/corporatesubsubcontent"
+                    value="Corporate Sub Sub Contents"
+                    xtype="textfield"/>
+                <corporatecontentdetail
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Corporate Content Details"
+                    fieldLabel="Corporate Content Detail"
+                    name="./../../siteconfig/hlm/corporatecontentdetail"
+                    value="Corporate Content Details"
+                    xtype="textfield"/>
+                <corporatecontentvideodetail
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Corporate Content Video Details"
+                    fieldLabel="Corporate Content Video Detail"
+                    name="./../../siteconfig/hlm/corporatecontentvideodetail"
+                    value="Corporate Content Video Details"
+                    xtype="textfield"/>
+                <mcpressrelease-business
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="News (Business)"
+                    fieldLabel="MC Press Release - Business"
+                    name="./../../siteconfig/hlm/pressreleasebusiness"
+                    value="News (Business)"
+                    xtype="textfield"/>
+                <mcpressrelease-corporate
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="News (Corporate)"
+                    fieldLabel="MC Press Release - Corporate"
+                    name="./../../siteconfig/hlm/pressreleasecorporate"
+                    value="News (Corporate)"
+                    xtype="textfield"/>
+                <presskit
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Press Kits"
+                    fieldLabel="MC Press Kits"
+                    name="./../../siteconfig/hlm/presskit"
+                    value="Press Kits"
+                    xtype="textfield"/>
+                <mcdailynews
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Daily News"
+                    fieldLabel="MC Daily News"
+                    name="./../../siteconfig/hlm/mcdailynews"
+                    value="Daily News"
+                    xtype="textfield"/>
+                <mcimagedetail
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Images"
+                    fieldLabel="MC Images"
+                    name="./../../siteconfig/hlm/mcimagedetail"
+                    value="Images"
+                    xtype="textfield"/>
+                <mcvideodetail
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Videos"
+                    fieldLabel="MC Videos"
+                    name="./../../siteconfig/hlm/mcvideodetail"
+                    value="Videos"
+                    xtype="textfield"/>
+            </items>
+        </contenttypes>
+        <contenttabs
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}true"
+            collapsible="{Boolean}true"
+            title="Content Tab Titles"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <industry
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Industries"
+                    fieldLabel="Industry"
+                    name="./../../siteconfig/contenttabs/industry"
+                    value="Industries"
+                    xtype="textfield"/>
+                <subindustry
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Sub Industries"
+                    fieldLabel="Sub Industry"
+                    name="./../../siteconfig/contenttabs/subindustry"
+                    value="Sub Industries"
+                    xtype="textfield"/>
+                <productcategorygroup
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Product and Service Category Groups"
+                    fieldLabel="Product and Service Category Group"
+                    name="./../../siteconfig/contenttabs/productcatgroup"
+                    value="Product and Service Category Groups"
+                    xtype="textfield"/>
+                <productcategory
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Product and Service Categories"
+                    fieldLabel="Product and Service Category"
+                    name="./../../siteconfig/contenttabs/productcat"
+                    value="Product and Service Categories"
+                    xtype="textfield"/>
+                <brand
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Brands"
+                    fieldLabel="Brand"
+                    name="./../../siteconfig/contenttabs/brand"
+                    value="Brands"
+                    xtype="textfield"/>
+                <subbrand
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Sub Brands"
+                    fieldLabel="Sub Brand"
+                    name="./../../siteconfig/contenttabs/subbrand"
+                    value="Sub Brands"
+                    xtype="textfield"/>
+                <productdetail
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Products"
+                    fieldLabel="Product and Service Detail"
+                    name="./../../siteconfig/contenttabs/product"
+                    value="Products"
+                    xtype="textfield"/>
+                <subproductdetail
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Sub Products"
+                    fieldLabel="Sub Product and Service Detail"
+                    name="./../../siteconfig/contenttabs/subproduct"
+                    value="Sub Products"
+                    xtype="textfield"/>
+                <usesapplication
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Uses and Applications"
+                    fieldLabel="Uses and Applications"
+                    name="./../../siteconfig/contenttabs/usesapplication"
+                    value="Uses and Applications"
+                    xtype="textfield"/>
+                <article
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Articles"
+                    fieldLabel="Article Detail"
+                    name="./../../siteconfig/contenttabs/article"
+                    value="Articles"
+                    xtype="textfield"/>
+                <event
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Events"
+                    fieldLabel="Events"
+                    name="./../../siteconfig/contenttabs/event"
+                    value="Events"
+                    xtype="textfield"/>
+                <casestudy
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Case Studies"
+                    fieldLabel="Case Study"
+                    name="./../../siteconfig/contenttabs/casestudy"
+                    value="Case Studies"
+                    xtype="textfield"/>
+                <pressrelease
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Press Releases"
+                    fieldLabel="Press Release"
+                    name="./../../siteconfig/contenttabs/pressrelease"
+                    value="Press Releases"
+                    xtype="textfield"/>
+                <video
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Videos"
+                    fieldLabel="Video"
+                    name="./../../siteconfig/contenttabs/video"
+                    value="Videos"
+                    xtype="textfield"/>
+                <newsletter
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Newsletters"
+                    fieldLabel="Newsletter"
+                    name="./../../siteconfig/contenttabs/newsletter"
+                    value="Newsletters"
+                    xtype="textfield"/>
+                <corporatecontent
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Corporate Contents"
+                    fieldLabel="Corporate Content"
+                    name="./../../siteconfig/contenttabs/corporatecontent"
+                    value="Corporate Contents"
+                    xtype="textfield"/>
+                <corporatesubcontent
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Corporate Sub Contents"
+                    fieldLabel="Corporate Sub Content"
+                    name="./../../siteconfig/contenttabs/corporatesubcontent"
+                    value="Corporate Sub Contents"
+                    xtype="textfield"/>
+                <corporatesubsubcontent
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Corporate Sub Sub Contents"
+                    fieldLabel="Corporate Sub Sub Content"
+                    name="./../../siteconfig/contenttabs/corporatesubsubcontent"
+                    value="Corporate Sub Sub Contents"
+                    xtype="textfield"/>
+                <corporatecontentdetail
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Corporate Content Details"
+                    fieldLabel="Corporate Content Detail"
+                    name="./../../siteconfig/contenttabs/corporatecontentdetail"
+                    value="Corporate Content Details"
+                    xtype="textfield"/>
+                <corporatecontentvideodetail
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Corporate Content Video Details"
+                    fieldLabel="Corporate Content Video Detail"
+                    name="./../../siteconfig/contenttabs/corporatecontentvideodetail"
+                    value="Corporate Content Video Details"
+                    xtype="textfield"/>
+                <mcpressrelease-business
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="News (Business)"
+                    fieldLabel="MC Press Release - Business"
+                    name="./../../siteconfig/contenttabs/pressreleasebusiness"
+                    value="News (Business)"
+                    xtype="textfield"/>
+                <mcpressrelease-corporate
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="News (Corporate)"
+                    fieldLabel="MC Press Release - Corporate"
+                    name="./../../siteconfig/contenttabs/pressreleasecorporate"
+                    value="News (Corporate)"
+                    xtype="textfield"/>
+                <presskit
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Press Kit"
+                    fieldLabel="MC Press Kits"
+                    name="./../../siteconfig/contenttabs/presskit"
+                    value="Press Kits"
+                    xtype="textfield"/>
+                <mcdailynews
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Daily News"
+                    fieldLabel="MC Daily News"
+                    name="./../../siteconfig/contenttabs/mcdailynews"
+                    value="Daily News"
+                    xtype="textfield"/>
+            </items>
+        </contenttabs>
+        <maxdisplayitemswithcallout
+            jcr:primaryType="cq:Widget"
+            allowDecimals="false"
+            allowNegative="false"
+            defaultValue="6"
+            fieldLabel="Max Display Items with Row Callout Visible"
+            name="./../../siteconfig/hlm/maxDisplayItemsWithCallout"
+            value="6"
+            xtype="numberfield"/>
+        <maxdisplayitemswithoutcallout
+            jcr:primaryType="cq:Widget"
+            allowDecimals="false"
+            allowNegative="false"
+            defaultValue="12"
+            fieldLabel="Max Display Items with Row Callout Hidden"
+            name="./../../siteconfig/hlm/maxDisplayItemsWithoutCallout"
+            value="12"
+            xtype="numberfield"/>
+        <maxitemsforviewallwithcallout
+            jcr:primaryType="cq:Widget"
+            allowDecimals="false"
+            allowNegative="false"
+            defaultValue="2"
+            fieldDescription="Show view all and carousel if number of items are more than entered within this box. This is used when row callout is activated."
+            fieldLabel="Max Items for View All Activation with Row Callout Visible"
+            name="./../../siteconfig/hlm/maxItemsViewAllWithCallout"
+            value="2"
+            xtype="numberfield"/>
+        <maxitemsforviewallwithoutcallout
+            jcr:primaryType="cq:Widget"
+            allowDecimals="false"
+            allowNegative="false"
+            defaultValue="4"
+            fieldDescription="Show view all if number of items are more than entered within this box. This is used when row callout is not activated."
+            fieldLabel="Max Items for View All Activation with Row Callout Hidden"
+            name="./../../siteconfig/hlm/maxItemsViewAllWithoutCallout"
+            value="4"
+            xtype="numberfield"/>
+        <allowedtools
+            jcr:primaryType="cq:Widget"
+            fieldDescription="List of callouts, tools and modules that can be hosted in the Row Callout module."
+            fieldLabel="Allowed Modules"
+            name="./../../siteconfig/hlm/allowedTools"
+            xtype="multifield">
+            <fieldConfig
+                jcr:primaryType="nt:unstructured"
+                optionsProvider="Dupont.hlm.allToolsOptions"
+                type="select"
+                xtype="selection"/>
+        </allowedtools>
+    </items>
+</jcr:root>

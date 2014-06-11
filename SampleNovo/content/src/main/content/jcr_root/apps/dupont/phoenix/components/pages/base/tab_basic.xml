@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Panel"
+    title="Basic">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <basic
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}false"
+            collapsible="{Boolean}false"
+            title="General"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Page / Hero Title"
+                    fieldSubLabel="Short Headline"
+                    name="./jcr:title"
+                    xtype="textfield"/>
+                <hideinnav
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Hide in Navigation"
+                    inputValue="true"
+                    name="./hideInNav"
+                    type="checkbox"
+                    xtype="selection"/>
+                <rank
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="c"
+                    fieldLabel="Rank"
+                    name="./rank"
+                    type="radio"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <ranka
+                            jcr:primaryType="nt:unstructured"
+                            text="Rank A"
+                            value="a"/>
+                        <rankb
+                            jcr:primaryType="nt:unstructured"
+                            text="Rank B"
+                            value="b"/>
+                        <rankc
+                            jcr:primaryType="nt:unstructured"
+                            checked="ture"
+                            text="Rank C"
+                            value="c"/>
+                    </options>
+                </rank>
+                <custom
+                    jcr:primaryType="cq:Widget"
+                    border="{Boolean}false"
+                    colors="[B23C00,C75300,A66200,786F1E,505D1C,404010,185E5D,278184,2F5680,003A51,3E2A67,470041,74004C,744E3D,52300C,411C00,61564E,505B5E]"
+                    fieldLabel="Hero Color"
+                    name="./heroColor"
+                    showHexValue="true"
+                    xtype="colorfield"/>
+                <resType
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./iconimage/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+            </items>
+        </basic>
+        <more_titles
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}true"
+            collapsible="{Boolean}true"
+            title="More Titles and Description"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <pagetitle
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Page Title"
+                    fieldSubLabel="Long Headline"
+                    hidden="{Boolean}true"
+                    name="./pageTitle"
+                    xtype="textfield"/>
+                <navtitle
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Text entered in this field will be displayed as the link text for this page in navigation components such as global navigation, breadcrumbs, hero sub navigation, contextual footer, etc."
+                    fieldLabel="Navigation Title"
+                    name="./navTitle"
+                    xtype="textfield"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Short Description"
+                    name="./jcr:description"
+                    xtype="textarea"/>
+            </items>
+        </more_titles>
+        <onofftime
+            jcr:primaryType="cq:Widget"
+            cls="cq-propsdialog-set-onofftime"
+            collapsed="{Boolean}true"
+            collapsible="{Boolean}true"
+            hidden="{Boolean}true"
+            title="On/Off Time"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <ontime
+                    jcr:primaryType="cq:Widget"
+                    ctCls="cq-propsdialog-ontime"
+                    fieldLabel="On Time"
+                    name="./onTime"
+                    xtype="datetime"/>
+                <offtime
+                    jcr:primaryType="cq:Widget"
+                    ctCls="cq-propsdialog-offtime"
+                    fieldLabel="Off Time"
+                    name="./offTime"
+                    xtype="datetime"/>
+                <onTimeHint
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./onTime@TypeHint"
+                    value="Date"
+                    xtype="hidden"/>
+                <offTimeHint
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./offTime@TypeHint"
+                    value="Date"
+                    xtype="hidden"/>
+            </items>
+        </onofftime>
+        <vanity
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}true"
+            collapsible="{Boolean}true"
+            title="Vanity URL"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <vanityPath
+                    jcr:primaryType="cq:Widget"
+                    cls="cq-propsdialog-vanityurl"
+                    fieldLabel="Vanity URL"
+                    name="./sling:vanityPath"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="nt:unstructured"
+                        allowBlank="{Boolean}false"
+                        xtype="textfield"/>
+                </vanityPath>
+                <vanityPathRedirect
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Redirect Vanity URL"
+                    name="./sling:redirect"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </vanity>
+    </items>
+</jcr:root>

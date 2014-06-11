@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Text"
+    title="Text"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            anchor="100%"
+            title="Featured Y Item"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <contenttype
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    path="/apps/dupont/phoenix/components/responsive/featuredy/contenttypes.infinity.json"
+                    xtype="cqinclude"/>
+                <contentPath
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Content Path"
+                    name="./selectedContent"
+                    type="select"
+                    validator="function() { return Dupont.featuredy.validateFerturedyContent(this);}"
+                    value="contentPath"
+                    xtype="pathfield"/>
+                <ModuleTitle
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Module Title"
+                    name="./moduletitle"
+                    xtype="textfield"/>
+                <pdfdata
+                    jcr:primaryType="cq:Widget"
+                    collapsed="{Boolean}false"
+                    collapsible="{Boolean}false"
+                    hidden="{Boolean}false"
+                    title="PDF Information"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <pdfTitle
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            fieldLabel="PDF Title"
+                            name="./pdftitle"
+                            xtype="textfield"/>
+                        <pdfDescription
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            fieldLabel="PDF Description"
+                            name="./pdfdesc"
+                            xtype="textarea"/>
+                    </items>
+                </pdfdata>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

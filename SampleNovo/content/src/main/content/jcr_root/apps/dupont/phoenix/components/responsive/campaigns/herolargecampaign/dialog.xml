@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    title="Hero Properties"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <image
+            jcr:primaryType="cq:Widget"
+            path="/apps/dupont/phoenix/components/hero/herobase/tab_hero_image.infinity.json"
+            xtype="cqinclude"/>
+        <advanced
+            jcr:primaryType="cq:Widget"
+            path="/apps/dupont/phoenix/components/hero/herobase/tab_hero_advanced.infinity.json"
+            xtype="cqinclude"/>
+        <Tab_x0020_1
+            jcr:primaryType="cq:Panel"
+            title="Hero Title">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <heroTtile
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Hero Title"
+                    name="./heroTitle"
+                    xtype="textfield"/>
+            </items>
+        </Tab_x0020_1>
+    </items>
+</jcr:root>

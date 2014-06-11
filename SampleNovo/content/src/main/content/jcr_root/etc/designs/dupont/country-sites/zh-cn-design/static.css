@@ -1,0 +1,41 @@
+/* overriding CSS */
+
+
+/* Testing MSDS Finder Title */
+.msds-finder-title {
+	color:blue;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Testing Hero Title */
+.solid h2 {
+  font-family: atrament-web-lf, Atrament, SimHei, sans-serif;
+}
+
+.title-h1, body.env-zh-cn .hero-content-title-h1 a, .featuredcallout h2, .no-wrap.product-finder-title, .product-finder a h2{
+	font-family: atrament-web-lf, Atrament, SimHei, sans-serif;
+}
+.hero-parent-page-link a{
+	background-position: 0 5px !important;
+}
+
+
+.article-right-column > div:nth-child(2n+1) > div.vertical_list_module, .vertical-list-module-odd > div.vertical_list_module {
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #EAEAEA !important;
+    border-top: 1px solid #EAEAEA !important;
+}
+.vertical_list_module li{
+	margin-bottom: 12px;
+}
+
+.products_services-col-1{
+	width: 176px;
+}
+
+.menu-dropdown .products_services-col-2 .sub_menu li{
+	width: 28%;
+}
+.menu-dropdown .sub_menu li{
+	white-space: nowrap;
+}

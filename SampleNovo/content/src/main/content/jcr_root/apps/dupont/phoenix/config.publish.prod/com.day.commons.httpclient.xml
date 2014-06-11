@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"    
+    proxy.exceptions="[localhost,127.0.0.1,52.124.2.80,52.124.2.81]"
+	proxy.host="52.129.0.4:80"
+	proxy.ntlm.host=""
+	proxy.ntlm.domain=""
+	proxy.user=""
+	proxy.enabled="{Boolean}true"/>

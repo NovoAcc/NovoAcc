@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Text"
+    title="M.10.0b – Link List (Dynamic)"
+    xtype="dialog">
+    <listeners
+        jcr:primaryType="nt:unstructured"
+        loadContent="function(dialog){Dupont.contentTypes.loadSelectionOptions(dialog);return true;}"/>
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Widget"
+                anchor="100%"
+                title="General"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <showhide
+                        jcr:primaryType="cq:Widget"
+                        description="Once checked, this component will not be displayed to users."
+                        fieldLabel="Hide Link List (Dynamic)?"
+                        name="./showHide"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

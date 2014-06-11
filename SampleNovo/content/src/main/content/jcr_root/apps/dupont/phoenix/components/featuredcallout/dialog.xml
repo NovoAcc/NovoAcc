@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Featured Call Out"
+    width="500"
+    height="200"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel"
+        title="Featured Call Out"
+        helpPath="en/cq/current/wcm/default_components.html#List"
+    	manageTabs="function(tab,noSwitch){var tabs=['props','static'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}">
+	    <items jcr:primaryType="cq:WidgetCollection">
+	        <list
+	            jcr:primaryType="cq:Widget"
+	            title="General"
+	            xtype="panel">
+	            <items jcr:primaryType="cq:WidgetCollection">
+                <tool
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Module"
+                    name="./selectedTool"
+                    optionsProvider="Dupont.featured.allowedToolsOptions"
+                    type="select"
+                    xtype="selection"/>
+	            </items>
+	        </list>
+	    </items>
+	    <listeners
+	        jcr:primaryType="nt:unstructured"
+	        beforesubmit="function(dialog){return Dupont.listeners.validateHLMRowCallout(dialog);}"
+	        loadContent="function(dialog){Dupont.contentTypes.loadSelectionOptions(dialog);return true;}"/>
+    </items>
+</jcr:root>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:componentIcon="/libs/cq/ui/widgets/themes/default/icons/16x16/components.png"
+    cq:componentName="S&amp;P Search Box!"
+    cq:componentPath="dupont/phoenix/components/responsive/searchpromo/searchbox"
+    jcr:lastModified="{Date}2013-08-16T05:22:49.323Z"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="cq:Component"
+    sling:resourceType="cq/analytics/components/mappings/cqmappings"
+    eVar16="eventdata.spKeyword"
+    eVar33="eventdata.spResults"
+    event19="eventdata.events.spSearch"
+    event45="eventdata.events.spNoresults"
+    prop16="eventdata.spKeyword"
+    prop27="eventdata.spResults"/>

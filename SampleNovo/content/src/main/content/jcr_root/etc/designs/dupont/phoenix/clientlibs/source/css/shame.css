@@ -1,0 +1,90 @@
+/*
+    YOU SHOULD BE ASHAMED OF USING THIS FILE. SHAME ON YOU.
+    The hottest places in hell are reserved for those who in great moral crises maintain this file.
+        - Dante Alighieri, The Divine Comedy (of CSS)
+*/
+
+/*=========================mixmedia css============================*/
+
+#multimedia-container .s7swatches {
+    top: -5px;
+    left: 648px!important;
+    width: 375px!important;
+    height: 380px!important;
+    background: none!important;
+    border:none!important;
+    background-color: none!important;
+    -moz-box-shadow: none!important;
+    -webkit-box-shadow:none!important;
+    box-shadow: none!important;
+    position: relative !important;
+}
+
+#multimedia-container .s7swatches .s7thumb {
+   width: 118px!important;
+   height: 69px!important;
+}
+
+#multimedia-container .s7swatches .s7scrollleftbutton, 
+#multimedia-container .s7swatches .s7scrollrightbutton {
+        border: 1px solid #F6F6F6;
+        bottom:25px;
+        box-shadow: 1px 1px 1px #CCCCCC;
+        color: #808080;
+        cursor:pointer;
+        display: inline-block;
+        font-family:ff-meta-web-pro, Segoe UI,Arial,Sans-Serif;
+        font-size:12px;
+        font-weight:bold;
+        height:22px;
+        line-height:19px;
+        margin-top: -10px;
+        text-indent:0;
+        text-transform: uppercase;
+    }
+
+#multimedia-container .s7swatches .s7scrollleftbutton {
+    background: #fff url("../images/left-arrow-grey.png") no-repeat scroll 5px 5px;
+    -moz-border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
+    padding: 2px 5px 0 5px;
+    left: 248px!important;
+    top: 344px!important;
+}
+
+#multimedia-container .s7swatches .s7scrollleftbutton:hover {
+    background: #808080 url("../images/left-arrow-grey-hover.png") no-repeat scroll 5px 5px;
+    border: 1px solid #808080;
+    color: #FFFFFF;
+}
+
+#multimedia-container .s7swatches .s7scrollrightbutton {
+    background: #fff url("../images/right-arrow-grey.png") no-repeat scroll 11px 5px;
+    -moz-border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
+    padding: 2px 0 0 9px;
+    left: 281px!important;
+    top: 344px!important;
+    width:21px;
+}
+
+#multimedia-container .s7swatches .s7scrollrightbutton:hover {
+    background: #808080 url("../images/right-arrow-grey-hover.png") no-repeat scroll 11px 5px;
+    border: 1px solid #808080;
+    color: #FFFFFF;
+}
+
+#multimedia-container .s7swatches .s7scrollrightbutton[state='disabled'] {
+    background: #E5E4E2 url("../images/right-arrow-grey-hover.png") no-repeat scroll 11px 5px;
+    border: 1px solid #E5E4E2;
+    cursor:auto;
+
+}
+
+#multimedia-container .s7swatches .s7scrollleftbutton[state='disabled'] {
+    background: #E5E4E2 url("../images/left-arrow-grey-hover.png") no-repeat scroll 5px 5px;
+    border: 1px solid #E5E4E2;
+    cursor:auto;
+}

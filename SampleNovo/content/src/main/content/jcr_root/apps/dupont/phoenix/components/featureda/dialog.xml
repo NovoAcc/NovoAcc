@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="500"
+    title="Featured Module A"
+    width="500"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        helpPath="en/cq/current/wcm/default_components.html#List"
+        manageTabs="function(tab,noSwitch){var tabs=['props','static'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+        title="Featured Module A"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <list
+                jcr:primaryType="cq:Widget"
+                title="General"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <selectedContent
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Path to the Video or Content Page"
+                        fieldLabel="Video or Content Page"
+                        name="./selectedContent"
+                        xtype="pathfield"/>
+                    <videodata
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        hidden="{Boolean}false"
+                        title="Overlay Information"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <enableOverlay
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Enable to see overlay on screen when 'View Media' link is clicked."
+                                fieldLabel="Enable Overlay"
+                                name="./overlay"
+                                type="checkbox"
+                                xtype="selection"/>
+                            <title
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="By default, the Page Title of the video page will be used for the title in the  overlay. A title specified here will override the default use of the Page Title."
+                                fieldLabel="Overlay Title"
+                                name="./video/jcr:title"
+                                xtype="textfield"/>
+                            <description
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="By default, the Short Description of the video page will be used for the caption in the overlay. A caption specified here will override the default use of the Short Description."
+                                fieldLabel="Overlay Caption"
+                                name="./video/jcr:description"
+                                xtype="textarea"/>
+                        </items>
+                    </videodata>
+                </items>
+            </list>
+        </items>
+        <listeners
+            jcr:primaryType="nt:unstructured"
+            beforesubmit="function(dialog){return Dupont.listeners.validateHLMRowCallout(dialog);}"
+            loadContent="function(dialog){Dupont.contentTypes.loadSelectionOptions(dialog);return true;}"/>
+    </items>
+</jcr:root>

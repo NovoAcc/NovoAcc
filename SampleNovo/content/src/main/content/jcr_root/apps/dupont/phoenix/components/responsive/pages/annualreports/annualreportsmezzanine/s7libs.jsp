@@ -1,0 +1,22 @@
+<%--
+  ==============================================================================
+
+  All Scene7 component should override this
+  file to include Scene7 lib here.
+
+  ==============================================================================
+
+--%>
+
+<%@include file="/apps/dupont/phoenix/components/common/global.jsp"%>
+<cq:includeClientLib categories="apps.dupont.s7default"/>
+<!-- removed height=device-height, -->
+<meta name="viewport" content="user-scalable=no,  width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<!-- Hiding the Safari on iPhone OS UI components -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-touch-fullscreen" content="YES" />
+<!-- Specifying a per-page Home screen icon -->
+<link rel="apple-touch-icon" href=""/>
+<link rel="apple-touch-startup-image" href="" />
+

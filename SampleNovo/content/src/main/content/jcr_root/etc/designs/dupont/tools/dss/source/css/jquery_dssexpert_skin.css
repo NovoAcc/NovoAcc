@@ -1,0 +1,181 @@
+.jcarousel-skin-dss-expert .jcarousel-container {
+    background: transparent;
+}
+.jcarousel-skin-dss-expert .jcarousel-direction-rtl {
+    direction: rtl;
+}
+.jcarousel-skin-dss-expert .jcarousel-container-horizontal {
+    display: block;
+    position: relative;
+}
+.jcarousel-skin-dss-expert .jcarousel-container-vertical {
+    width: 75px;
+    height: 75px;
+    padding: 40px 20px;
+}
+.jcarousel-skin-dss-expert .jcarousel-clip {
+    overflow: hidden;
+}
+.jcarousel-skin-dss-expert .jcarousel-clip-horizontal {
+    /* margin-left: 70px; */
+    position: relative;
+    width: 960px;
+}
+.jcarousel-skin-dss-expert .jcarousel-clip-horizontal ul {
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    top: 0;
+    /* width: 960px; */
+}
+.jcarousel-skin-dss-expert .jcarousel-clip-vertical {
+    width:  77px;
+    height: 245px;
+}
+.jcarousel-skin-dss-expert .jcarousel-item {
+    margin-right: 30px;
+}
+.jcarousel-skin-dss-expert .jcarousel-item:hover,
+.jcarousel-skin-dss-expert .jcarousel-item:focus {
+    border-color: #808080;
+}
+.jcarousel-skin-dss-expert .jcarousel-item-horizontal {
+    margin-left: 0;
+    float: left;
+    list-style: none outside none;
+}
+.jcarousel-skin-dss-expert .jcarousel-direction-rtl .jcarousel-item-horizontal {
+    margin-left: 7px;
+    margin-right: 0;
+}
+.jcarousel-skin-dss-expert .jcarousel-item-vertical {
+    margin-bottom: 7px;
+}
+.jcarousel-skin-dss-expert .jcarousel-item-placeholder { }
+
+/* Horizontal Buttons */
+
+.jcarousel-skin-dss-expert .jcarousel-next-horizontal {
+    position: absolute;
+    top: 150px;
+    right: -70px;
+    width: 28px;
+    height: 54px;
+    cursor: pointer;
+    background: transparent url(/etc/designs/dupont/tools/dss/source/images/carousel-arrow-next.png) no-repeat 0 0;
+}
+.jcarousel-skin-dss-expert .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    left: 5px;
+    right: auto;
+    background-image: url(/etc/designs/dupont/tools/dss/source/images/carousel-scroll-left.png);
+}
+.jcarousel-skin-dss-expert .jcarousel-next-horizontal:hover,
+.jcarousel-skin-dss-expert .jcarousel-next-horizontal:focus {
+    background: transparent url(/etc/designs/dupont/tools/dss/source/images/carousel-arrow-next-hover.png) no-repeat 0 0;
+}
+.jcarousel-skin-dss-expert .jcarousel-next-horizontal:active { }
+.jcarousel-skin-dss-expert .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-dss-expert .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-dss-expert .jcarousel-next-disabled-horizontal:focus,
+.jcarousel-skin-dss-expert .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background: transparent url(/etc/designs/dupont/tools/dss/source/images/carousel-arrow-next.png) no-repeat 0 0;
+}
+.jcarousel-skin-dss-expert .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 150px;
+    left: -70px;
+    width: 28px;
+    height: 54px;
+    cursor: pointer;
+    background: transparent url(/etc/designs/dupont/tools/dss/source/images/carousel-arrow-prev.png) no-repeat 0 0;
+}
+.jcarousel-skin-dss-expert .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    left: auto;
+    right: 5px;
+    background-image: url(/etc/designs/dupont/tools/dss/source/images/carousel-scroll-right.png);
+}
+.jcarousel-skin-dss-expert .jcarousel-prev-horizontal:hover,
+.jcarousel-skin-dss-expert .jcarousel-prev-horizontal:focus {
+    background: transparent url(/etc/designs/dupont/tools/dss/source/images/carousel-arrow-prev-hover.png) no-repeat 0 0;
+}
+.jcarousel-skin-dss-expert .jcarousel-prev-horizontal:active { }
+.jcarousel-skin-dss-expert .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-dss-expert .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-dss-expert .jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-skin-dss-expert .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background: transparent url(/etc/designs/dupont/tools/dss/source/images/carousel-arrow-prev.png) no-repeat 0 0;
+}
+
+/* Vertical Buttons */
+.jcarousel-skin-dss-expert .jcarousel-next-vertical {
+    position: absolute;
+    bottom: 5px;
+    left: 43px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    /* background: transparent url(next-vertical.gif) no-repeat 0 0;*/
+}
+.jcarousel-skin-dss-expert .jcarousel-next-vertical:hover,
+.jcarousel-skin-dss-expert .jcarousel-next-vertical:focus {
+    /* background-position: 0 -32px; */
+}
+.jcarousel-skin-dss-expert .jcarousel-next-vertical:active {
+    background-position: 0 -64px;
+}
+.jcarousel-skin-dss-expert .jcarousel-next-disabled-vertical,
+.jcarousel-skin-dss-expert .jcarousel-next-disabled-vertical:hover,
+.jcarousel-skin-dss-expert .jcarousel-next-disabled-vertical:focus,
+.jcarousel-skin-dss-expert .jcarousel-next-disabled-vertical:active {
+    cursor: default;
+    background-position: 0 -96px;
+}
+.jcarousel-skin-dss-expert .jcarousel-prev-vertical {
+    position: absolute;
+    top: 5px;
+    left: 43px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    /* background: transparent url(prev-vertical.gif) no-repeat 0 0; */
+}
+.jcarousel-skin-dss-expert .jcarousel-prev-vertical:hover,
+.jcarousel-skin-dss-expert .jcarousel-prev-vertical:focus {
+    background-position: 0 -32px;
+}
+.jcarousel-skin-dss-expert .jcarousel-prev-vertical:active {
+    background-position: 0 -64px;
+}
+.jcarousel-skin-dss-expert .jcarousel-prev-disabled-vertical,
+.jcarousel-skin-dss-expert .jcarousel-prev-disabled-vertical:hover,
+.jcarousel-skin-dss-expert .jcarousel-prev-disabled-vertical:focus,
+.jcarousel-skin-dss-expert .jcarousel-prev-disabled-vertical:active {
+    cursor: default;
+    background-position: 0 -96px;
+}
+#DSSViewPane .indicator {
+    height: 15px;
+    padding: 10px 40px 0 0;
+    float:left;
+}
+.indicator a {
+    background: url("/etc/designs/dupont/tools/dss/source/images/indicator.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 15px;
+    margin: 0 5px 0 0;
+    width: 15px;
+}
+.indicator a.selected, .indicator a.hover {
+    background: url("/etc/designs/dupont/tools/dss/source/images/indicator-current.png") no-repeat scroll 0 0 transparent;
+}
+.indicator a span {
+    display: none;
+}
+.viewall {
+    float:right;
+    text-transform:uppercase;
+}

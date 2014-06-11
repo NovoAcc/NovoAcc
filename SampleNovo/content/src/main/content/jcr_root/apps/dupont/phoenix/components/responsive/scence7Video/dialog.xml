@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Scene7 Video Viewer"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <fileReference
+            jcr:primaryType="cq:Widget"
+            fieldLabel="File Reference"
+            name="./fileReference"
+            xtype="pathfield"/>
+        <damAssetFileReference
+            jcr:primaryType="cq:Widget"
+            fieldLabel="DAM File Reference"
+            name="./assetDamRef"
+            xtype="hidden"/>
+        <cloudName
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Cloud Name"
+            hidden="{Boolean}true"
+            name="./cloudName"
+            xtype="textfield">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                loadContent="function(field, record, path) {CQ.scene7.videoViewer.activateVideoEditDialog(field.findParentByType('panel'), record);}"/>
+        </cloudName>
+        <shortdesc
+            jcr:primaryType="cq:Widget"
+            fieldLabel="MC Video short desc"
+            name="./mcvideoeshortdesc"
+            validateOnBlur="true"
+            xtype="textfield"/>
+    </items>
+</jcr:root>

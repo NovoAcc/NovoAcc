@@ -1,0 +1,158 @@
+
+.jcarousel-skin-bi-color .jcarousel-container {
+    background: none repeat scroll 0 0 transparent;
+}
+.jcarousel-skin-bi-color .jcarousel-direction-rtl {
+    direction: rtl;
+}
+.jcarousel-skin-bi-color .jcarousel-container-horizontal {
+    display: block;
+    position: relative;
+}
+.jcarousel-skin-bi-color .jcarousel-container-vertical {
+    height: 75px;
+    padding: 40px 20px;
+    width: 75px;
+}
+.jcarousel-skin-bi-color .jcarousel-clip {
+    overflow: hidden;
+}
+.jcarousel-skin-bi-color .jcarousel-clip-horizontal {
+    position: relative;
+    width: 960px;
+}
+.jcarousel-skin-bi-color .jcarousel-clip-horizontal ul {
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    top: 0;
+}
+.jcarousel-skin-bi-color .jcarousel-clip-vertical {
+    height: 245px;
+    width: 77px;
+}
+.jcarousel-skin-bi-color .jcarousel-item {
+    margin-right: 29.3px;
+}
+.jcarousel-skin-bi-color .jcarousel-item:hover, .jcarousel-skin-bi-color .jcarousel-item:focus {
+    border-color: #808080;
+}
+.jcarousel-skin-bi-color .jcarousel-item-horizontal {
+    float: left;
+    list-style: none outside none;
+    margin-left: 0;
+}
+.jcarousel-skin-bi-color .jcarousel-direction-rtl .jcarousel-item-horizontal {
+    margin-left: 7px;
+    margin-right: 0;
+}
+.jcarousel-skin-bi-color .jcarousel-item-vertical {
+    margin-bottom: 7px;
+}
+.jcarousel-skin-bi-color .jcarousel-item-placeholder {
+}
+.jcarousel-skin-bi-color .jcarousel-next-horizontal {
+    background: url("../images/carousel-arrow-next.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 54px;
+    position: absolute;
+    right: -70px;
+    top: 35px;
+    width: 28px;
+}
+.jcarousel-skin-bi-color .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    background-image: url("../images/carousel-scroll-left.png");
+    left: 5px;
+    right: auto;
+}
+.jcarousel-skin-bi-color .jcarousel-next-horizontal:hover, .jcarousel-skin-bi-color .jcarousel-next-horizontal:focus {
+    background: url("../images/carousel-arrow-next-hover.png") no-repeat scroll 0 0 transparent;
+}
+.jcarousel-skin-bi-color .jcarousel-next-horizontal:active {
+}
+.jcarousel-skin-bi-color .jcarousel-next-disabled-horizontal, .jcarousel-skin-bi-color .jcarousel-next-disabled-horizontal:hover, .jcarousel-skin-bi-color .jcarousel-next-disabled-horizontal:focus, .jcarousel-skin-bi-color .jcarousel-next-disabled-horizontal:active {
+    background: url("../images/carousel-arrow-next.png") no-repeat scroll 0 0 transparent;
+    cursor: default;
+}
+.jcarousel-skin-bi-color .jcarousel-prev-horizontal {
+    background: url("../images/carousel-arrow-prev.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 54px;
+    left: -70px;
+    position: absolute;
+    top: 35px;
+    width: 28px;
+}
+.jcarousel-skin-bi-color .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    background-image: url("../images/carousel-scroll-right.html");
+    left: auto;
+    right: 5px;
+}
+.jcarousel-skin-bi-color .jcarousel-prev-horizontal:hover, .jcarousel-skin-bi-color .jcarousel-prev-horizontal:focus {
+    background: url("../images/carousel-arrow-prev-hover.png") no-repeat scroll 0 0 transparent;
+}
+.jcarousel-skin-bi-color .jcarousel-prev-horizontal:active {
+}
+.jcarousel-skin-bi-color .jcarousel-prev-disabled-horizontal, .jcarousel-skin-bi-color .jcarousel-prev-disabled-horizontal:hover, .jcarousel-skin-bi-color .jcarousel-prev-disabled-horizontal:focus, .jcarousel-skin-bi-color .jcarousel-prev-disabled-horizontal:active {
+    background: url("../images/carousel-arrow-prev.png") no-repeat scroll 0 0 transparent;
+    cursor: default;
+}
+.jcarousel-skin-bi-color .jcarousel-next-vertical {
+    bottom: 5px;
+    cursor: pointer;
+    height: 32px;
+    left: 43px;
+    position: absolute;
+    width: 32px;
+}
+.jcarousel-skin-bi-color .jcarousel-next-vertical:hover, .jcarousel-skin-bi-color .jcarousel-next-vertical:focus {
+}
+.jcarousel-skin-bi-color .jcarousel-next-vertical:active {
+    background-position: 0 -64px;
+}
+.jcarousel-skin-bi-color .jcarousel-next-disabled-vertical, .jcarousel-skin-bi-color .jcarousel-next-disabled-vertical:hover, .jcarousel-skin-bi-color .jcarousel-next-disabled-vertical:focus, .jcarousel-skin-bi-color .jcarousel-next-disabled-vertical:active {
+    background-position: 0 -96px;
+    cursor: default;
+}
+.jcarousel-skin-bi-color .jcarousel-prev-vertical {
+    cursor: pointer;
+    height: 32px;
+    left: 43px;
+    position: absolute;
+    top: 5px;
+    width: 32px;
+}
+.jcarousel-skin-bi-color .jcarousel-prev-vertical:hover, .jcarousel-skin-bi-color .jcarousel-prev-vertical:focus {
+    background-position: 0 -32px;
+}
+.jcarousel-skin-bi-color .jcarousel-prev-vertical:active {
+    background-position: 0 -64px;
+}
+.jcarousel-skin-bi-color .jcarousel-prev-disabled-vertical, .jcarousel-skin-bi-color .jcarousel-prev-disabled-vertical:hover, .jcarousel-skin-bi-color .jcarousel-prev-disabled-vertical:focus, .jcarousel-skin-bi-color .jcarousel-prev-disabled-vertical:active {
+    background-position: 0 -96px;
+    cursor: default;
+}
+#DSSViewPane .indicator {
+    float: left;
+    height: 15px;
+    padding: 10px 40px 0 0;
+}
+.indicator a {
+    background: url("../images/indicator.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 15px;
+    margin: 0 5px 0 0;
+    width: 15px;
+}
+.indicator a.selected, .indicator a.hover {
+    background: url("../images/indicator-current.png") no-repeat scroll 0 0 transparent;
+}
+.indicator a span {
+    display: none;
+}
+.viewall {
+    float: right;
+    text-transform: uppercase;
+}

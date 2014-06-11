@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Widget"
+    fieldLabel="Content Type"
+    name="./contentType"
+    type="select"
+    xtype="selection">
+	<options jcr:primaryType="cq:WidgetCollection">
+		<industry
+			jcr:primaryType="nt:unstructured"
+			text="Industries"
+			value="industry"/>
+		<subindustry
+			jcr:primaryType="nt:unstructured"
+			text="Sub Industries"
+			value="subindustry"/>
+		<productcategorygroup
+			jcr:primaryType="nt:unstructured"
+			text="Product and Service Category Groups"
+			value="productcatgroup"/>
+		<productcategory
+			jcr:primaryType="nt:unstructured"
+			text="Product and Service Categories"
+			value="productcat"/>
+		<brand
+			jcr:primaryType="nt:unstructured"
+			text="Brands"
+			value="brand"/>
+		<subbrand
+			jcr:primaryType="nt:unstructured"
+			text="Sub Brands"
+			value="subbrand"/>
+		<productdetail
+			jcr:primaryType="nt:unstructured"
+			text="Product and Service Details"
+			value="product"/>
+		<subproductdetail
+			jcr:primaryType="nt:unstructured"
+			text="Sub Product and Service Details"
+			value="subproduct"/>
+		<usesapplications
+			jcr:primaryType="nt:unstructured"
+			text="Uses and Applications"
+			value="usesapplication"/>
+		<article
+			jcr:primaryType="nt:unstructured"
+			text="Articles"
+			value="article"/>
+		<event
+			jcr:primaryType="nt:unstructured"
+			text="Events"
+			value="event"/>
+		<casestudy
+			jcr:primaryType="nt:unstructured"
+			text="Case Studies"
+			value="casestudy"/>
+		<pressrelease
+			jcr:primaryType="nt:unstructured"
+			text="Press Releases"
+			value="pressrelease"/>
+		<video
+			jcr:primaryType="nt:unstructured"
+			text="Videos"
+			value="video"/>
+		<newsletter
+			jcr:primaryType="nt:unstructured"
+			text="Newsletters"
+			value="newsletter"/>
+		<corporatecontent
+			jcr:primaryType="nt:unstructured"
+			text="Corporate Content"
+			value="corporatecontent"/>
+		<corporatesubcontent
+			jcr:primaryType="nt:unstructured"
+			text="Corporate Sub Content"
+			value="corporatesubcontent"/>
+		<corporatesubsubcontent
+			jcr:primaryType="nt:unstructured"
+			text="Corporate Sub Sub Content"
+			value="corporatesubsubcontent"/>
+		<corporatecontentdetail
+			jcr:primaryType="nt:unstructured"
+			text="Corporate Content Detail"
+			value="corporatecontentdetail"/>
+		<corporatecontentvideodetail
+			jcr:primaryType="nt:unstructured"
+			text="Corporate Content Video Detail"
+			value="corporatecontentvideodetail"/>
+    </options>
+</jcr:root>

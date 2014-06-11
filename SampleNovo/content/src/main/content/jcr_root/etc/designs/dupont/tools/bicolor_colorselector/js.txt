@@ -1,0 +1,7 @@
+#base=source/js
+
+jquery.random.js
+jquery.sortable.js
+color-selector.js
+jquery.ui.selectmenu.js
+bi-color-tool-omniture.js

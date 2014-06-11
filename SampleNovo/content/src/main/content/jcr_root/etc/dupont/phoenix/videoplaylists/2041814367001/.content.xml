@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2013-10-09T18:39:10.934Z"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/dupont/phoenix/templates/base"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Objekte aus Corian®"
+        sling:alias="eidupont/Objekte aus Corian®"
+        sling:resourceType="dupont/phoenix/components/pages/base"/>
+</jcr:root>

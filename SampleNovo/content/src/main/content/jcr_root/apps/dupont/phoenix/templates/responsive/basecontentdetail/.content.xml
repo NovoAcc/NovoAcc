@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template"
+	allowedPaths="/nowhere"    
+    jcr:title="Responsive Base Content Detail Template"
+	jcr:description="Base Content Detail Template for T.5.1, T.5.2, T.5.3, T.5.4, T.5.5, T.5.6, T.7.4a, T.7.4b">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="dupont/phoenix/components/responsive/pages/basecontentdetail"/>
+</jcr:root>

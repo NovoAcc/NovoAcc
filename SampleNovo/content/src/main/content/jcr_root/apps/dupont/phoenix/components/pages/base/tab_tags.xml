@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Panel"
+    title="Tags">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <pagetag
+            jcr:primaryType="cq:Widget"
+            cls="cq-propsdialog-tags"
+            fieldDescription="Self Tag dictates what content dynamically should be included in this page."
+            fieldLabel="Self Tag"
+            name="./pageTag"
+            xtype="tags">
+            <namespaces jcr:primaryType="cq:WidgetCollection">
+                <ns1
+                    jcr:primaryType="nt:unstructured"
+                    maximum="1"
+                    name="DuPont"/>
+            </namespaces>
+        </pagetag>
+        <clonetags
+            jcr:primaryType="cq:Widget"
+            editable="{Boolean}true"
+            fieldDescription="The selection of a new page will overwrite all existing tags."
+            fieldLabel="Clone Tags"
+            fieldSubLabel="Page Tags Source"
+            name="./cq:clonepage"
+            xtype="pathfield">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                blur="function(dialog){Dupont.listeners.cloneTags(this);}"
+                dialogopen="function(dialog){Dupont.listeners.cloneSource(this);}"
+                dialogselect="function(dialog){Dupont.listeners.cloneTags(dialog);}"/>
+        </clonetags>
+        <tags
+            jcr:primaryType="cq:Widget"
+            cls="cq-propsdialog-tags"
+            fieldDescription="Related Tags dictate how this page should be dynamically included on other pages."
+            fieldLabel="Related Tags"
+            name="./cq:tags"
+            xtype="tags">
+            <bbar jcr:primaryType="cq:WidgetCollection">
+                <buttons jcr:primaryType="cq:WidgetCollection">
+                    <prop1
+                        jcr:primaryType="nt:unstructured"
+                        disabled="{Boolean}true"
+                        disabledClass="none"
+                        iconCls="cq-image-icon-info"
+                        text="What tags are recommended and/or required?"
+                        tooltip="&lt;b>How tags work:&lt;/b>&#xa;&lt;p>The tags in a page work as content identifiers that help dynamically driven modules like the M.10.0b - Dynamic Link List or the M.5.0 - Horizontal List Module (HLM) display relevant content.&lt;/p>&#xa;&#xa;&lt;p>These components will search all pages within the same CCTLD country site which are tagged with the current pages self-tag, rank and sort them and display those deemed most relevant.&lt;/p>&#xa;&#xa;&lt;p>For example, if the current page should be considered for inclusion in a dynamic module on the Safety &amp; Protection Industry page, set the Industry:Safety &amp; Protection tag in the tags field of the current page.&lt;/p>&#xa;&#xa;&lt;p>Additionally, certain tags must be set on every page because they are reported to Omniture/Site Catalyst for evaluation of site user interaction. If these tags are not set, then no information is sent back to the reporting suits.&lt;/p>&#xa;&#xa;&lt;p>Required tags for a page are:&lt;/p>&#xa;&#xa;&lt;ul>&#xa;&#x9;&lt;li>Brands&lt;/li>&#xa;&#x9;&lt;li>Business Unit&lt;/li>&#xa;&#x9;&lt;li>Corporate Landing&lt;/li>&#xa;&#x9;&lt;li>Industry&lt;/li>&#xa;&#x9;&lt;li>Megatrend&lt;/li>&#xa;&#x9;&lt;li>PCG&lt;/li>&#xa;&#x9;&lt;li>Products&lt;/li>&#xa;&#x9;&lt;li>Uses and Applications.&lt;/li>&#xa;&lt;/ul>&#xa;&#xa;&lt;p>The page may be tagged multiple times with the same tag. For example, a page may be tagged to multiple industries, PCG’s, products, etc.&lt;/p>"
+                        xtype="tbbutton"/>
+                </buttons>
+            </bbar>
+        </tags>
+    </items>
+</jcr:root>

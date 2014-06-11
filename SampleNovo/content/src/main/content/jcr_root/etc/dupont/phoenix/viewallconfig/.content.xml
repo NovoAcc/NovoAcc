@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2014-01-27T14:43:59.935+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/dupont/phoenix/templates/plateformutility"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="viewallconfig"
+        sling:resourceType="dupont/phoenix/components/pages/plateformutility"
+        brand-pressrelease="[DuPont:brands,DuPont:business_unit,DuPont:corporate_landing,DuPont:industry]"
+        brand-subbrand="[DuPont:pcg,DuPont:products]">
+        <openareapar
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <viewallconfig
+                jcr:created="{Date}2014-01-27T12:26:14.124+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-01-27T14:43:59.920+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dupont/phoenix/components/viewAllConfig"
+                brand-pressrelease="[DuPont:brands,DuPont:business_unit,DuPont:corporate_landing]"
+                brand-subbrand="[DuPont:megatrend,DuPont:products,DuPont:usage]"
+				productcatgroup-pressrelease="[DuPont:brands,DuPont:business_unit,DuPont:corporate_landing]"
+				productcatgroup-article="[DuPont:brands,DuPont:business_unit,DuPont:corporate_landing]"
+				productcatgroup-casestudy="[DuPont:brands,DuPont:business_unit,DuPont:corporate_landing]"/>
+        </openareapar>
+    </jcr:content>
+</jcr:root>

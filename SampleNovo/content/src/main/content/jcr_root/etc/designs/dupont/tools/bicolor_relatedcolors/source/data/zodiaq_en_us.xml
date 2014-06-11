@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<Colors>
+		<color id="1" name="Snow White" sortOrder="1" image="Zodiaq_Snow_White_690x345_300x150.jpg" productUrl="snow-white.html" priceGroup="c">
+			<collections> </collections>
+			<hues>
+				<hue id="H8"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="3" name="Crema Botticino" sortOrder="5" image="Zodiaq_Crema_Botticino_690x345_300x150_0.jpg" productUrl="crema-botticino.html" priceGroup="c">
+			<collections>
+				<collection id="C3"></collection>
+			</collections>
+			<hues>
+				<hue id="H8"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="4" name="Cloud White" sortOrder="6" image="Zodiaq_Cloud_White_690x345_300x150.jpg" productUrl="cloud-white.html" priceGroup="c">
+			<collections> </collections>
+			<hues>
+				<hue id="H8"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="5" name="Papyrus" sortOrder="7" image="Zodiaq_Papyrus_690x345_300x150_0.jpg" productUrl="papyrus.html" priceGroup="c">
+			<collections> </collections>
+			<hues>
+				<hue id="H8"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="7" name="Flax" sortOrder="10" image="Zodiaq_Flax_690x345_300x150_0.jpg" productUrl="flax.html" priceGroup="c">
+			<collections>
+				<collection id="C1"></collection>
+			</collections>
+			<hues>
+				<hue id="H8"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color-disabled id="8" name="Coriander" sortOrder="11" image="Zodiaq_Coriander_690x345_300x150.jpg" productUrl="coriander.html" priceGroup="c">
+			<collections>
+				<collection id="C1"></collection>
+			</collections>
+			<hues>
+				<hue id="H8"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color id="9" name="Giallo Michelangelo" sortOrder="12" image="Zodiaq_Giallo_Michelangelo_690x345_300x150_0.jpg" productUrl="giallo-michelangelo.html" priceGroup="c">
+			<collections>
+				<collection id="C3"></collection>
+			</collections>
+			<hues>
+				<hue id="H8"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="10" name="Cygnus Pearl" sortOrder="13" image="Zodiaq_Cygnus_Pearl_690x345_300x150.jpg" productUrl="cygnus-pearl.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H1"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="11" name="Caraway" sortOrder="14" image="Zodiaq_Caraway_690x345_300x150.jpg" productUrl="caraway.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H1"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="12" name="Astral Pearl" sortOrder="15" image="Zodiaq_Astral_Pearl_690x345_300x150.jpg" productUrl="astral-pearl.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H1"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="13" name="Cappuccino" sortOrder="16" image="Zodiaq_Cappuccino_690x345_300x150_0.jpg" productUrl="cappuccino.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H1"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="14" name="Antique Pearl" sortOrder="17" image="Zodiaq_Antique_Pearl_690x345_300x150.jpg" productUrl="antique-pearl.html" priceGroup="a">
+			<collections> </collections>
+			<hues>
+				<hue id="H1"></hue>
+				<hue id="H3"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="15" name="Savory" sortOrder="18" image="Zodiaq_Savory_690x345_300x150.jpg" productUrl="savory.html" priceGroup="c">
+			<collections>
+				<collection id="C2"></collection>
+			</collections>
+			<hues>
+				<hue id="H1"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="16" name="Lunar Pearl" sortOrder="19" image="Zodiaq_Lunar_Pearl_690x345_300x150_0.jpg" productUrl="lunar-pearl.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H1"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color-disabled id="17" name="Minera Pearl" sortOrder="20" image="Zodiaq_Minera_Pearl_690x345_300x150.jpg" productUrl="minera-pearl.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H1"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color id="18" name="Mossy Green" sortOrder="21" image="Zodiaq_Mossy_Green_690x345_300x150_0.jpg" productUrl="mossy-green.html" priceGroup="c">
+			<collections>
+				<collection id="C1"></collection>
+			</collections>
+			<hues>
+				<hue id="H6"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color-disabled id="19" name="Calm Springs" sortOrder="22" image="Zodiaq_Calm_Springs_690x345_300x150.jpg" productUrl="calm-springs.html" priceGroup="c">
+			<collections>
+				<collection id="C1"></collection>
+			</collections>
+			<hues>
+				<hue id="H2"></hue>
+				<hue id="H3"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color-disabled id="20" name="Wintergreen" sortOrder="23" image="Zodiaq_Wintergreen_690x345_300x150_2.jpg" productUrl="wintergreen.html" priceGroup="c">
+			<collections>
+				<collection id="C1"></collection>
+			</collections>
+			<hues>
+				<hue id="H6"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color-disabled id="21" name="Magellan Green" sortOrder="24" image="Zodiaq_Magellan_Green_690x345_300x150.jpg" productUrl="magellan-green.html" priceGroup="c">
+			<collections> </collections>
+			<hues>
+				<hue id="H6"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color-disabled id="22" name="Alpha Brown" sortOrder="25" image="Zodiaq_Alpha_Brown_690x345_300x150.jpg" productUrl="alpha-brown.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H9"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color id="23" name="Toasted Almond" sortOrder="26" image="Zodiaq_Toasted_Almond_690x345_300x150_4.jpg" productUrl="toasted-almond.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H9"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color-disabled id="24" name="Warm Taupe" sortOrder="27" image="Zodiaq_Warm_Taupe_690x345_300x150_1.jpg" productUrl="warm-taupe.html" priceGroup="c">
+			<collections>
+				<collection id="C1"></collection>
+			</collections>
+			<hues>
+				<hue id="H9"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color-disabled id="25" name="Copper Sunset" sortOrder="28" image="Zodiaq_Copper_Sunset_690x345_300x150_0.jpg" productUrl="copper-sunset.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H7"></hue>
+				<hue id="H9"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color id="26" name="Autumn Light" sortOrder="29" image="Zodiaq_Autumn_Light_690x345_300x150.jpg" productUrl="autumn-light.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H9"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color-disabled id="27" name="Moroccan Morning" sortOrder="30" image="Zodiaq_Moroccan_Morning_690x345_300x150_8.jpg" productUrl="moroccan-morning.html" priceGroup="c">
+			<collections>
+				<collection id="C1"></collection>
+			</collections>
+			<hues>
+				<hue id="H9"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color-disabled id="28" name="Meteor Grey" sortOrder="31" image="Zodiaq_Meteor_Grey_690x345_300x150_0.jpg" productUrl="meteor-grey.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H5"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color-disabled id="29" name="Chicory" sortOrder="32" image="Zodiaq_Chicory_690x345_300x150.jpg" productUrl="chicory.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H3"></hue>
+				<hue id="H5"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color id="30" name="Coarse Pepper" sortOrder="33" image="Zodiaq_Coarse_Pepper_690x345_300x150.jpg" productUrl="coarse-pepper.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H5"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color-disabled id="31" name="Poppy Seed" sortOrder="34" image="Zodiaq_Poppy_Seed_690x345_300x150_0.jpg" productUrl="poppy-seed.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H3"></hue>
+				<hue id="H5"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color id="32" name="Storm Grey" sortOrder="35" image="Zodiaq_Storm_Grey_690x345_300x150.jpg" productUrl="storm-grey.html" priceGroup="c">
+			<collections> </collections>
+			<hues>
+				<hue id="H5"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color-disabled id="33" name="Celestial Blue" sortOrder="36" image="Zodiaq_Celestial_Blue_690x345_300x150.jpg" productUrl="celestial-blue.html" priceGroup="c">
+			<collections> </collections>
+			<hues>
+				<hue id="H2"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color id="34" name="Sage" sortOrder="37" image="Zodiaq_Sage_690x345_300x150.jpg" productUrl="sage.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H4"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color-disabled id="35" name="Woodland Grey" sortOrder="38" image="Zodiaq_Woodland_Grey_690x345_300x150.jpg" productUrl="woodland-grey.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H3"></hue>
+				<hue id="H4"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color id="36" name="Borealis Blue" sortOrder="39" image="Zodiaq_Borealis_Blue_690x345_300x150.jpg" productUrl="borealis-blue.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H2"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="37" name="Nutmeg" sortOrder="40" image="Zodiaq_Nutmeg_690x345_300x150.jpg" productUrl="nutmeg.html" priceGroup="c">
+			<collections>
+				<collection id="C2"></collection>
+			</collections>
+			<hues>
+				<hue id="H5"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="38" name="Black Forest" sortOrder="41" image="Zodiaq_Black_Forest_300x150_0.jpg" productUrl="black-forest.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H4"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="40" name="Smokey Topaz" sortOrder="42" image="Zodiaq_Smokey_Topaz_690x345_300x150_0.jpg" productUrl="smokey-topaz.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H9"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="41" name="Chestnut" sortOrder="43" image="Zodiaq_Chestnut_690x345_300x150_0.jpg" productUrl="chestnut.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H4"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color-disabled id="42" name="Vela Brown" sortOrder="44" image="Zodiaq_Vela_Brown_690x345_300x150_1.jpg" productUrl="vela-brown.html" priceGroup="a">
+			<collections> </collections>
+			<hues>
+				<hue id="H4"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color id="43" name="Saddle Brown" sortOrder="45" image="Zodiaq_Saddle_Brown_690x345_300x150.jpg" productUrl="saddle-brown.html" priceGroup="c">
+			<collections> </collections>
+			<hues>
+				<hue id="H4"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color-disabled id="44" name="Abyss Black" sortOrder="46" image="Zodiaq_Abyss_Black_690x345_300x150_0.jpg" productUrl="abyss-black.html" priceGroup="a">
+			<collections> </collections>
+			<hues>
+				<hue id="H4"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color id="45" name="Space Black" sortOrder="47" image="Zodiaq_Space_Black_690x345_300x150_1.jpg" productUrl="space-black.html" priceGroup="c">
+			<collections> </collections>
+			<hues>
+				<hue id="H4"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="46" name="Galaxy Black" sortOrder="48" image="Zodiaq_Galaxy_Black_690x345_300x150_0.jpg" productUrl="galaxy-black.html" priceGroup="b">
+			<collections> </collections>
+			<hues>
+				<hue id="H4"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color-disabled id="47" name="Licorice" sortOrder="49" image="Zodiaq_Licorice_690x345_300x150.jpg" productUrl="licorice.html" priceGroup="c">
+			<collections>
+				<collection id="C1"></collection>
+			</collections>
+			<hues>
+				<hue id="H4"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color-disabled>
+		<color id="48" name="Mystic Black" sortOrder="50" image="Zodiaq_Mystic_Black_690x345_300x150_0.jpg" productUrl="mystic-black.html" priceGroup="c">
+			<collections> </collections>
+			<hues>
+				<hue id="H4"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="49" name="Indus Red" sortOrder="51" image="Zodiaq_Indus_Red_690x345_300x150.jpg" productUrl="indus-red.html" priceGroup="c">
+			<collections> </collections>
+			<hues>
+				<hue id="H7"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="50" name="Snow Flurry" sortOrder="2" image="DBI_Zodiaq_Color Chip_Snow Flurry-300x150.jpg" productUrl="snow-flurry.html" priceGroup="c">
+			<collections>
+				<collection id="C4"></collection>
+			</collections>
+			<hues>
+				<hue id="H8"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="51" name="Coarse Carrara" sortOrder="4" image="DBI_Zodiaq_Color Chip_Coarse Carrara-300x150.jpg" productUrl="coarse-carrara.html" priceGroup="c">
+			<collections>
+				<collection id="C4"></collection>
+			</collections>
+			<hues>
+				<hue id="H8"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+		<color id="52" name="Coarse Marfil" sortOrder="9" image="DBI_Zodiaq_Color Chip_Coarse Marfil-300x150.jpg" productUrl="coarse-marfil.html" priceGroup="c">
+			<collections>
+				<collection id="C4"></collection>
+			</collections>
+			<hues>
+				<hue id="H8"></hue>
+			</hues>
+			<usesandapplications> </usesandapplications>
+		</color>
+
+
+		<color id="53" name="Coriander" sortOrder="52" image="Zodiaq_Coriander.jpg" productUrl="coriander.html" priceGroup="c">
+		
+			<collections>
+				<collection id="C4"></collection>
+				<collection id="C1"></collection>
+			</collections>
+			<hues>
+				<hue id="H8"></hue>
+			</hues>
+			<usesandapplications></usesandapplications>
+		</color>
+		
+		<color id="54" name="Warm Taupe" sortOrder="53" image="Zodiaq_Warm_Taupe.jpg" productUrl="warm-taupe.html" priceGroup="c">
+			<collections>
+				<collection id="C1"></collection>
+				<collection id="C4"></collection>
+			</collections>
+			<hues>
+				<hue id="H8"></hue>
+			</hues>
+			<usesandapplications></usesandapplications>
+		</color>
+		
+	</Colors>
+	<Collections>
+		<collection id="C1" displayName="Terra Collection" sysName="terra-collection" descriptionTitle="Zodiaq® Terra Collection" description=""></collection>
+		<collection id="C2" displayName="Private Collection" sysName="private-collection" descriptionTitle="Zodiaq® Private Collection" description=""></collection>
+		<collection id="C3" displayName="Okite Collection" sysName="okite-collection" descriptionTitle="Zodiaq® Okite® Collection" description=""></collection>
+		<collection id="C4" displayName="New Colors" sysName="new-colors" descriptionTitle="Zodiaq® New Colors" description=""></collection>
+	</Collections>
+	<Hues>
+		<hue id="H0" displayName="All Hues" sysName="all-hues"></hue>
+		<hue id="H1" displayName="Beiges" sysName="beiges"></hue>
+		<hue id="H2" displayName="Blues" sysName="blues"></hue>
+		<hue id="H3" displayName="Cool Naturals" sysName="cool-naturals"></hue>
+		<hue id="H4" displayName="Darks" sysName="darks"></hue>
+		<hue id="H5" displayName="Grays" sysName="grays"></hue>
+		<hue id="H6" displayName="Greens" sysName="greens"></hue>
+		<hue id="H7" displayName="Hots" sysName="hots"></hue>
+		<hue id="H8" displayName="Lights" sysName="lights"></hue>
+		<hue id="H9" displayName="Warm Naturals" sysName="warm-naturals"></hue>
+	</Hues>
+	<PriceGroups>
+		<pricegroup id="0" displayName="All Price Groups" sysName="all-prices"></pricegroup>
+		<pricegroup id="pg1" displayName="A - $" sysName="a"></pricegroup>
+		<pricegroup id="pg2" displayName="B - $$" sysName="b"></pricegroup>
+		<pricegroup id="pg3" displayName="C - $$$" sysName="c"></pricegroup>
+	</PriceGroups>
+	<SortOptions>
+		<sort id="0" displayName="Light to Dark" sysName="light-dark"></sort>
+		<sort id="1" displayName="Dark to Light" sysName="dark-light"></sort>
+		<sort id="2" displayName="Alphabetical" sysName="alpha"></sort>
+	</SortOptions>
+	<UsesAndApplications> </UsesAndApplications>
+	<Configuration>
+		<PriceGroupsEnabled>false</PriceGroupsEnabled>
+		<ProductType>Zodiaq</ProductType>
+		<ImageBasePath>/etc/designs/dupont/tools/bicolor_colorselector/source/images/</ImageBasePath>
+		<AllColorPageBasePath>../products/</AllColorPageBasePath>
+		<AllColorPageName>../../zodiaq-all-colors.html</AllColorPageName>
+		<ColorPageBasePath>../../../products/zodiaq-all-colors/sub-products/</ColorPageBasePath>
+	</Configuration> 
+	<Translations>
+		<ShowMeLabel value="Show Me:"></ShowMeLabel>
+		<ColorString value="Color"></ColorString>
+		<AllColorsLabel value="All Colors"></AllColorsLabel>
+		<CollectionsLabel value="Collections"></CollectionsLabel>
+		<ColorsCountLabel value="Viewing {0} Colors"></ColorsCountLabel>
+		<FilterLabel value=" Filter By:"></FilterLabel>
+		<SortLabel value="Sort By:"></SortLabel>
+		<NoResultsMsg value="There are no colors matching the filters you've selected. Please try a different filter combination or view"></NoResultsMsg>
+		<NoResultsLinkText value="All Colors"></NoResultsLinkText>
+		<BackToTopLink value="Back to Top"></BackToTopLink>
+		<AllColorsPageLinkText value="Colors of Zodiaq®"></AllColorsPageLinkText>
+		<RelatedColorsTitle value="Related Colors"></RelatedColorsTitle>
+		<RelatedHuesLabel value="See Related Hues: "></RelatedHuesLabel>
+		<RecommendedColorsTitle value="Recommended Colors"></RecommendedColorsTitle>
+		<RecommendedColorsLabel value="See Related Collections: "></RecommendedColorsLabel>
+        <AllPriceReset value="All Price Groups"></AllPriceReset>
+        <HueReset value="All Hues"></HueReset>
+        <SortReset value="Light to Dark"></SortReset>
+	</Translations>
+</data>

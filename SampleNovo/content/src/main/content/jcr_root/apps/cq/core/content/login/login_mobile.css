@@ -1,0 +1,181 @@
+/* All mobile devices ----------- */
+
+body {
+    background:#76a300 ! important;
+}
+
+div.right, div.right-bg {
+    background:none;
+    left:0;
+}
+    
+#tag, #product {
+    display:none;
+}
+
+#productclaim {
+  z-index:100;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    
+    #productclaim {
+      width: 203px;
+      height: 17px;
+      background: url(images/productclaim-small.png) 0 0 no-repeat;
+    }
+
+    div.loginbox {
+        width:180px;
+    }
+
+    #user, #password {
+        width:160px;
+        right:20px;
+        background: url(images/input-bg-small.png) 0 0 no-repeat;
+    }
+
+    #login-error {
+        width:160px;
+    }
+
+    #user input, #password input {
+        width:150px;
+    }
+
+    #submit input {
+        width:160px;
+        height:24px;
+        margin-right:20px;
+    }
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+
+    div.right, div.right-bg {
+        width:320px;
+        height:356px;
+    }
+
+    div.right-bg {
+        background:url(bg/bg-iphone-portrait.png) 0 0 no-repeat;
+    }
+
+    div.loginbox {
+        top:200px;
+        left:80px;
+    }
+
+    #productclaim {
+      top: 14px;
+    }    
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 480px) and (orientation : landscape) {
+
+    div.right, div.right-bg {
+        width:480px;
+    }
+
+    div.right-bg {
+        background:url(bg/bg-iphone-landscape.png) 0 0 no-repeat;
+    }
+
+    div.loginbox {
+        top:66px;
+        right:0;
+    }
+
+    #productclaim {
+      top: 180px;
+      left:12px;
+    }    
+
+}
+
+/* iPhone 4 (portrait) ----------- */
+@media 
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+
+    #productclaim {
+      background: url(images/productclaim.png) 0 0 no-repeat;
+      background-size:203px 18.7px;
+    }
+
+}
+
+/* iPhone 4 (portrait) ----------- */
+@media 
+only screen and (-webkit-min-device-pixel-ratio : 1.5) and (orientation : portrait),
+only screen and (min-device-pixel-ratio : 1.5) and (orientation : portrait) {
+
+    div.right-bg {
+        background:url(bg/bg-iphone4-portrait.jpg) 0 0 no-repeat;
+        background-size: 320px 356px;
+    }
+
+}
+
+/* iPhone 4 (landscape) ----------- */
+@media 
+only screen and (-webkit-min-device-pixel-ratio : 1.5) and (orientation : landscape),
+only screen and (min-device-pixel-ratio : 1.5) and (orientation : landscape) {
+
+    div.right-bg {
+        background:url(bg/bg-iphone4-landscape.jpg) 0 0 no-repeat;
+        background-size: 480px 208px;
+    }
+
+}
+
+/* iPad (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    #submit input {
+        width:279px;
+        height:24px;
+    }
+
+}
+
+/* iPad (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+    div.right, div.right-bg {
+        width:768px;
+    }
+
+    div.right-bg {
+        background:url(bg/bg-ipad-portrait.jpg) 0 0 no-repeat;
+    }
+
+    div.loginbox {
+        top:640px;
+        left:248px;
+    }
+
+}
+
+/* iPad (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+    div.right, div.right-bg {
+        width:1024px;
+    }
+
+    div.right-bg {
+        background:url(bg/bg-ipad-landscape.jpg) 0 0 no-repeat;
+    }
+        
+    div.loginbox {
+        top:380px;
+        right:122px;
+    }
+
+}

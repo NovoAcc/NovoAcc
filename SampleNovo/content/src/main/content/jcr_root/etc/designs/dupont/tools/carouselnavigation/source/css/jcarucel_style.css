@@ -1,0 +1,92 @@
+#CarouselNavigationPane .jcarousel-container {
+    background: transparent;
+}
+
+#CarouselNavigationPane .jcarousel-container-horizontal 
+{
+    display: block;
+    position: relative;
+
+}
+
+#CarouselNavigationPane .jcarousel-clip {
+    overflow: hidden;
+  
+}
+
+#CarouselNavigationPane .jcarousel-clip-horizontal {
+    /* margin-left: 70px; */
+     position: relative;
+     width: 960px;
+}
+
+ #CarouselNavigationPane .jcarousel-clip-horizontal ul
+ {
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    top: 0;
+    /* width: 960px; */
+ }
+/*
+#CarouselNavigationPane .jcarousel-item 
+{
+    margin-right: 30px;
+}
+*/
+#CarouselNavigationPane .jcarousel-item:hover,
+#CarouselNavigationPane .jcarousel-item:focus {
+    border-color: #808080;
+}
+
+#CarouselNavigationPane .jcarousel-item-horizontal {
+    margin-left: 1px;
+    float: left;
+    list-style: none outside none;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+#CarouselNavigationPane .jcarousel-next-horizontal {
+    position: absolute;
+    top: 510px;
+    right: -70px;
+    width: 28px;
+    height: 54px;
+    cursor: pointer;
+    background: transparent url(../images/carousel-arrow-next.png) no-repeat 0 0;
+}
+#CarouselNavigationPane .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 510px;
+    left: -70px;
+    width: 28px;
+    height: 54px;
+    cursor: pointer;
+    background: transparent url(../images/carousel-arrow-prev.png) no-repeat 0 0;
+}
+
+
+#CarouselNavigationPane .jcarousel-prev-horizontal:hover,
+#CarouselNavigationPane .jcarousel-prev-horizontal:focus {
+    background: transparent url(../images/carousel-arrow-prev-hover.png) no-repeat 0 0;
+}
+
+#CarouselNavigationPane .jcarousel-next-horizontal:hover,
+#CarouselNavigationPane .jcarousel-next-horizontal:focus {
+    background: transparent url(../images/carousel-arrow-next-hover.png) no-repeat 0 0;
+}
+
+#CarouselNavigationPane .jcarousel-prev-horizontal:active {
+}
+
+#CarouselNavigationPane .jcarousel-prev-disabled-horizontal,
+#CarouselNavigationPane .jcarousel-prev-disabled-horizontal:hover,
+#CarouselNavigationPane .jcarousel-prev-disabled-horizontal:focus,
+#CarouselNavigationPane .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background: transparent url(../images/carousel-arrow-prev.png) no-repeat 0 0;
+}

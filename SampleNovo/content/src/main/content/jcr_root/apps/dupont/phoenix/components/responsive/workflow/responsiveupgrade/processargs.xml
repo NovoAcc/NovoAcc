@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Panel"
+    title="Arguments">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <arguments
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}false"
+            collapsible="{Boolean}false"
+            title="Process Arguments"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <upgradeall
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Upgrade pages from selected page and all sub pages."
+                    fieldLabel="Upgrade pages from selected page and all sub pages"
+                    name="./metaData/upgradePageAndSubPages"
+                    type="checkbox"
+                    xtype="selection"/>
+                <responsiveormediaupgrade
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Responsive Upgrade or Media Component (Video Player and Media Gallery) upgrade."
+                    fieldLabel="Upgrade Type"
+                    name="./metaData/upgradeType"
+                    defaultValue="responsive"
+                    type="radio"
+                    xtype="selection">
+					<options jcr:primaryType="cq:WidgetCollection">
+	               		<responsive
+	               			text="Responsive Upgrade"
+	                   		jcr:primaryType="nt:unstructured"
+	                   		value="responsive"/>
+	               		<media
+	               			text="Media Component Upgrade"
+	                   		jcr:primaryType="nt:unstructured"
+	                   		value="media"/>
+					</options>
+				</responsiveormediaupgrade>
+                <gallerytype
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Select gallery type for upgrade within the page."
+                    fieldLabel="Gallery Type"
+                    name="./metaData/galleryType"
+                    defaultValue="videoimage"
+                    type="radio"
+                    xtype="selection">
+					<options jcr:primaryType="cq:WidgetCollection">
+	               		<video
+	               			text="Video Gallery"
+	                   		jcr:primaryType="nt:unstructured"
+	                   		value="video"/>
+	               		<image
+	               			text="Image Gallery"
+	                   		jcr:primaryType="nt:unstructured"
+	                   		value="image"/>
+	               		<videoimage
+							checked="{Boolean}true"
+	               			text="Video and Image Galleries"
+	                   		jcr:primaryType="nt:unstructured"
+	                   		value="videoimage"/>
+					</options>
+				</gallerytype>
+            </items>
+        </arguments>
+    </items>
+</jcr:root>

@@ -1,0 +1,36 @@
+/* Article Detail - Fix for list style image placement */
+.content-body ul li {
+  list-style-position: inside;
+}
+#media-menu-weapper{
+  max-width: 758px;
+}
+
+/* GLOBAL NAVIGATION COLUMNS */
+
+.menu-dropdown .sub_menu li {
+  float:left;
+  margin-right:9px;
+}
+.header-top-bar {
+  display:block;
+}
+
+#bg-container, #main-container, .article-left-column, .videoplayer {
+    position: relative;
+}
+
+.videoplayer .video-detail {
+    float: left;
+    margin: 30px 0 20px;
+    width:100%;
+    position: relative;
+    z-index:1200;
+}
+
+/* Override not needed.
+#fancybox-close {
+    top: -18px;
+    right: -18px;
+    z-index: 1201;
+}*/

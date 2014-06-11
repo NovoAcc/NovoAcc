@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Media Center Alt Press Release Template - T.7.4a"
+    jcr:primaryType="cq:Template"
+    jcr:title="Media Center Alt Press Release Template"
+    allowedPaths="[/content(/.*)?]">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="dupont/phoenix/components/responsive/pages/mcpressrelease"
+        contentType="pressrelease">
+        <linklistdynamic-pressreleases
+            jcr:primaryType="nt:unstructured"
+            contentType="pressrelease"
+      		sling:resourceType="dupont/phoenix/components/linklistdynamic"/>
+	</jcr:content>       
+</jcr:root>

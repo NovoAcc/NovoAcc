@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="M.25.0 – Tool Callout"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        helpPath="en/cq/current/wcm/default_components.html#List"
+        manageTabs="function(tab,noSwitch){var tabs=['props','static'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+        title="M.25.0 – Tool Callout"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <list
+                jcr:primaryType="cq:Widget"
+                title="General"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Title for the Tout Component"
+                        fieldLabel="Link Title"
+                        name="./titleTout"
+                        xtype="textfield"/>
+                    <linkURL
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldDescription="Please browse or drop the target page here"
+                        fieldLabel="URL"
+                        name="./linkURLTout"
+                        xtype="pathfield"/>
+                    <enableOverlay
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Boolean}false"
+                        fieldDescription="Enable to see Image in the Tout Component"
+                        fieldLabel="Enable Image"
+                        inputValue="{Boolean}true"
+                        name="./bImage"
+                        type="checkbox"
+                        xtype="selection">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            loadcontent="function(field, rec, path)                              {                              var tabPanel = this.findParentByType('tabpanel');                              var contentTypeSelected = tabPanel.find('type','Image')[0];         var show = field.getValue();                               if (show !='')                               {                               contentTypeSelected.allowBlank = false;                               contentTypeSelected.hidden = false;                              }                              else                              {                               contentTypeSelected.allowBlank = true;                               contentTypeSelected.hidden = true;                              }                              tabPanel.doLayout();                              field.findParentByType('tabpanel').manageTabs(value);                             }"
+                            selectionchanged="function(field, value, isChecked)                              {                              var tabPanel = this.findParentByType('tabpanel');                              var contentTypeSelected = tabPanel.find('type','Image')[0];                                       var show = field.getValue();                              if (show !='')                               {                               contentTypeSelected.allowBlank = false;                               contentTypeSelected.hidden = false;                              }                              else                              {                               contentTypeSelected.allowBlank = true;                               contentTypeSelected.hidden = true;                              }                              tabPanel.doLayout();                              field.findParentByType('tabpanel').manageTabs(value);                             }"/>
+                    </enableOverlay>
+                    <resType
+                        jcr:primaryType="cq:Widget"
+                        ignoreData="{Boolean}true"
+                        name="./image/sling:resourceType"
+                        value="foundation/components/image"
+                        xtype="hidden"/>
+                    <openInNewWindow
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Open In a New Window?"
+                        inputValue="{Boolean}true"
+                        name="./openInNewWindow"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </list>
+            <children
+				allowUpload="{Boolean}false"
+                jcr:primaryType="cq:Widget"
+                ddGroups="[media]"
+                fileNameParameter="./image/fileName"
+                fileReferenceParameter="./image/fileReference"
+                height="{Long}400"
+                hidden="{Boolean}true"
+                name="./image/file"
+                renditionSuffix="/_jcr_content/renditions/original"
+                requestSuffix="/image.img.png"
+                title="Call Out Image"
+                type="Image"
+                width="{Long}100"
+                xtype="html5smartimage"/>
+        </items>
+        <listeners
+            jcr:primaryType="nt:unstructured"
+            beforesubmit="function(dialog){return Dupont.listeners.validateHLMRowCallout(dialog);}"
+            loadContent="function(dialog){Dupont.contentTypes.loadSelectionOptions(dialog);return true;}"/>
+    </items>
+</jcr:root>

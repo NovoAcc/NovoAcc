@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="Case Study Detail Template - T.5.3"
+    jcr:primaryType="cq:Template"
+    jcr:title="Responsive Case Study Detail Template"
+    allowedPaths="[/content(/.*)?]"
+    ranking="{Long}340">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="dupont/phoenix/components/responsive/pages/casestudydetail"
+        contentType="casestudy">
+        <linklistdynamic-casestudies
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/linklistdynamic"
+            contentType="casestudy"/>
+        <linklistdynamic-products
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/linklistdynamic"
+            contentType="product"/>
+        <bodycopy
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/bodycopy"/>
+    </jcr:content>
+</jcr:root>

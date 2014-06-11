@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            title="Iframe Source"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <iframeSrc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Iframe Source"
+                    name="./iframeSrc"
+                    xtype="pathfield"/>
+                <iframewidth
+                    jcr:primaryType="cq:Widget"
+                    allowDecimals="false"
+                    allowNegative="false"
+                    default_x0020_Value="100"
+                    fieldLabel="Iframe Width"
+                    name="./iframewidth"
+                    xtype="numberfield"/>
+                <iframeheight
+                    jcr:primaryType="cq:Widget"
+                    allowDecimals="false"
+                    allowNegative="false"
+                    default_x0020_Value="100"
+                    fieldLabel="Iframe Height"
+                    name="./iframeheight"
+                    xtype="numberfield"/>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

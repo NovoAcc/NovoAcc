@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Panel"
+    title="Global Navigation ">
+    <listeners
+        jcr:primaryType="nt:unstructured"
+        loadContent="function(dialog) {Dupont.siteConfigProps.loadSiteConfigProps(dialog);}"/>
+    <items jcr:primaryType="cq:WidgetCollection">
+        <enabled
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Enable Country Container Configuration&#xa;"
+            name="./../../siteconfig/globalnav/countryContainer"
+            type="checkbox"
+            xtype="selection">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                selectionchanged="function(field, value, checked) {Dupont.listeners.showHideDialogFieldSet(this, field, checked);}"/>
+        </enabled>
+        <countrysite
+            jcr:primaryType="cq:Widget"
+            collapsible="{Boolean}false"
+            name="./../../siteconfig/globalnav/countrysite"
+            title="Country Site"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <industrynode
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Industries"
+                    name="./../../siteconfig/globalnav/industrynode"
+                    xtype="pathfield"/>
+                <prodservicesnode
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Products &amp; Services"
+                    name="./../../siteconfig/globalnav/prodservicesnode"
+                    xtype="pathfield"/>
+                <allindustrieslandingnode
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="All Industries Landing Page"
+                    name="./../../siteconfig/globalnav/allindustrieslandingnode"
+                    xtype="pathfield"/>
+                <prodandserviceslandingnode
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Products &amp; Services Landing Page"
+                    name="./../../siteconfig/globalnav/prodserviceslandingnode"
+                    xtype="pathfield"/>
+                <inclusiveinnovation
+                    jcr:primaryType="cq:Widget"
+                    collapsible="{Boolean}true"
+                    title="Science &amp; Society Node Links"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <leftcolumn
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Press + to add more links. External links and DAM Assets not supported."
+                            fieldLabel="Left Column Links"
+                            name="./../../siteconfig/globalnav/scienceandsociety/leftcolumn"
+                            xtype="multifield">
+                            <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                editable="{Boolean}false"
+                                limit="2"
+                                regex="/content/(?!dam).*"
+                                xtype="multilinklist"/>
+                        </leftcolumn>
+                        <rightcolumn
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Press + to add more links. External links and DAM Assets not supported."
+                            fieldLabel="Right Column Links"
+                            name="./../../siteconfig/globalnav/scienceandsociety/rightcolumn"
+                            xtype="multifield">
+                            <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                editable="{Boolean}false"
+                                limit="5"
+                                regex="/content/(?!dam).*"
+                                xtype="multilinklist"/>
+                        </rightcolumn>
+                    </items>
+                </inclusiveinnovation>
+            </items>
+        </countrysite>
+        <countrycontainer
+            jcr:primaryType="cq:Widget"
+            collapsible="{Boolean}false"
+            fieldDescription="ok great"
+            name="./../../siteconfig/globalnav/countrycontainer"
+            title="Country Container"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <viewmore
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="View More In DuPont  link"
+                    name="./../../siteconfig/globalnav/viewMoreLink"
+                    xtype="pathfield"/>
+                <country
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription=""
+                    fieldLabel="Country"
+                    name="./../../siteconfig/globalnav/country"
+                    xtype="textfield"/>
+                <label
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The following note applies to the upcoming Column fields:&#xa;                           &#xa;&lt;br/> -If a single Main Link is configured for column one, all Featured Links curated for all three columns will be displayed and belong to that single Main Link. If two Main Links (for column one and two) are configured, and all Featured Links for all three columns also curated, then the display within the Global Navigation - Products &amp; Services Mega Menu will be such that three Featured Links are displayed per column under the respective Main Link, and any Featured Links curated for column three will not be displayed."
+                    fieldLabel="Note:"
+                    xtype="label"/>
+                <firstcolumn
+                    jcr:primaryType="cq:Widget"
+                    collapsible="{Boolean}true"
+                    title="First Column"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <title
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title"
+                            name="./../../siteconfig/globalnav/column1Title"
+                            xtype="textfield"/>
+                        <mainlink
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Main Link:"
+                            name="./../../siteconfig/globalnav/column1MainLink"
+                            xtype="pathfield"/>
+                        <featuredlink
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="A maximum of three items will be displayed."
+                            fieldLabel="Featured Links:&#xa;"
+                            name="./../../siteconfig/globalnav/column1FeaturedLinks"
+                            width="1000"
+                            xtype="custommultifield">
+                            <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                editable="{Boolean}false"
+                                limit="3"
+                                regex="/content/(?!dam).*"
+                                xtype="multilinklist"/>
+                        </featuredlink>
+                    </items>
+                </firstcolumn>
+                <secondcolumn
+                    jcr:primaryType="cq:Widget"
+                    collapsible="{Boolean}true"
+                    title="Second Column"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <title
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title"
+                            name="./../../siteconfig/globalnav/column2Title"
+                            xtype="textfield"/>
+                        <mainlink
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Main Link:"
+                            name="./../../siteconfig/globalnav/column2MainLink"
+                            xtype="pathfield"/>
+                        <featuredlink
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="A maximum of three items will be displayed."
+                            fieldLabel="Featured Links:&#xa;"
+                            name="./../../siteconfig/globalnav/column2FeaturedLinks"
+                            width="1000"
+                            xtype="custommultifield">
+                            <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                editable="{Boolean}false"
+                                limit="3"
+                                regex="/content/(?!dam).*"
+                                xtype="multilinklist"/>
+                        </featuredlink>
+                    </items>
+                </secondcolumn>
+                <thirdcolumn
+                    jcr:primaryType="cq:Widget"
+                    collapsible="{Boolean}true"
+                    title="Third Column"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <title
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Title"
+                            name="./../../siteconfig/globalnav/column3Title"
+                            xtype="textfield"/>
+                        <mainlink
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Main Link:"
+                            name="./../../siteconfig/globalnav/column3MainLink"
+                            xtype="pathfield"/>
+                        <featuredlink
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="A maximum of three items will be displayed."
+                            fieldLabel="Featured Links:&#xa;"
+                            name="./../../siteconfig/globalnav/column3FeaturedLinks"
+                            width="1000"
+                            xtype="custommultifield">
+                            <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                editable="{Boolean}false"
+                                limit="3"
+                                regex="/content/(?!dam).*"
+                                xtype="multilinklist"/>
+                        </featuredlink>
+                    </items>
+                </thirdcolumn>
+                <dupontlinks
+                    jcr:primaryType="cq:Widget"
+                    collapsible="{Boolean}true"
+                    title="DuPont Links"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <links
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="A maximum of six items will be displayed."
+                            name="./../../siteconfig/globalnav/dupontLinks"
+                            xtype="custommultifield">
+                            <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                editable="{Boolean}false"
+                                limit="6"
+                                width="1000"
+                                xtype="multilinklistcurated"/>
+                        </links>
+                    </items>
+                </dupontlinks>
+            </items>
+        </countrycontainer>
+    </items>
+</jcr:root>

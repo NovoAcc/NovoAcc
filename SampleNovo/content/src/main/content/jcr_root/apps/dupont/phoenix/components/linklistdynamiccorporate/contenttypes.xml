@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Widget"
+    fieldLabel="Content Type"
+    name="./contentType"
+    type="select"
+    xtype="selection">
+    <options jcr:primaryType="cq:WidgetCollection">
+        <productcategorygroup
+            jcr:primaryType="nt:unstructured"
+            text="Product and Service Category Groups"
+            value="productcatgroup"/>
+        <productcategory
+            jcr:primaryType="nt:unstructured"
+            text="Product and Service Categories"
+            value="productcat"/>
+        <brand
+            jcr:primaryType="nt:unstructured"
+            text="Brands"
+            value="brand"/>
+        <subbrand
+            jcr:primaryType="nt:unstructured"
+            text="Sub Brands"
+            value="subbrand"/>
+        <productdetail
+            jcr:primaryType="nt:unstructured"
+            text="Product and Service Details"
+            value="product"/>
+        <article
+            jcr:primaryType="nt:unstructured"
+            text="Articles"
+            value="article"/>
+        <casestudy
+            jcr:primaryType="nt:unstructured"
+            text="Case Studies"
+            value="casestudy"/>
+        <pressrelease
+            jcr:primaryType="nt:unstructured"
+            text="Press Releases"
+            value="pressrelease"/>
+        <newsletter
+            jcr:primaryType="nt:unstructured"
+            text="Newsletters"
+            value="newsletter"/>
+        <corporatefunctionsdetail
+            jcr:primaryType="nt:unstructured"
+            text="Corporate Functions Detail"
+            value="corporatefunctionsdetail"/>
+        <corporatefunctionslanding
+            jcr:primaryType="nt:unstructured"
+            text="Corporate Functions Landing"
+            value="corporatefunctionslanding"/>
+        <corporatefunctionssub-landing
+            jcr:primaryType="nt:unstructured"
+            text="Corporate Functions Sub-landing"
+            value="corporatefunctionssub-landing"/>
+    </options>
+</jcr:root>

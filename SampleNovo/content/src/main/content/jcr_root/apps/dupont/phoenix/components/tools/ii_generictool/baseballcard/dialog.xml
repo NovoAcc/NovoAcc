@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Baseball Card"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Challenge"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+            	<indextitle
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The index title"
+                    fieldLabel="Index Card Title"
+                    name="./indexTitle"
+                    xtype="textfield"/>
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Challenge title for the Baseball Card "
+                    fieldLabel="Title"
+                    name="./baseballCardTitle"
+                    xtype="textfield"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Challenge Short description of the baseball card. If use as description is selected, only this text will be rendered."
+                    fieldLabel="Short Description"
+                    name="./baseballCardShortDescription"
+                    xtype="textarea"/>
+                <primarycolor
+                    jcr:primaryType="cq:Widget"
+                    border="{Boolean}false"
+                    colors="[B23C00,C75300,A66200,786F1E,505D1C,404010,185E5D,278184,2F5680,003A51,3E2A67,470041,74004C,744E3D,52300C,411C00,61564E,505B5E]"
+                    fieldLabel="Main Baseball Card Color"
+                    name="./iicolor"
+                    showHexValue="true"
+                    xtype="colorfield"/>
+                <imagerestype
+	                    jcr:primaryType="cq:Widget"
+	                    ignoreData="{Boolean}true"
+	                    name="./image/sling:resourceType"
+	                    value="foundation/components/image"
+	                    xtype="hidden"/>
+	            <thumbnailrestype
+	                    jcr:primaryType="cq:Widget"
+	                    ignoreData="{Boolean}true"
+	                    name="./thumbnail/sling:resourceType"
+	                    value="foundation/components/image"
+	                    xtype="hidden"/>
+	            <whiteiconrestype
+	                    jcr:primaryType="cq:Widget"
+	                    ignoreData="{Boolean}true"
+	                    name="./whiteicon/sling:resourceType"
+	                    value="foundation/components/image"
+	                    xtype="hidden"/>
+                <iconrestype
+	                    jcr:primaryType="cq:Widget"
+	                    ignoreData="{Boolean}true"
+	                    name="./icon/sling:resourceType"
+	                    value="foundation/components/image"
+	                    xtype="hidden"/>
+	            <scienceimagerestype
+	                    jcr:primaryType="cq:Widget"
+	                    ignoreData="{Boolean}true"
+	                    name="./scienceImage/sling:resourceType"
+	                    value="foundation/components/image"
+	                    xtype="hidden"/>
+            </items>
+        </title>
+        <inclusiveinnovations
+            jcr:primaryType="cq:Widget"
+            title="Science"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+            	<sciencetitle
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title for the Science Baseball Card "
+                    fieldLabel="Science Title"
+                    name="./scienceTitle"
+                    xtype="textfield"/>
+                <sciencedescription
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Short description of the Science baseball card. If use as description is selected, only this text will be rendered."
+                    fieldLabel="Science Description"
+                    name="./scienceDescription"
+                    xtype="textarea"/>
+                <sciencelinks
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Curated Link list"
+                    fieldLabel="Links"
+                    name="./baseballCardLinks"
+                    width="1000"
+                    xtype="custommultifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        limit="2"
+                        xtype="multilinklistcurated"/>
+                </sciencelinks>
+            </items>
+        </inclusiveinnovations>
+        <thumbnail
+            jcr:primaryType="cq:Widget"
+            allowUpload="{Boolean}false"
+            ddGroups="[media]"
+            fileNameParameter="./thumbnail/fileName"
+            fileReferenceParameter="./thumbnail/fileReference"
+            name="./thumbnail/file"
+            renditionSuffix="/_jcr_content/renditions/original"
+            requestSuffix="/thumbnail.img.png"
+            title="Thumbnail"
+            type="Image"
+            height="{Long}400"
+            width="{Long}100"
+            xtype="html5smartimage">
+        </thumbnail>
+        <thumbnailadvanced
+            jcr:primaryType="cq:Widget"
+            title="Thumbnail Advanced"
+            xtype="panel">
+        	<items jcr:primaryType="cq:WidgetCollection">
+			    <title
+			        jcr:primaryType="cq:Widget"
+			        fieldLabel="Title"
+			        name="./thumbnail/jcr:title"
+			        xtype="textfield"/>
+			    <alt
+			        jcr:primaryType="cq:Widget"
+			        fieldDescription="(leave empty to use the title defined above)"
+			        fieldLabel="Alt Text"
+			        name="./thumbnail/alt"
+			        xtype="textfield"/>
+			    <linkURL
+			        jcr:primaryType="cq:Widget"
+			        fieldDescription="Drop files or pages from the Content Finder"
+			        fieldLabel="Link to"
+			        name="./thumbnail/linkURL"
+			        xtype="pathfield"/>
+			    <description
+			        jcr:primaryType="cq:Widget"
+			        fieldLabel="Description"
+			        name="./thumbnail/jcr:description"
+			        xtype="textarea"/>
+			    <size
+			        jcr:primaryType="cq:Widget"
+			        fieldLabel="Size"
+			        heightParameter="./thumbnail/height"
+			        widthParameter="./thumbnail/width"
+			        xtype="sizefield"/>
+			</items>
+		</thumbnailadvanced>
+        <image
+            jcr:primaryType="cq:Widget"
+            allowUpload="{Boolean}false"
+            ddGroups="[media]"
+            fileNameParameter="./image/fileName"
+            fileReferenceParameter="./image/fileReference"
+            height="{Long}400"
+            name="./image/file"
+            renditionSuffix="/_jcr_content/renditions/original"
+            requestSuffix="/image.img.png"
+            title="Image"
+            type="Image"
+            width="{Long}100"
+            xtype="html5smartimage">
+        </image>
+        <imageadvanced
+            jcr:primaryType="cq:Widget"
+            title="Image Advanced"
+            xtype="panel">
+        	<items jcr:primaryType="cq:WidgetCollection">
+			    <title
+			        jcr:primaryType="cq:Widget"
+			        fieldLabel="Title"
+			        name="./image/jcr:title"
+			        xtype="textfield"/>
+			    <alt
+			        jcr:primaryType="cq:Widget"
+			        fieldDescription="(leave empty to use the title defined above)"
+			        fieldLabel="Alt Text"
+			        name="./image/alt"
+			        xtype="textfield"/>
+			    <linkURL
+			        jcr:primaryType="cq:Widget"
+			        fieldDescription="Drop files or pages from the Content Finder"
+			        fieldLabel="Link to"
+			        name="./image/linkURL"
+			        xtype="pathfield"/>
+			    <description
+			        jcr:primaryType="cq:Widget"
+			        fieldLabel="Description"
+			        name="./image/jcr:description"
+			        xtype="textarea"/>
+			    <size
+			        jcr:primaryType="cq:Widget"
+			        fieldLabel="Size"
+			        heightParameter="./image/height"
+			        widthParameter="./image/width"
+			        xtype="sizefield"/>
+			</items>
+		</imageadvanced>
+		<whiteicon
+            jcr:primaryType="cq:Widget"
+            allowUpload="{Boolean}false"
+            ddGroups="[media]"
+            fileNameParameter="./whiteicon/fileName"
+            fileReferenceParameter="./whiteicon/fileReference"
+            name="./whiteicon/file"
+            renditionSuffix="/_jcr_content/renditions/original"
+            requestSuffix="/whiteicon.img.png"
+            title="White Icon"
+            type="Image"
+            height="{Long}400"
+            width="{Long}100"
+            xtype="html5smartimage">
+        </whiteicon>
+        <iconadvanced
+            jcr:primaryType="cq:Widget"
+            title="White Icon Advanced"
+            xtype="panel">
+        	<items jcr:primaryType="cq:WidgetCollection">
+			    <title
+			        jcr:primaryType="cq:Widget"
+			        fieldLabel="Title"
+			        name="./whiteicon/jcr:title"
+			        xtype="textfield"/>
+			    <alt
+			        jcr:primaryType="cq:Widget"
+			        fieldDescription="(leave empty to use the title defined above)"
+			        fieldLabel="Alt Text"
+			        name="./whiteicon/alt"
+			        xtype="textfield"/>
+			    <linkURL
+			        jcr:primaryType="cq:Widget"
+			        fieldDescription="Drop files or pages from the Content Finder"
+			        fieldLabel="Link to"
+			        name="./whiteicon/linkURL"
+			        xtype="pathfield"/>
+			    <description
+			        jcr:primaryType="cq:Widget"
+			        fieldLabel="Description"
+			        name="./whiteicon/jcr:description"
+			        xtype="textarea"/>
+			    <size
+			        jcr:primaryType="cq:Widget"
+			        fieldLabel="Size"
+			        heightParameter="./whiteicon/height"
+			        widthParameter="./whiteicon/width"
+			        xtype="sizefield"/>
+			</items>
+		</iconadvanced>
+        <icon
+            jcr:primaryType="cq:Widget"
+            allowUpload="{Boolean}false"
+            ddGroups="[media]"
+            fileNameParameter="./icon/fileName"
+            fileReferenceParameter="./icon/fileReference"
+            name="./icon/file"
+            renditionSuffix="/_jcr_content/renditions/original"
+            requestSuffix="/icon.img.png"
+            title="Icon"
+            type="Image"
+            height="{Long}400"
+            width="{Long}100"
+            xtype="html5smartimage">
+        </icon>
+        <iconadvanced
+            jcr:primaryType="cq:Widget"
+            title="Icon Advanced"
+            xtype="panel">
+        	<items jcr:primaryType="cq:WidgetCollection">
+			    <title
+			        jcr:primaryType="cq:Widget"
+			        fieldLabel="Title"
+			        name="./icon/jcr:title"
+			        xtype="textfield"/>
+			    <alt
+			        jcr:primaryType="cq:Widget"
+			        fieldDescription="(leave empty to use the title defined above)"
+			        fieldLabel="Alt Text"
+			        name="./icon/alt"
+			        xtype="textfield"/>
+			    <linkURL
+			        jcr:primaryType="cq:Widget"
+			        fieldDescription="Drop files or pages from the Content Finder"
+			        fieldLabel="Link to"
+			        name="./icon/linkURL"
+			        xtype="pathfield"/>
+			    <description
+			        jcr:primaryType="cq:Widget"
+			        fieldLabel="Description"
+			        name="./icon/jcr:description"
+			        xtype="textarea"/>
+			    <size
+			        jcr:primaryType="cq:Widget"
+			        fieldLabel="Size"
+			        heightParameter="./icon/height"
+			        widthParameter="./icon/width"
+			        xtype="sizefield"/>
+			</items>
+		</iconadvanced>
+        <scienceimage
+            jcr:primaryType="cq:Widget"
+            allowUpload="{Boolean}false"
+            ddGroups="[media]"
+            fileNameParameter="./scienceImage/fileName"
+            fileReferenceParameter="./scienceImage/fileReference"
+            name="./scienceImage/file"
+            renditionSuffix="/_jcr_content/renditions/original"
+            requestSuffix="/scienceImage.img.png"
+            title="Science Image"
+            type="Image"
+            height="{Long}400"
+            width="{Long}100"
+            xtype="html5smartimage">
+        </scienceimage>
+        <scienceimageadvanced
+            jcr:primaryType="cq:Widget"
+            title="Science Image Advanced"
+            xtype="panel">
+        	<items jcr:primaryType="cq:WidgetCollection">
+			    <title
+			        jcr:primaryType="cq:Widget"
+			        fieldLabel="Title"
+			        name="./scienceImage/jcr:title"
+			        xtype="textfield"/>
+			    <alt
+			        jcr:primaryType="cq:Widget"
+			        fieldDescription="(leave empty to use the title defined above)"
+			        fieldLabel="Alt Text"
+			        name="./scienceImage/alt"
+			        xtype="textfield"/>
+			    <linkURL
+			        jcr:primaryType="cq:Widget"
+			        fieldDescription="Drop files or pages from the Content Finder"
+			        fieldLabel="Link to"
+			        name="./scienceImage/linkURL"
+			        xtype="pathfield"/>
+			    <description
+			        jcr:primaryType="cq:Widget"
+			        fieldLabel="Description"
+			        name="./scienceImage/jcr:description"
+			        xtype="textarea"/>
+			    <size
+			        jcr:primaryType="cq:Widget"
+			        fieldLabel="Size"
+			        heightParameter="./scienceImage/height"
+			        widthParameter="./scienceImage/width"
+			        xtype="sizefield"/>
+			</items>
+		</scienceimageadvanced>
+    </items>
+</jcr:root>

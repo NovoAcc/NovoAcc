@@ -1,0 +1,11 @@
+<%--
+  ==============================================================================
+
+  Include hero area components (Hero Normal, Content Tabs, Sub Navigation, etc.
+  TODO -> Separate Hero Normal From Content Tabs
+
+  ==============================================================================
+
+--%><%@ include file="/apps/dupont/phoenix/components/common/global.jsp" %><%
+
+%><cq:include path="herolargecampaign" resourceType="dupont/phoenix/components/responsive/campaigns/herolargecampaign"/>

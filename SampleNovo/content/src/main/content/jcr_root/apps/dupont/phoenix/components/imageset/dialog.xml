@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Slideshow"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <images
+            jcr:primaryType="cq:Widget"
+            ddGroups="[media]"
+            fileReferencePrefix="./image$"
+            title="Image Set"
+            xtype="slideshow"/>
+    </items>
+</jcr:root>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="A limitless list of&#xa;galleries. The list may wrap to the next line but each&#xa;list item should remain completely on a single line."
+    jcr:primaryType="cq:Component"
+    jcr:title="Media gallery menu"
+    allowedParents="[*/parsys]"
+    componentGroup="DuPont"/>

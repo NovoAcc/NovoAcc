@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Site Configuration"
+    width="700"
+    xtype="dialog">
+    <listeners
+        jcr:primaryType="nt:unstructured"
+        loadContent="function(dialog) {Dupont.siteConfigProps.loadSiteConfigProps(dialog);}"/>
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Panel"
+                title="General">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <externalsiteprefix
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="http://www.dupont.com"
+                        fieldLabel="External Site Prefix"
+                        fieldSubLabel="for example: http://www.dupont.com"
+                        name="./../../siteconfig/general/externalsiteprefix"
+                        value="http://www.dupont.com"
+                        xtype="textfield"/>
+                    <megatrendFolderPath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Path to Megatrend Folder"
+                        name="./../../siteconfig/general/megatrendFolderPath"
+                        xtype="pathfield"/>
+                    <countryselectorURL
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Please configure URL for country selector."
+                        fieldLabel="Country Selector URL"
+                        name="./../../siteconfig/general/countryselectorURL"
+                        value="Please configure URL for country selector."
+                        xtype="textfield"/>
+                    <typekitid
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Typekit Id"
+                        name="./../../siteconfig/general/typekitId"
+                        xtype="textfield"/>
+                </items>
+            </general>
+            <footer
+                jcr:primaryType="cq:Panel"
+                title="Footer">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <corporatefolderpath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Corporate Folder Path"
+                        name="./../../siteconfig/footer/corporateFolderPath"
+                        xtype="pathfield"/>
+                    <utilitylinksfolderpath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Utility Links Folder Path"
+                        name="./../../siteconfig/footer/utilityLinksFolderPath"
+                        xtype="pathfield"/>
+                    <copyrightText
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Copyright Text"
+                        name="./../../siteconfig/footer/copyrightText"/>
+                    <ipctext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="ICP Text"
+                        name="./../../siteconfig/footer/ipcText"
+                        xtype="textfield"/>
+                </items>
+            </footer>
+            <tabfeatured
+                jcr:primaryType="cq:Widget"
+                path="/apps/dupont/phoenix/components/siteconfig/tab_featured.infinity.json"
+                xtype="cqinclude"/>
+            <tabhlm
+                jcr:primaryType="cq:Widget"
+                path="/apps/dupont/phoenix/components/siteconfig/tab_hlm.infinity.json"
+                xtype="cqinclude"/>
+            <socialmediachiclets
+                jcr:primaryType="cq:Widget"
+                path="/apps/dupont/phoenix/components/siteconfig/tab_socialmedia.infinity.json"
+                xtype="cqinclude"/>
+            <globalnav
+                jcr:primaryType="cq:Widget"
+                path="/apps/dupont/phoenix/components/siteconfig/tab_globalnav.infinity.json"
+                xtype="cqinclude"/>
+            <brightcove
+                jcr:primaryType="cq:Panel"
+                title="Brightcove">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <Video_Gallery_Properties
+                        jcr:primaryType="cq:Widget"
+                        title="Video Gallery"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <galleryVideoPlayerKey
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Player Key"
+                                name="./../../siteconfig/videogallery/galleryVideoPlayerKey"
+                                xtype="textfield"/>
+                            <galleryVideoPlayerId
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Player Id"
+                                name="./../../siteconfig/videogallery/galleryVideoPlayerId"
+                                xtype="textfield"/>
+                        </items>
+                    </Video_Gallery_Properties>
+                    <Video_Player_Properties
+                        jcr:primaryType="cq:Widget"
+                        title="Video Player"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <playerkey
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Player Key"
+                                name="./../../siteconfig/videoplayer/videoPlayerKey"
+                                xtype="textfield"/>
+                            <playerid
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Player Id"
+                                name="./../../siteconfig/videoplayer/videoPlayerId"
+                                xtype="textfield"/>
+                        </items>
+                    </Video_Player_Properties>
+                </items>
+            </brightcove>
+            <linklistdynamic
+                jcr:primaryType="cq:Panel"
+                title="Dynamic Link List">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <article
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Articles"
+                        fieldLabel="Article Detail"
+                        name="./../../siteconfig/linklistdynamic/article"
+                        value="RELATED STORIES"
+                        xtype="textfield"/>
+                    <casestudy
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Case Studies"
+                        fieldLabel="Case Study"
+                        name="./../../siteconfig/linklistdynamic/casestudy"
+                        value="OTHER CASE STUDIES"
+                        xtype="textfield"/>
+                    <pressrelease
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Press Releases"
+                        fieldLabel="Press Release"
+                        name="./../../siteconfig/linklistdynamic/pressrelease"
+                        value="OTHER PRESS RELEASES"
+                        xtype="textfield"/>
+                    <video
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Videos"
+                        fieldLabel="Video"
+                        name="./../../siteconfig/linklistdynamic/video"
+                        value="OTHER VIDEOS"
+                        xtype="textfield"/>
+                    <newsletter
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Newsletters"
+                        fieldLabel="Newsletter"
+                        name="./../../siteconfig/linklistdynamic/newsletter"
+                        value="OTHER NEWS RELEASES"
+                        xtype="textfield"/>
+                    <productdetail
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="Products"
+                        fieldLabel="Product and Service Detail"
+                        name="./../../siteconfig/linklistdynamic/product"
+                        value="RELATED PRODUCTS"
+                        xtype="textfield"/>
+                </items>
+            </linklistdynamic>
+            <imagemediagallery
+                jcr:primaryType="cq:Widget"
+                path="/apps/dupont/phoenix/components/siteconfig/tab_imagegallery.infinity.json"
+                xtype="cqinclude"/>
+            <cookiemessage
+                jcr:primaryType="cq:Panel"
+                title="Cookie Message">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <enabled
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Show Cookie Alert"
+                        name="./../../siteconfig/cookiemessage/enabled"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <message
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Cookie Message "
+                        name="./../../siteconfig/cookiemessage/message"
+                        value="Message"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/dupont/phoenix/components/siteconfig/rteplugins.infinity.json"
+                            xtype="cqinclude"/>
+                    </message>
+                </items>
+            </cookiemessage>
+            <tabmc
+                jcr:primaryType="cq:Widget"
+                title="Media Center"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <corporatefolderpath
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Corporate Folder Path"
+                        name="./../../siteconfig/tabmc/corporateFolderPath"
+                        xtype="pathfield"/>
+                </items>
+            </tabmc>
+            <searchandpromote
+                jcr:primaryType="cq:Widget"
+                path="/apps/dupont/phoenix/components/siteconfig/tab_searchandpromote.infinity.json"
+                xtype="cqinclude"/>
+            <viewallconfiguration
+                jcr:primaryType="cq:Widget"
+                path="/apps/dupont/phoenix/components/siteconfig/tab_viewallconfiguration.infinity.json"
+                xtype="cqinclude"/>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<Colors>
+			<color id="1" name_eng="Glacier White" name="雪白" sortOrder="1" image="Corian_Glacier_White_300x150.jpg" productUrl="glacier-white.html">
+				<collections>
+					<collection id="C1"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA2"></ua>
+					<ua id="UA5"></ua>
+					<ua id="UA37"></ua>
+				</usesandapplications>
+			</color>
+			<color id="2" name_eng="Glacier Ice" name="冰川白 " sortOrder="2" image="Corian_Glacier_Ice_300x150.jpg" productUrl="glacier-ice.html">
+				<collections>					
+					<collection id="C10"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+					<hue id="H8"/>
+					
+				</hues>
+				<usesandapplications>
+					<ua id="UA2"></ua>
+					<ua id="UA14"></ua>
+					<ua id="UA30"></ua>
+					<ua id="UA37"></ua>
+				</usesandapplications>
+			</color>
+			<color id="3" name_eng="Venaro White" name="暗纹白" sortOrder="3" image="DSP_Corian_Color Chip_VenaroWhite_690x345_300x150.jpg" productUrl="venaro-white.html">
+				<collections>
+					<collection id="C4"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+				</hues>
+			</color>
+			<color id="4" name_eng="Designer White" name="设计师白" sortOrder="4" image="Corian_Designer_White_300x150_0.jpg" productUrl="designer-white.html">
+				<collections>
+					<collection id="C7"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA2"></ua>
+					<ua id="UA5"></ua>
+					<ua id="UA37"></ua>
+				</usesandapplications>
+			</color>
+			<color id="5" name_eng="Sparkling White" name="闪晶白" sortOrder="5" image="DSP_Corian_Photograph_Sparkling White_690x345_Detail_300x150_0.jpg" productUrl="sparkling-white.html">
+				<collections>
+					<collection id="C8"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+				</hues>
+			</color>
+			<color id="6" name_eng="Cameo White" name="奶白" sortOrder="6" image="Corian_Cameo_White_300x150.jpg"  productUrl="cameo-white.html" >
+				<collections>
+					<collection id="C1"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA2"></ua>
+					<ua id="UA5"></ua>
+					<ua id="UA37"></ua>
+				</usesandapplications>
+			</color>
+			<color id="7" name_eng="Cirrus White" name="云彩白" sortOrder="7" image="DSP_Corian_PC_Color Chip_Cirrus_White_690x345_300x150_0.jpg" productUrl="cirrus-white.html">
+				<collections>
+					<collection id="C6"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+				</hues>
+			</color>
+			<color id="8" name_eng="Antarctica" name="南极" sortOrder="8" image="Corian_antarctica_300x150.jpg"  productUrl="antarctica.html" >
+				<collections>
+					<collection id="C5"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+				</hues>
+				<usesandapplications>
+				</usesandapplications>
+			</color>
+			<color id="9" name_eng="Rice Paper" name="米纸" sortOrder="9" image="Corian_Rice_Paper_690x345_300x150.jpg" productUrl="rice-paper.html">
+				<collections>
+					<collection id="C2"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+				</hues>
+			</color>
+			<color id="10" name_eng="white ripple" name="水纹白" sortOrder="10" image="white-ripple-300x150.jpg" productUrl="white-ripple.html">
+				<collections>					
+					<collection id="C9"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+				</hues>
+			</color>
+			<color id="11" name_eng="Rain Cloud" name="雨水白" sortOrder="11" image="Corian_Rain_Cloud_690x345_300x150.jpg" productUrl="rain-cloud.html">
+				<collections>
+					<collection id="C6"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+				</hues>
+			</color>
+			<color id="12" name_eng="White Jasmine" name="茉莉" sortOrder="12" image="Corian_White_Jasmine_300x150.jpg"  productUrl="white-jasmine.html" >
+				<collections>
+					<collection id="C2"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="13" name_eng="Linen" name="亚麻布" sortOrder="13" image="Linen_690x345_300x150_0.jpg"  productUrl="linen.html" >
+				<collections>
+					<collection id="C2"/>
+				</collections>
+				<hues>
+					<hue id="H1"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="14" name_eng="Vanilla" name="香草" sortOrder="14" image="Corian_Vanilla_300x150.jpg"  productUrl="vanilla.html" >
+				<collections>
+					<collection id="C1"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA2"></ua>
+					<ua id="UA5"></ua>
+					<ua id="UA37"></ua>
+				</usesandapplications>
+			</color>
+			<color id="15" name_eng="Whisper" name="淡沙黄" sortOrder="15" image="Corian_Whisper_690x345_300x150.jpg" productUrl="whisper.html">
+				<collections>
+					<collection id="C2"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+				</hues>
+			</color>
+			<color id="16" name_eng="Savannah" name="平原" sortOrder="16" image="Savannah_690x345_300x150_0.jpg"  productUrl="savannah.html" >
+				<collections>
+					<collection id="C5"/>
+				</collections>
+				<hues>
+					<hue id="H1"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="17" name_eng="Abalone" name="鲍鱼" sortOrder="17" image="Corian_Abalone_300x150.jpg"  productUrl="abalone.html" >
+				<collections>
+					<collection id="C3"/>
+				</collections>
+				<hues>
+					<hue id="H1"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="18" name_eng="Tumbled Glass" name="万花筒" sortOrder="18" image="DSP_Corian_Color Chip_TumbledGlass_690x345_300x150_0.jpg" productUrl="tumbled-glass.html">
+				<collections>
+					<collection id="C5"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+				</hues>
+			</color>
+			<color id="19" name_eng="Silver Birch" name="银桦" sortOrder="19" image="SilverBirch_690x345_300x150_0.jpg"  productUrl="silver-birch.html" >
+				<collections>
+					<collection id="C5"/>
+				</collections>
+				<hues>
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+				<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="20" name_eng="Everest" name="雪花白" sortOrder="20" image="Corian_Everest_300x150.jpg"  productUrl="everest.html">
+				<collections>
+					<collection id="C3"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="21" name_eng="Whitecap" name="浪花白" sortOrder="21" image="Corian_Whitecap_300x150.jpg" productUrl="whitecap.html">
+				<collections>
+					<collection id="C5"/>
+				</collections>
+				<hues>
+					<hue id="H7"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="22" name_eng="Canvas" name="画布" sortOrder="22" image="Corian_Canvas_300x150.jpg" productUrl="canvas.html">
+				<collections>
+					<collection id="C2"/>
+				</collections>
+				<hues>
+					<hue id="H1"/>
+				</hues>
+			</color>
+			<color id="23" name_eng="Pearl" name="珍贝白" sortOrder="23" image="DSP_Corian_Pearl_690x345_300x150_1.jpg" productUrl="pearl.html">
+				<collections>
+					<collection id="C6"/>
+				</collections>
+				<hues>
+					<hue id="H4"/>
+				</hues>
+			</color>
+			<color id="24" name_eng="Fossil" name="古化石" sortOrder="24" image="Corian_Fossil_690x345_300x150_1.jpg"  productUrl="fossil.html" >
+				<collections>
+					<collection id="C5"/>
+				</collections>
+				<hues>
+					<hue id="H1"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color_disabled id="25" name="Oyster" name_eng="生蠔" sortOrder="25" image="" productUrl="oyster.html">
+				<collections>
+					<collection id="C5"/>
+				</collections>
+				<hues>
+					<hue id="H1"/>
+				</hues>
+			</color_disabled>
+			<color id="26" name_eng="Clam Shell" name="蚬壳" sortOrder="26" image="ClamShell_690x345_300x150_0.jpg"  productUrl="clam-shell.html" >
+				<collections>
+					<collection id="C6"/>
+				</collections>
+				<hues>
+					<hue id="H1"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="27" name_eng="Burled Beach" name="粗沙" sortOrder="27" image="Corian_Burled_Beach_690x345_300x150.jpg"  productUrl="burled-beach.html" >
+				<collections>
+					<collection id="C6"/>
+				</collections>
+				<hues>
+					<hue id="H1"/>
+				</hues>
+				<usesandapplications>
+				</usesandapplications>
+			</color>
+			<color id="28" name_eng="Aurora" name="杏仁麻" sortOrder="28" image="Aurora_690x345_300x150_1.jpg"  productUrl="aurora.html" >
+				<collections>
+					<collection id="C2"/>
+				</collections>
+				<hues>
+					<hue id="H1"/>
+				</hues>
+				<usesandapplications>
+				<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="29" name_eng="Sahara" name="砂褐" sortOrder="29" image="Sahara_690x345_300x150.jpg"  productUrl="sahara.html" >
+				<collections>
+					<collection id="C5"/>
+				</collections>
+				<hues>				
+				</hues>
+				<usesandapplications>
+					<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="30" name_eng="Mojave" name="黄沙麻" sortOrder="30" image="Mojave_690x345_300x150.jpg"  productUrl="mojave.html" >
+				<collections>
+					<collection id="C2"/>
+				</collections>
+				<hues>
+					<hue id="H1"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="31" name_eng="Sun" name="太阳" sortOrder="31" image="Corian_Sun_690x345_300x150.jpg" productUrl="sun.html">
+				<collections>
+					<collection id="C7"/>
+				</collections>
+				<hues>
+					<hue id="H6"/>
+				</hues>
+			</color>
+			<color id="32" name_eng="blueberry ice" name="冰莓蓝" sortOrder="32" image="blueberry-ice-300x150_0.jpg" productUrl="blueberry-ice.html">
+				<collections>					
+					<collection id="C10"/>
+				</collections>
+				<hues>
+					<hue id="H8"/>					
+				</hues>
+			</color>
+			<color id="33" name_eng="Mandarin" name="桔子" sortOrder="33" image="Corian_Mandarin_690x345_300x150.jpg" productUrl="mandarin.html">
+				<collections>
+					<collection id="C7"/>
+				</collections>
+				<hues>
+					<hue id="H6"/>
+				</hues>
+			</color>
+			<color id="34" name_eng="mint ice" name="冰薄荷" sortOrder="34" image="mint-ice-300x150.jpg" productUrl="mint-ice.html">
+				<collections>					
+					<collection id="C10"/>
+				</collections>
+				<hues>
+					<hue id="H8"/>				
+				</hues>
+			</color>
+			<color id="35" name_eng="Hot" name="火红" sortOrder="35" image="Corian_Hot_690x345_300x150.jpg" productUrl="hot.html">
+				<collections>
+					<collection id="C7"/>
+				</collections>
+				<hues>
+					<hue id="H6"/>
+				</hues>
+			</color>
+			<color id="36" name_eng="Egyptian Copper" name="埃及铜" sortOrder="36" image="Egyptian Copper_Color Chip_300x150_1.jpg" productUrl="egyptian-copper.html">
+				<collections>
+					<collection id="C6"/>
+				</collections>
+				<hues>
+					<hue id="H6"/>
+				</hues>
+			</color>
+			<color id="37" name_eng="Dusk" name="灰麻" sortOrder="37" image="Corian_Dusk_690x325_300x150.jpg"  productUrl="dusk.html" >
+				<collections>
+					<collection id="C2"/>
+				</collections>
+				<hues>
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+				<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="38" name_eng="Sandstone" name="岩石麻" sortOrder="38" image="Corian_Sandstone_690x345_300x150.jpg"  productUrl="sandstone.html" >
+				<collections>
+					<collection id="C2"/>
+				</collections>
+				<hues>
+					<hue id="H1"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="39" name_eng="elegant gray" name="茶灰" sortOrder="39" image="elegent-gray-300x150.jpg"  productUrl="elegant-gray.html" >
+				<collections>			
+					<collection id="C1"/>
+				</collections>
+				<hues>					
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="40" name_eng="pearl gray" name="珍珠灰" sortOrder="40" image="pearl-gray-300x150_0.jpg"  productUrl="pearl-gray.html" >
+				<collections>
+					<collection id="C1"/>					
+				</collections>
+				<hues>					
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="41" name_eng="ice white" name="冰月白" sortOrder="41" image="ice-white-300x150_0.jpg"  productUrl="ice-white.html" >
+				<collections>
+					<collection id="C10"/>
+				</collections>
+				<hues>
+					<hue id="H8"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="42" name_eng="gray ripple" name="水纹灰" sortOrder="42" image="gray-ripple-300x150.jpg"  productUrl="gray-ripple.html" >
+				<collections>					
+					<collection id="C9"/>
+				</collections>
+				<hues>					
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+					<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="43" name_eng="Dove" name="灰鸽" sortOrder="43" image="Dove_690x345_300x150_1.jpg"  productUrl="dove.html" >
+				<collections>
+					<collection id="C2"/>
+				</collections>
+				<hues>
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+				<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="44" name_eng="silver gray" name="银灰" sortOrder="44" image="silver-gray-300x150.jpg"  productUrl="silver-gray.html" >
+				<collections>
+					<collection id="C1"/>				
+				</collections>
+				<hues>
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+				<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="45" name_eng="silverite" name="闪晶银" sortOrder="45" image="silverite-300x150_0.jpg"  productUrl="silverite.html" >
+				<collections>					
+					<collection id="C8"/>
+				</collections>
+				<hues>
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+				<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="46" name_eng="Basil" name="罗勒棕" sortOrder="46" image="Corian_Basil_690x345_300x150.jpg" productUrl="basil.html">
+				<collections>
+					<collection id="C6"/>
+				</collections>
+				<hues>
+					<hue id="H3"/>
+				</hues>
+			</color>
+			<color id="47" name_eng="Sonora" name="粗砂砾" sortOrder="47" image="Corian_Sonora__690x345_300x150_0.jpg"  productUrl="sonora.html" >
+				<collections>
+					<collection id="C6"/>
+				</collections>
+				<hues>
+					<hue id="H3"/>
+				</hues>
+				<usesandapplications>
+				<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="48" name_eng="medea" name="墨砥" sortOrder="48" image="medea-300x150_0.jpg"  productUrl="medea.html" >
+				<collections>
+				<collection id="C3"/>
+			
+				</collections>
+				<hues>				
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+				<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="49" name_eng="Canyon" name="峽谷" sortOrder="49" image="Corian_Canyon_690x345_300x150.jpg"  productUrl="canyon.html" >
+				<collections>
+					<collection id="C3"/>
+				</collections>
+				<hues>
+					<hue id="H3"/>
+				</hues>
+				<usesandapplications>
+				<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="50" name_eng="Cocoa Brown" name="可可棕" sortOrder="50" image="Cocoa_Brown_300x150.jpg"  productUrl="cocoa-brown.html" >
+				<collections>
+					<collection id="C5"/>
+				</collections>
+				<hues>
+					<hue id="H3"/>
+				</hues>
+				<usesandapplications>
+				</usesandapplications>
+			</color>
+			<color id="51" name_eng="sorrel" name="乌金" sortOrder="51" image="sorrel-300x150_0.jpg"  productUrl="sorrel.html" >
+				<collections>
+					<collection id="C6"/>					
+				</collections>
+				<hues>
+					
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+				</usesandapplications>
+			</color>
+			<color id="52" name_eng="sienna brown" name="棕褐" sortOrder="52" image="sienna-brown-300x150.jpg"  productUrl="sienna-brown.html" >
+				<collections>
+				<collection id="C3"/>
+				
+				</collections>
+				<hues>
+					<hue id="H3"/>
+				</hues>
+				<usesandapplications>
+				</usesandapplications>
+			</color>
+			<color id="53" name_eng="Lava Rock" name="熔岩石" sortOrder="53" image="Corian_Lava_Rock_690x345_300x150.jpg"  productUrl="lava-rock.html" >
+				<collections>
+					<collection id="C6"/>
+				</collections>
+				<hues>
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+				<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="54" name_eng="deep gray" name="墨灰 " sortOrder="54" image="deep-gray-300x150_0.jpg"  productUrl="deep-gray.html" >
+				<collections>				
+					<collection id="C1"/>
+				</collections>
+				<hues>
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+				<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="55" name_eng="anthracite	" name="闪晶墨" sortOrder="55" image="anthracite-300x150.jpg"  productUrl="anthracite.html" >
+				<collections>					
+					<collection id="C8"/>
+				</collections>
+				<hues>
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+				<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color_disabled id="56" name_eng="mardi gras" name="满天星" sortOrder="56" image="Corian_Mardi_Gras_690x345_300x150_1.jpg" productUrl="mardi-gras.html">
+				<collections>
+					<collection id="C7"/>
+				</collections>
+				<hues>
+					<hue id="H4"/>
+				</hues>
+			</color_disabled>
+			<color_disabled id="57" name_eng="sparkling black" name="闪晶黑" sortOrder="57" image="DSP_Corian_Sparkling_Black_690x345_300x150.jpg" productUrl="sparkling-black.html">
+				<collections>
+					<collection id="C8"/>
+				</collections>
+				<hues>
+					<hue id="H4"/>
+				</hues>
+			</color_disabled>
+			<color id="58" name_eng="Midnight" name="黑麻" sortOrder="58" image="Corian_Midnight_690x325_300x150.jpg"  productUrl="midnight.html" >
+				<collections>
+					<collection id="C2"/>
+				</collections>
+				<hues>
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+				<ua id="UA5"></ua>
+				</usesandapplications>
+			</color>
+			<color id="59" name_eng="Black Quartz" name="黑石英" sortOrder="59" image="Corian_Black_Quartz_690x325_300x150.jpg"  productUrl="black-quartz.html" >
+				<collections>
+					<collection id="C3"/>
+				</collections>
+				<hues>
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+				</usesandapplications>
+			</color>
+			<color id="60" name_eng="Night Sky" name="夜空" sortOrder="60" image="Corian_Night_Sky_690x345_300x150.jpg"  productUrl="night-sky.html" >
+				<collections>
+					<collection id="C3"/>
+				</collections>
+				<hues>
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+				</usesandapplications>
+			</color>
+			<color id="61" name_eng="Nocturne" name="黑夜" sortOrder="61" image="Corian_Nocturne_690x345_300x150.jpg"  productUrl="nocturne.html" >
+				<collections>
+					<collection id="C7"/>
+				</collections>
+				<hues>
+					<hue id="H4"/>
+				</hues>
+				<usesandapplications>
+				</usesandapplications>
+			</color>
+		</Colors>				
+		
+		<collections>
+			<collection id="C1" displayName_eng="solid" displayName="净色系列" sysName="c1" descriptionTitle="净色系列" description=""/>
+			<collection id="C2" displayName_eng="Sierra" displayName="麻石系列" sysName="c2" descriptionTitle="麻石系列" description="" />
+			<collection id="C3" displayName_eng="summit" displayName="山峰系列" sysName="c3" descriptionTitle="山峰系列" description="" />
+			<collection id="C4" displayName_eng="Venaro" displayName="暗纹系列" sysName="c4" descriptionTitle="暗纹系列" description="" />
+			<collection id="C5" displayName_eng="summit magna" displayName="晶岩系列" sysName="c5" descriptionTitle="晶岩系列" description=""/>
+			<collection id="C6" displayName_eng="private collection" displayName="珍藏系列" sysName="c6" descriptionTitle="珍藏系列" description="" />
+			<collection id="C7" displayName_eng="designer portfolio" displayName="专业设计色彩系列" sysName="c7" descriptionTitle="专业设计色彩系列" description="" />
+			<collection id="C8" displayName_eng="sparklings/metallics" displayName="闪晶系列" sysName="c8" descriptionTitle="闪晶系列" description="" />
+			<collection id="C9" displayName_eng="Ripple" displayName="水纹系列"  sysName="c9" descriptionTitle="水纹系列" description="" />
+			<collection id="C10" displayName_eng="Translucent" displayName="透光系列"  sysName="c10" descriptionTitle="透光" description="" />
+		</collections>
+		<Hues>
+			<hue id="H0" displayName_eng="All Hues" displayName="所有色调" sysName="all-hues" />
+			<hue id="H1" displayName_eng="Beige" displayName="米色" sysName="beige" />
+			<hue id="H2" displayName_eng="Blue" displayName="蓝色" sysName="blue" />
+			<hue id="H3" displayName_eng="Brown, Purple" displayName="咖啡色，紫色" sysName="brown-purple" />
+			<hue id="H4" displayName_eng="Gray, Black" displayName="灰色，黑" sysName="gray-black" />
+			<hue id="H5" displayName_eng="Green" displayName="绿色" sysName="green" />
+			<hue id="H6" displayName_eng="Yellow, Orange Red" displayName="黄色，橙色，红色" sysName="yellow-red" />
+
+			<hue id="H7" displayName_eng="White" displayName="白色" sysName="white" />		
+			<hue id="H8" displayName_eng="Translucent" displayName="透光" sysName="Translucent" />	
+			
+		</Hues>
+		<PriceGroups>
+		</PriceGroups>
+		<SortOptions>
+			<sort id="0" displayName="浅色到深色" sysName="light-dark"></sort>
+			<sort id="1" displayName="深色到浅色" sysName="dark-light"></sort>
+		</SortOptions>
+		<UsesAndApplications>
+			<ua id="UA2" displayName="Corian® Application— Exterior Cladding &amp; Facades" collectionId="C2" pageURL="exterior-cladding-facades.html" />
+			<ua id="UA5" displayName="Corian® Application— Kitchen Worktops" collectionId="C1" pageURL="kitchen-worktops.html" />
+			<ua id="UA14" displayName="Corian Lighting" collectionId="C4" pageURL="lighting.html" />
+			<ua id="UA30" displayName="Corian® Technique —  Corian®  &amp; Light" collectionId="C4" pageURL="corian-light.html" />
+			<ua id="UA37" displayName="Corian® Technique — Corian®  Outdoors" collectionId="C2" pageURL="outdoors.html" />
+		</UsesAndApplications>
+	
+
+
+
+	<Configuration>
+		<PriceGroupsEnabled>false</PriceGroupsEnabled>
+		<ProductType>Corian</ProductType>
+		<ImageBasePath>/etc/designs/dupont/tools/bicolor_colorselector/source/images/</ImageBasePath>
+		<AllColorPageBasePath>../products/</AllColorPageBasePath>
+		<AllColorPageName>corian-all-colors.html</AllColorPageName>
+		<ColorPageBasePath>../products/corian-all-colours/sub-products/</ColorPageBasePath>
+	</Configuration>  
+
+	<Translations>
+		<ShowMeLabel value="显示:"></ShowMeLabel>
+		<ColorString value="颜色"></ColorString>
+		<AllColorsLabel value="所有 颜色"></AllColorsLabel>
+		<CollectionsLabel value="系列"></CollectionsLabel>
+		<ColorsCountLabel value="查看 {0} 颜色"></ColorsCountLabel>
+		<FilterLabel value=" 过滤:"></FilterLabel>
+		<SortLabel value="排序:"></SortLabel>
+		<NoResultsMsg value="没有匹配您选择的颜色。请尝试或查看不同的过滤器组合"></NoResultsMsg>
+		<NoResultsLinkText value="所有颜色."></NoResultsLinkText>
+		<BackToTopLink value="返回"></BackToTopLink>
+		<AllColorsPageLinkText value="所有颜色."></AllColorsPageLinkText>
+		<RelatedColorsTitle value="相关颜色"></RelatedColorsTitle>
+		<RelatedHuesLabel value="查看相关色调: "></RelatedHuesLabel>
+		<RecommendedColorsTitle value="推荐颜色"></RecommendedColorsTitle>
+		<RecommendedColorsLabel value="请参阅相关收藏集: "></RecommendedColorsLabel>
+        <AllPriceReset value="所有价格组"></AllPriceReset>
+        <HueReset value="所有色调"></HueReset>
+        <SortReset value="浅色到深色"></SortReset>
+	</Translations>
+</data>

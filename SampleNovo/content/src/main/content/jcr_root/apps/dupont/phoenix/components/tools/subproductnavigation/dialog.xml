@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog"
+    height="{Long}400">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs jcr:primaryType="cq:TabPanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <general  jcr:primaryType="cq:Widget"
+                    title = "General"
+                    xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <productsPath jcr:primaryType="cq:Widget"
+                            fieldLabel="Sub Products Parent Page"
+                            fieldDescription="Select the product page you want to show the subproducts for."
+                            name="./subproductspath"
+                            xtype="pathfield"/>
+                        <filtertags jcr:primaryType="cq:Widget"
+                            cls="cq-propsdialog-tags"
+                            fieldDescription="Select the tags to use as filters for the sub product pages. First tag will be primary filter. Second and third tag will be sub filters"
+                            fieldLabel="Filter Tags"
+                            name="./filters"
+                            xtype="tags" />
+                        <filterLabel jcr:primaryType="cq:Widget"
+                            fieldLabel="Filter By label"
+                            fieldDescription="The label for the filters"
+                            name="./filterslabel"
+                            xtype="textfield"/>
+                        <alternateSubProductsLabel jcr:primaryType="cq:Widget"
+                            fieldLabel="Alternate sub products label"
+                            fieldDescription="The label to show instead of 'products' in the product counter label and under the 'Show Me' menu. Default label is 'Products'.
+                                e.g: Put in 'Colors' to display All Colors under the Show Me option instead of All Products."
+                            name="./alternateproductslabel"
+                            xtype="textfield"/>
+                        <noSubProducts jcr:primaryType="cq:Widget"
+                            fieldLabel="No products message"
+                            fieldDescription="The message to show when any combination of filters return zero results"
+                            name="./noproductsmessage"
+                            xtype="textfield"/>
+                    </items>
+                </general>
+                <subfilters  jcr:primaryType="cq:Widget"
+                    title = "Sub Filters"
+                    xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <subfilter1DropDownText jcr:primaryType="cq:Widget"
+                            fieldLabel="Sub Filter 1 Default Dropdown text"
+                            fieldDescription="Sub filter will show at the top of the tool as dropdowns. Enter the default text to show for this sub filter."
+                            name="./subfilter1defaultdropdowntext"
+                            xtype="textfield"/>
+                        <subfilter2DropDownText jcr:primaryType="cq:Widget"
+                            fieldLabel="Sub Filter 2 Default Dropdown text"
+                            fieldDescription="Sub filter will show at the top of the tool as dropdowns. Enter the default text to show for this sub filter."
+                            name="./subfilter2defaultdropdowntext"
+                            xtype="textfield"/>
+                    </items>
+                </subfilters>
+                <sorting jcr:primaryType="cq:Widget"
+                    title = "Sorting"
+                    xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <sortEnabled jcr:primaryType="cq:Widget"
+                            fieldLabel="Enable Sort dropdown"
+                            inputValue="{Boolean}true"
+                            name="./enablesort"
+                            type="checkbox"
+                            xtype="selection"/>
+                        <sortLabel jcr:primaryType="cq:Widget"
+                            fieldLabel="Sort by label"
+                            fieldDescription="The sort option label. Default text is 'Sort By'"
+                            name="./sortlabel"
+                            xtype="textfield"/>
+                        <sortAscendingLabel jcr:primaryType="cq:Widget"
+                            fieldLabel="Ascending label"
+                            fieldDescription="The ascending sort option label. Default text is 'Ascending'"
+                            name="./ascendingLabel"
+                            xtype="textfield"/>
+                        <sortDescendingLabel jcr:primaryType="cq:Widget"
+                            fieldLabel="Descending label"
+                            fieldDescription="The descending sort option label. Default text is 'Descending'"
+                            name="./descendingLabel"
+                            xtype="textfield"/>
+                    </items>
+                </sorting>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

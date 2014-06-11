@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#CompositeField"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <socialmedia
+            jcr:primaryType="cq:Panel"
+            title="Manage Social Channels">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <socialmedialinks
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Press + to add more links"
+                    fieldLabel="Social Channels"
+                    name="/etc/designs/dupont/phoenix/socialmediachannels"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="nt:unstructured"
+                        xtype="managesocialchannel"/>
+                </socialmedialinks>
+            </items>
+        </socialmedia>
+    </items>
+</jcr:root>

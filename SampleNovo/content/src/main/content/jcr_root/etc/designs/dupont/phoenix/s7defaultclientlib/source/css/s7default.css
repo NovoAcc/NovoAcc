@@ -1,0 +1,860 @@
+.s7tooltip {
+    position: absolute;
+    padding: 5px;
+    line-height: 100%;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+    color: rgb(26, 26, 26);
+    font-family: Helvetica, sans-serif;
+    font-size: 11px;
+    border: 1px solid rgb(191, 191, 191);
+}
+.s7mutablevolume {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s7mutablevolume .s7mutebutton {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.s7mutablevolume .s7mutebutton[selected='true'][state='up'] {
+    background-image: url("../images/muteon_up.png");
+}
+.s7mutablevolume .s7mutebutton[selected='true'][state='over'] {
+    background-image: url("../images/muteon_over.png");
+}
+.s7mutablevolume .s7mutebutton[selected='true'][state='down'] {
+    background-image: url("../images/muteon_down.png");
+}
+.s7mutablevolume .s7mutebutton[selected='true'][state='disabled'] {
+    background-image: url("../images/muteon_disabled.png");
+}
+.s7mutablevolume .s7mutebutton[selected='false'][state='up'] {
+    background-image: url("../images/muteoff_up.png");
+}
+.s7mutablevolume .s7mutebutton[selected='false'][state='over'] {
+    background-image: url("../images/muteoff_over.png");
+}
+.s7mutablevolume .s7mutebutton[selected='false'][state='down'] {
+    background-image: url("../images/muteoff_down.png");
+}
+.s7mutablevolume .s7mutebutton[selected='false'][state='disabled'] {
+    background-image: url("../images/muteoff_disabled.png");
+}
+.s7mutablevolume .s7verticalvolume {
+    position: absolute;
+    width: 25px;
+    height: 80px;
+    left: 0px;
+    background-color: #ccc;
+}
+.s7mutablevolume .s7verticalvolume .s7track {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 5px;
+    height: 55px;
+    background-color: #737373;
+}
+.s7mutablevolume .s7verticalvolume .s7filledtrack {
+    position: absolute;
+    left: 0px;
+    width: 5px;
+    background-color: #ffffff;
+}
+.s7mutablevolume .s7verticalvolume .s7knob {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 6px;
+    left: 6px;
+    background-image: url("../images/volume_knob.png");
+}
+.s7verticalvolume {
+    position: absolute;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 25px;
+    height: 80px;
+    background-color: #ccc;
+}
+.s7verticalvolume .s7track {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 5px;
+    height: 55px;
+    background-color: #737373;
+}
+.s7verticalvolume .s7filledtrack {
+    position: absolute;
+    left: 0px;
+    width: 5px;
+    background-color: #ffffff;
+}
+.s7verticalvolume .s7knob {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 6px;
+    left: 6px;
+    background-image: url("../images/volume_knob.png");
+}
+.s7videoscrubber {
+    position: absolute;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 235px;
+    height: 26px;
+}
+.s7videoscrubber .s7videotime {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    left: 4px;
+    width: 46px;
+    height: 24px;
+    padding: 8px;
+    background-image: url("../images/scrub_time.png");
+    align: center;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+}
+.s7track,
+.s7trackloaded,
+.s7trackplayed {
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    top: 35%;
+    height: 31%;
+}
+.s7videoscrubber .s7track {
+    background-color: #555555;
+}
+.s7videoscrubber .s7trackloaded {
+    z-index: 100;
+    background-color: #666666;
+}
+.s7videoscrubber .s7trackplayed {
+    z-index: 200;
+    background-color: #999999;
+}
+.s7videoscrubber .s7knob {
+    position: absolute;
+    width: 9px;
+    top: 23%;
+    height: 54%;
+    background-image: none;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+.s7videotime {
+    position: absolute;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 4px;
+}
+.s7controlbar {
+    background-color: #a6a6a6;
+    position: relative;
+    width: 420px;
+    height: 30px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s7closedcaptionbutton {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+.s7closedcaptionbutton[selected='true'][state='up'] {
+    background-image: url("../images/closedcaptions_up.png");
+}
+.s7closedcaptionbutton[selected='true'][state='over'] {
+    background-image: url("../images/closedcaptions_over.png");
+}
+.s7closedcaptionbutton[selected='true'][state='down'] {
+    background-image: url("../images/closedcaptions_down.png");
+}
+.s7closedcaptionbutton[selected='true'][state='disabled'] {
+    background-image: url("../images/closedcaptions_disabled.png");
+}
+.s7closedcaptionbutton[selected='false'][state='up'] {
+    background-image: url("../images/closedcaptions_disabled.png");
+}
+.s7closedcaptionbutton[selected='false'][state='over'] {
+    background-image: url("../images/closedcaptions_over.png");
+}
+.s7closedcaptionbutton[selected='false'][state='down'] {
+    background-image: url("../images/closedcaptions_down.png");
+}
+.s7closedcaptionbutton[selected='false'][state='disabled'] {
+    background-image: url("../images/closedcaptions_disabled.png");
+}
+.s7thumbnailpagebutton {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+.s7thumbnailpagebutton[selected='true'][state='up'] {
+    background-image: url("../images/thumb_up.png");
+}
+.s7thumbnailpagebutton[selected='true'][state='over'] {
+    background-image: url("../images/thumb_over.png");
+}
+.s7thumbnailpagebutton[selected='true'][state='down'] {
+    background-image: url("../images/thumb_down.png");
+}
+.s7thumbnailpagebutton[selected='true'][state='disabled'] {
+    background-image: url("../images/thumb_disabled.png");
+}
+.s7thumbnailpagebutton[selected='false'][state='up'] {
+    background-image: url("../images/page_up.png");
+}
+.s7thumbnailpagebutton[selected='false'][state='over'] {
+    background-image: url("../images/page_over.png");
+}
+.s7thumbnailpagebutton[selected='false'][state='down'] {
+    background-image: url("../images/page_down.png");
+}
+.s7thumbnailpagebutton[selected='false'][state='disabled'] {
+    background-image: url("../images/page_disabled.png");
+}
+.s7scrubberswatchesbutton {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+.s7scrubberswatchesbutton[selected='true'][state='up'] {
+    background-image: url("../images/swatches_up.png");
+}
+.s7scrubberswatchesbutton[selected='true'][state='over'] {
+    background-image: url("../images/swatches_over.png");
+}
+.s7scrubberswatchesbutton[selected='true'][state='down'] {
+    background-image: url("../images/swatches_down.png");
+}
+.s7scrubberswatchesbutton[selected='true'][state='disabled'] {
+    background-image: url("../images/swatches_disabled.png");
+}
+.s7scrubberswatchesbutton[selected='false'][state='up'] {
+    background-image: url("../images/scrubber_up.png");
+}
+.s7scrubberswatchesbutton[selected='false'][state='over'] {
+    background-image: url("../images/scrubber_over.png");
+}
+.s7scrubberswatchesbutton[selected='false'][state='down'] {
+    background-image: url("../images/scrubber_down.png");
+}
+.s7scrubberswatchesbutton[selected='false'][state='disabled'] {
+    background-image: url("../images/scrubber_disabled.png");
+}
+.s7fullscreenbutton {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+.s7fullscreenbutton[selected='true'][state='up'] {
+    background-image: url("../images/fullscreen_up.png");
+}
+.s7fullscreenbutton[selected='true'][state='over'] {
+    background-image: url("../images/fullscreen_over.png");
+}
+.s7fullscreenbutton[selected='true'][state='down'] {
+    background-image: url("../images/fullscreen_down.png");
+}
+.s7fullscreenbutton[selected='true'][state='disabled'] {
+    background-image: url("../images/fullscreen_disabled.png");
+}
+.s7fullscreenbutton[selected='false'][state='up'] {
+    background-image: url("../images/minscreen_up.png");
+}
+.s7fullscreenbutton[selected='false'][state='over'] {
+    background-image: url("../images/minscreen_over.png");
+}
+.s7fullscreenbutton[selected='false'][state='down'] {
+    background-image: url("../images/minscreen_down.png");
+}
+.s7fullscreenbutton[selected='false'][state='disabled'] {
+    background-image: url("../images/minscreen_disabled.png");
+}
+.s7playpausebutton {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+.s7playpausebutton[selected='true'][state='up'] {
+    background-image: url("../images/play_up.png");
+}
+.s7playpausebutton[selected='true'][state='over'] {
+    background-image: url("../images/play_over.png");
+}
+.s7playpausebutton[selected='true'][state='down'] {
+    background-image: url("../images/play_down.png");
+}
+.s7playpausebutton[selected='true'][state='disabled'] {
+    background-image: url("../images/play_disabled.png");
+}
+.s7playpausebutton[selected='false'][state='up'] {
+    background-image: url("../images/pause_up.png");
+}
+.s7playpausebutton[selected='false'][state='over'] {
+    background-image: url("../images/pause_over.png");
+}
+.s7playpausebutton[selected='false'][state='down'] {
+    background-image: url("../images/pause_down.png");
+}
+.s7playpausebutton[selected='false'][state='disabled'][state='up'] {
+    background-image: url("../images/pause_disabled.png");
+}
+.s7playpausebutton[selected='true'][replay='true'][state='up'] {
+    background-image: url("../images/replay_up.png");
+}
+.s7playpausebutton[selected='true'][replay='true'][state='over'] {
+    background-image: url("../images/replay_over.png");
+}
+.s7playpausebutton[selected='true'][replay='true'][state='down'] {
+    background-image: url("../images/replay_down.png");
+}
+.s7playpausebutton[selected='true'][replay='true'][state='disabled'] {
+    background-image: url("../images/replay_disabled.png");
+}
+.s7scrolldownbutton {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s7scrolldownbutton[state='up'] {
+    background-image: url("../images/scroll_down_up.png");
+}
+.s7scrolldownbutton[state='over'] {
+    background-image: url("../images/scroll_down_over.png");
+}
+.s7scrolldownbutton[state='down'] {
+    background-image: url("../images/scroll_down_down.png");
+}
+.s7scrolldownbutton[state='disabled'] {
+    background-image: url("../images/scroll_down_disabled.png");
+}
+.s7scrolldownbutton {
+    width: 20px;
+    height: 20px;
+}
+.s7scrollupbutton {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s7scrollupbutton[state='up'] {
+    background-image: url("../images/scroll_up_up.png");
+}
+.s7scrollupbutton[state='over'] {
+    background-image: url("../images/scroll_up_over.png");
+}
+.s7scrollupbutton[state='down'] {
+    background-image: url("../images/scroll_up_down.png");
+}
+.s7scrollupbutton[state='disabled'] {
+    background-image: url("../images/scroll_up_disabled.png");
+}
+.s7scrollupbutton {
+    width: 20px;
+    height: 20px;
+}
+.s7scrollrightbutton {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s7scrollrightbutton[state='up'] {
+    background-image: url("../images/scroll_right_up.png");
+}
+.s7scrollrightbutton[state='over'] {
+    background-image: url("../images/scroll_right_over.png");
+}
+.s7scrollrightbutton[state='down'] {
+    background-image: url("../images/scroll_right_down.png");
+}
+.s7scrollrightbutton[state='disabled'] {
+    background-image: url("../images/scroll_right_disabled.png");
+}
+.s7scrollrightbutton {
+    width: 20px;
+    height: 20px;
+}
+.s7scrollleftbutton {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s7scrollleftbutton[state='up'] {
+    background-image: url("../images/scroll_left_up.png");
+}
+.s7scrollleftbutton[state='over'] {
+    background-image: url("../images/scroll_left_over.png");
+}
+.s7scrollleftbutton[state='down'] {
+    background-image: url("../images/scroll_left_down.png");
+}
+.s7scrollleftbutton[state='disabled'] {
+    background-image: url("../images/scroll_left_disabled.png");
+}
+.s7scrollleftbutton {
+    width: 20px;
+    height: 20px;
+}
+.s7panrightbutton {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s7panrightbutton[state='up'] {
+    background-image: url("../images/panright_up.png");
+}
+.s7panrightbutton[state='over'] {
+    background-image: url("../images/panright_over.png");
+}
+.s7panrightbutton[state='down'] {
+    background-image: url("../images/panright_down.png");
+}
+.s7panrightbutton[state='disabled'] {
+    background-image: url("../images/panright_disabled.png");
+}
+.s7panleftbutton {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s7panleftbutton[state='up'] {
+    background-image: url("../images/panleft_up.png");
+}
+.s7panleftbutton[state='over'] {
+    background-image: url("../images/panleft_over.png");
+}
+.s7panleftbutton[state='down'] {
+    background-image: url("../images/panleft_down.png");
+}
+.s7panleftbutton[state='disabled'] {
+    background-image: url("../images/panleft_disabled.png");
+}
+.s7pandownbutton {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s7pandownbutton[state='up'] {
+    background-image: url("../images/pandown_up.png");
+}
+.s7pandownbutton[state='over'] {
+    background-image: url("../images/pandown_over.png");
+}
+.s7pandownbutton[state='down'] {
+    background-image: url("../images/pandown_down.png");
+}
+.s7pandownbutton[state='disabled'] {
+    background-image: url("../images/pandown_disabled.png");
+}
+.s7panupbutton {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s7panupbutton[state='up'] {
+    background-image: url("../images/panup_up.png");
+}
+.s7panupbutton[state='over'] {
+    background-image: url("../images/panup_over.png");
+}
+.s7panupbutton[state='down'] {
+    background-image: url("../images/panup_down.png");
+}
+.s7panupbutton[state='disabled'] {
+    background-image: url("../images/panup_disabled.png");
+}
+.s7zoomoutbutton {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s7zoomoutbutton[state='up'] {
+    background-image: url("../images/zoomout_up.png");
+}
+.s7zoomoutbutton[state='over'] {
+    background-image: url("../images/zoomout_over.png");
+}
+.s7zoomoutbutton[state='down'] {
+    background-image: url("../images/zoomout_down.png");
+}
+.s7zoomoutbutton[state='disabled'] {
+    background-image: url("../images/zoomout_disabled.png");
+}
+.s7zoominbutton {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s7zoominbutton[state='up'] {
+    background-image: url("../images/zoomin_up.png");
+}
+.s7zoominbutton[state='over'] {
+    background-image: url("../images/zoomin_over.png");
+}
+.s7zoominbutton[state='down'] {
+    background-image: url("../images/zoomin_down.png");
+}
+.s7zoominbutton[state='disabled'] {
+    background-image: url("../images/zoomin_disabled.png");
+}
+.s7zoomresetbutton {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s7zoomresetbutton[state='up'] {
+    background-image: url("../images/zoomreset_up.png");
+}
+.s7zoomresetbutton[state='over'] {
+    background-image: url("../images/zoomreset_over.png");
+}
+.s7zoomresetbutton[state='down'] {
+    background-image: url("../images/zoomreset_down.png");
+}
+.s7zoomresetbutton[state='disabled'] {
+    background-image: url("../images/zoomreset_disabled.png");
+}
+.s7closebutton {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s7closebutton[state='up'] {
+    background-image: url("../images/close_up.png");
+}
+.s7closebutton[state='over'] {
+    background-image: url("../images/close_over.png");
+}
+.s7closebutton[state='down'] {
+    background-image: url("../images/close_down.png");
+}
+.s7closebutton[state='disabled'] {
+    background-image: url("../images/close_disabled.png");
+}
+.s7closebutton {
+    width: 32px;
+    height: 32px;
+}
+.s7zoomview {
+    position: absolute;
+    background-color: #FFFFFF;
+    user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s7zoomview[cursortype='default'] {
+    cursor: default;
+}
+.s7zoomview[cursortype='zoomin'] {
+    cursor: default;
+}
+.s7zoomview[cursortype='reset'] {
+    cursor: default;
+}
+.s7zoomview[cursortype='drag'] {
+    cursor: default;
+}
+.s7zoomview[cursortype='slide'] {
+    cursor: default;
+}
+.s7zoomview .s7iconeffect {
+    width: 120px;
+    height: 120px;
+    -webkit-transform: translateZ(0px);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.s7zoomview .s7iconeffect[media-type='standard'] {
+    background-image: url("../images/doubletapicon.png");
+}
+.s7zoomview .s7iconeffect[media-type='multitouch'] {
+    background-image: url("../images/zoomicon.png");
+}
+.s7swatches {
+    background-color: rgba(100, 100, 100, 0.2);
+    z-index: 0;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 500px;
+    height: 250px;
+}
+.s7swatches .s7thumbcell {
+    margin: 5px;
+}
+.s7swatches .s7thumb {
+    border: 1px solid transparent;
+    width: 75px;
+    height: 75px;
+}
+.s7swatches .s7thumb[state='selected'] {
+    border: 1px solid #FFFFFF;
+}
+.s7swatches .s7thumb .s7thumboverlay {
+    width: 100%;
+    height: 100%;
+}
+.s7swatches .s7thumb .s7thumboverlay[type='swatchset'] {
+    background-image: url("../images/asset_type_swatches.png");
+}
+.s7swatches .s7thumb .s7thumboverlay[type='spinset'] {
+    background-image: url("../images/asset_type_spin.png");
+}
+.s7swatches .s7thumb .s7thumboverlay[type='video'] {
+    background-image: url("../images/asset_type_video.png");
+}
+.s7swatches .s7label {
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+}
+.s7swatches .s7scrollleftbutton {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+}
+.s7swatches .s7scrollleftbutton[state='up'] {
+    background-image: url("../images/scroll_left_up.png");
+}
+.s7swatches .s7scrollleftbutton[state='over'] {
+    background-image: url("../images/scroll_left_over.png");
+}
+.s7swatches .s7scrollleftbutton[state='down'] {
+    background-image: url("../images/scroll_left_down.png");
+}
+.s7swatches .s7scrollleftbutton[state='disabled'] {
+    background-image: url("../images/scroll_left_disabled.png");
+}
+.s7swatches .s7scrollrightbutton {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+}
+.s7swatches .s7scrollrightbutton[state='up'] {
+    background-image: url("../images/scroll_right_up.png");
+}
+.s7swatches .s7scrollrightbutton[state='over'] {
+    background-image: url("../images/scroll_right_over.png");
+}
+.s7swatches .s7scrollrightbutton[state='down'] {
+    background-image: url("../images/scroll_right_down.png");
+}
+.s7swatches .s7scrollrightbutton[state='disabled'] {
+    background-image: url("../images/scroll_right_disabled.png");
+}
+.s7swatches .s7scrollupbutton {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+}
+.s7swatches .s7scrollupbutton[state='up'] {
+    background-image: url("../images/scroll_up_up.png");
+}
+.s7swatches .s7scrollupbutton[state='over'] {
+    background-image: url("../images/scroll_up_over.png");
+}
+.s7swatches .s7scrollupbutton[state='down'] {
+    background-image: url("../images/scroll_up_down.png");
+}
+.s7swatches .s7scrollupbutton[state='disabled'] {
+    background-image: url("../images/scroll_up_disabled.png");
+}
+.s7swatches .s7scrolldownbutton {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+}
+.s7swatches .s7scrolldownbutton[state='up'] {
+    background-image: url("../images/scroll_down_up.png");
+}
+.s7swatches .s7scrolldownbutton[state='over'] {
+    background-image: url("../images/scroll_down_over.png");
+}
+.s7swatches .s7scrolldownbutton[state='down'] {
+    background-image: url("../images/scroll_down_down.png");
+}
+.s7swatches .s7scrolldownbutton[state='disabled'] {
+    background-image: url("../images/scroll_down_disabled.png");
+}
+.s7videoplayer {
+    position: absolute;
+    background-color: #000000;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.s7videoplayer .s7iconeffect {
+    width: 120px;
+    height: 120px;
+    -webkit-transform: translateZ(0px);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.s7videoplayer .s7iconeffect[state='play'] {
+    background-image: url("../images/videoplayicon.png");
+}
+.s7videoplayer .s7iconeffect[state='replay'] {
+    background-image: url("../images/videoreplayicon.png");
+}
+.s7videoplayer .s7caption {
+    font-family: sans-serif;
+    font-size: large;
+    color: #ffffff;
+    -webkit-transform: translateZ(0px);
+    margin: 0 auto;
+}
+.s7container {
+    overflow: hidden;
+}
+.s7container[mode='fullscreen'] {
+    border: 0px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}

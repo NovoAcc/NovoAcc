@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- ====================================================================== -->
+    <!-- P A R E N T P R O J E C T D E S C R I P T I O N -->
+    <!-- ====================================================================== -->
+    <parent>
+        <groupId>com.dupont.phoenix</groupId>
+        <artifactId>phoenix-core</artifactId>
+		<version>2.7.21-SNAPSHOT</version>
+
+    </parent>
+
+    <!-- ====================================================================== -->
+    <!-- P R O J E C T D E S C R I P T I O N -->
+    <!-- ====================================================================== -->
+
+    <artifactId>phoenix-core-content</artifactId>
+    <name>CQ Phoenix Core Package</name>
+    <packaging>content-package</packaging>
+
+  <scm>
+    <url>https://github.com/PhoenixACN/phoenix_2.0_dev/tree/master/content</url>
+    <connection>scm:git:git:@github.com:PhoenixACN/phoenix_2.0_dev.git</connection>
+    <developerConnection>scm:git:git@github.com:PhoenixACN/phoenix_2.0_dev.git</developerConnection>
+     <tag>HEAD</tag>
+  </scm>
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/content/jcr_root</directory>
+                <filtering>false</filtering>
+                <excludes>
+                    <exclude>**/.vlt</exclude>
+                    <exclude>**/.vltignore</exclude>
+                </excludes>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <includeEmptyDirs>true</includeEmptyDirs>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>com.day.jcr.vault</groupId>
+                <artifactId>content-package-maven-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <group>phoenix-core</group>
+                     <properties>
+                        <!-- <acHandling>overwrite</acHandling> -->
+                        <createdBy>AdobeConsulting</createdBy>
+                    </properties>
+					<filters>
+						<filter>
+                            <root>/apps/dupont/phoenix/components</root>
+                        </filter>
+                        <filter>
+                            <root>/apps/dupont/phoenix/config.author</root>
+                        </filter>
+                        <filter>
+                            <root>/apps/dupont/phoenix/config.publish</root>
+                        </filter>
+                        <filter>
+                            <root>/apps/dupont/phoenix/config.author.dev</root>
+                        </filter>
+                        <filter>
+                            <root>/apps/dupont/phoenix/config.author.preprod</root>
+                        </filter>
+                        <filter>
+                            <root>/apps/dupont/phoenix/config.author.prod</root>
+                        </filter>
+                        <filter>
+                            <root>/apps/dupont/phoenix/config.author.qa</root>
+                        </filter>
+                        <filter>
+                            <root>/apps/dupont/phoenix/config.publish.dev</root>
+                        </filter>
+                        <filter>
+                            <root>/apps/dupont/phoenix/config.publish.prod</root>
+                        </filter>
+                        <filter>
+                            <root>/apps/dupont/phoenix/i18n</root>
+                        </filter>
+                        <filter>
+                            <root>/apps/dupont/phoenix/install</root>
+                        </filter>
+                        <filter>
+                            <root>/apps/dupont/phoenix/templates</root>
+                        </filter>
+                        <filter>
+                            <root>/apps/dupont/phoenix/widgets</root>
+                        </filter>
+                        <filter>
+                            <root>/apps/foundation</root>
+                        </filter>
+                        <filter>
+                            <root>/apps/wcm</root>
+                        </filter>
+                         <filter>
+                            <root>/apps/cq</root>
+                        </filter>
+                        <filter>
+							<root>/etc/designs/dupont</root>
+						</filter>
+						<filter>
+							<root>/etc/languages</root>
+						</filter>
+						<filter>
+							<root>/etc/DuPontTools</root>
+						</filter>
+						<filter>
+							<root>/etc/clientcontext/default</root>
+						</filter>
+						<filter>
+							<root>/etc/workflow/models/media-upgrade-workflow</root>
+						</filter>
+						<filter>
+							<root>/etc/map.publish.prod</root>
+						</filter>
+						<filter>
+							<root>/etc/msm/rolloutconfigs/default</root>
+						</filter>
+						<filter>
+							<root>/etc/msm/rolloutconfigs/relative-link-enhancement</root>
+						</filter>
+						<!--  For the time we are using merge filter as we dont want to re-enter password
+						However need to revisit if the properties are getting added/deleted in the production more than other env
+						then mode needs to be replaced
+						-->
+						<filter>
+							<root>/etc/cloudservices/sitecatalyst/global-config/</root>
+							<mode>merge</mode> 
+						</filter>
+                        <filter>
+							<root>/etc/cloudservices/sitecatalyst/global-config/global-framework</root>
+							<mode>update</mode> 
+						</filter>
+						<filter>
+							<root>/etc/dupont/phoenix/utilities/</root>
+						</filter>
+						<filter>
+							<root>/etc/dupont/phoenix/videoplaylists/</root>
+						</filter>
+                        <filter>
+                            <root>/apps/dupont/phoenixadmin/templates</root>
+                        </filter>
+                        <filter>
+                            <root>/apps/dupont/phoenixadmin/components</root>
+                        </filter>
+                         <filter>
+                            <root>/apps/sling/servlet/errorhandler/</root>
+                        </filter>
+					</filters>
+                    <embeddeds>
+                        <embedded>
+                            <groupId>${project.groupId}</groupId>
+                            <artifactId>phoenix-core-bundle</artifactId>
+                            <target>/apps/dupont/phoenix/install</target>
+                        </embedded>
+                    </embeddeds>
+                   <userId>${crx.userId}</userId>
+                   <password>${crx.password}</password>
+                    <failOnError>true</failOnError>
+                    <targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>phoenix-core-bundle</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+    <profiles>
+        <profile>
+            <id>autoInstallPackage</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.day.jcr.vault</groupId>
+                        <artifactId>content-package-maven-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>install-content-package</id>
+                                <phase>install</phase>
+                                <goals>
+                                    <goal>install</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

@@ -1,0 +1,26 @@
+/* GLOBAL NAVIGATION COLUMNS */
+
+.menu-dropdown .sub_menu li {
+  float:left;
+  margin-right:9px;
+}
+.header-top-bar {
+  display:block;
+}
+
+#multimedia-container .s7videoplayer, #videoplayerid .s7videoplayer {
+    z-index: 1200;
+}
+
+#multimedia-container .s7controlbar, #videoplayerid .s7controlbar  {
+    z-index: 1201;
+}
+
+#bg-container,
+#main-container {
+  overflow-x: visible;
+}
+
+.header-top-bar-nav .menu-container {
+    height: 50px;
+}

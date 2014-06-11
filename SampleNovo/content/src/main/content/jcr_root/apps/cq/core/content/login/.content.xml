@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[mix:lockable,rep:AccessControllable,sling:VanityPath]"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Adobe® CQ5 - Sign In"
+    sling:resourceType="cq/core/components/login">
+    <login.js/>
+    <login.css/>
+    <login_ie.css/>
+    <rep:policy/>
+    <bg
+        jcr:mixinTypes="[mix:lockable]"
+        jcr:primaryType="nt:unstructured">
+        <background.png/>
+        <bg-ipad-landscape.jpg/>
+        <bg-ipad-portrait.jpg/>
+        <bg-iphone-landscape.png/>
+        <bg-iphone-portrait.png/>
+        <bg-iphone4-landscape.jpg/>
+        <bg-iphone4-portrait.jpg/>
+        <bg-mask.png/>
+    </bg>
+    <images
+        jcr:mixinTypes="[mix:lockable]"
+        jcr:primaryType="nt:unstructured">
+        <adobe_tag.png/>
+        <box-bg-shadow.png/>
+        <btn-overlay.png/>
+        <input-bg-small.png/>
+        <input-bg.png/>
+        <productclaim-small.png/>
+        <productclaim.png/>
+        <productlogo.png/>
+    </images>
+    <login_mobile.css/>
+    <favicon_0.ico/>
+</jcr:root>

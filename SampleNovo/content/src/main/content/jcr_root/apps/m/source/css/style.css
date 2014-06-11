@@ -1,0 +1,209 @@
+                   * {
+                                -webkit-user-select: none;                          /* prevent copy paste for all elements */
+                                -webkit-touch-callout: none;      /* Disabling the callout */
+                                -webkit-text-size-adjust: none;
+                                }
+
+.s7container {
+}
+
+.s7videoplayer .videoPreview {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                margin: 0 0 0 0;
+                width: 550px;
+                height:300px;
+}
+
+.iconContainer {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin: -60px 0 0 -60px;
+                z-index: 9999;
+}
+
+
+
+.s7swatches {
+                -moz-box-shadow: inset 0px 0px 10px #888;
+                -webkit-box-shadow: inset 0px 0px 10px #888;
+                box-shadow: inset 0px 0px 10px #888;
+
+                border-style:solid;
+                border-width: 1px;
+                bottom: 0px;
+                width: 350px;
+                height: 120px;
+                background-color: rgba(200, 200, 200, 0.5);
+                z-index: 9999;
+}
+
+.s7swatches .s7thumb { 
+                width: 50px;
+                height: 50px;
+                border-radius: 0px;
+}
+
+.s7swatches .s7thumb[state="default"] { 
+                border-radius: 0px;
+}
+
+.s7swatches .s7thumb[state="selected"] {
+                border-radius: 0px;
+                box-shadow: inset 0px 0px 0px 2px #3366CC;
+                -webkit-box-shadow: inset 0px 0px 0px 2px rgba(51, 102, 204, 1);
+}
+
+.s7spinview{
+                background-color: #FFF;
+                opacity: 1;
+                position: absolute;
+}
+
+
+/* IconEffect */
+.s7zoomview .s7iconeffect {       
+                width: 120px;     
+                height: 120px;   
+                background-repeat: no-repeat;                
+                background-position: center; 
+}
+
+
+/**
+* Swatches scroll left button  
+ */
+.s7swatches .s7scrollleftbutton {
+                display:block;
+                position: absolute;          
+                top: 0px;
+                left: 0px;
+                width: 40px;
+                height: 20px;
+                z-index: 5000;
+}
+
+/**
+* Swatches scroll right button  
+ */
+.s7swatches .s7scrollrightbutton {
+                display:block;
+                position: absolute;          
+                top: 0px;
+                left: 0px;
+                width: 40px;
+                height: 20px;
+                z-index: 5000;
+}
+
+/**
+* Swatches scroll up button  
+ */
+.s7swatches .s7scrollupbutton {
+                display:block;
+                position: absolute;          
+                top: 0px;
+                left: 0px;
+                width: 20px;
+                height: 20px;
+                z-index: 5000;
+}
+
+/**
+* Swatches scroll down button  
+ */
+.s7swatches .s7scrolldownbutton {
+                display:block;
+                position: absolute;          
+                top: 0px;
+                left: 0px;
+                width: 20px;
+                height: 20px;
+                z-index: 5000;
+}
+
+
+.mixedmedia {
+
+    list-style: none outside none;
+}
+.mixedmedia li{
+    float: left;
+    margin: 0 8px 0 0;
+
+        }
+
+
+.mobile-mixedmedia
+ {
+
+ display:none;           
+ }
+.buttons{
+    display:none;
+}
+    .s7container1{
+display: none;
+
+}
+
+
+/* Mobile Landscape */
+@media screen and (max-width:600px), screen and (max-device-width:600px){
+
+.imageset
+{
+    display:none;
+
+}
+.mixedmedia{
+
+display:none !important;
+ }
+
+.mobile-mixedmedia
+ {
+
+ display:block; 
+ }
+
+
+.s7swatches {
+
+    display:none !important;
+}
+
+
+.buttons {
+display:block !important;
+}
+
+}
+
+  /* Mobile Landscape */
+@media screen and (max-width:480px), screen and (max-device-width:480px){
+
+.imageset
+{
+    display:none;
+}
+.mixedmedia{
+
+display:none !important;
+    }
+.mobile-mixedmedia
+ {
+
+ display:block;           
+ }
+.s7swatches {
+
+    display:none;
+}
+.buttons {
+display:block !important;
+}
+
+}        

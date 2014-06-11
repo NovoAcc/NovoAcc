@@ -1,0 +1,1492 @@
+/* TEMPORARY CSS FILE FOR THE .- SCENE7 MIXED MEDIA VIDEO */
+
+/*DESKTOP CSS GOES HERE  *** NO MEDIA QUERY REQUIRED FOR DESKTOP *** */
+
+/* SDKS7 Video Player Component */
+.videoplayer .video-detail {
+  float: left;
+  margin: 30px 0 20px;
+  width:100%;
+}
+
+#videoplayerid {
+	max-width: 715px;
+}
+
+.videoplayer .video-detail object {
+  float:left;
+  width:100%;
+}
+
+.videoplayer #s7VideoElement{
+}
+
+.videoplayer .s7container { 
+  margin-bottom: 18px;
+  overflow: visible; 
+}
+
+.videoplayer .s7videoplayer {
+    opacity: 1;
+    position: absolute;
+}
+
+/*.videoplayer .s7iconeffect {
+  left:39% !important;
+}*/
+
+.videoplayer #video_detail_desc {
+  float: left;
+  font-size:12px;
+  line-height:15px;
+  text-align:justify;
+  width:561px;
+}
+
+.videoplayer #video_detail_Title {
+  float: left;
+  font-size:12px;
+  line-height:15px;
+  text-align:justify;
+  width: 561px;
+}
+
+.videoplayer .s7controlbar {
+  background-color: #404040;
+  border-radius: 10px 10px 10px 10px;
+  top: 85%;
+  height: 40px;
+  margin: 0 auto;
+  position: relative;
+  width: 466px;
+  /*width: 80%;*/
+}
+
+.videoplayer .s7mutablevolume {
+  border-left: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgba(0,0,0,.2);
+  border-right: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  height: 40px;
+  float: left;
+  position: relative;
+  width: 10%;
+}
+
+.videoplayer .s7mutebutton {
+  width:100%;
+}
+
+.videoplayer .s7mutablevolume .s7verticalvolume {
+  background: #404040;
+  width:100%;
+}
+
+.videoplayer .s7mutablevolume .s7mutebutton[selected='false'][state='up'] {
+  background: url('../images/muteoff_up.png') no-repeat center;
+  height: 100% !important;
+  width:100% !important;
+}
+
+.videoplayer .s7mutablevolume .s7mutebutton[selected='false'][state='over'],
+.videoplayer .s7mutablevolume .s7mutebutton[selected='false'][state='down']{
+  background: url('../images/muteoff_over.png') no-repeat center;
+  height: 100% !important;
+  width:100% !important;
+}
+
+.videoplayer .s7mutablevolume .s7mutebutton[selected='true'][state='over'],
+.videoplayer .s7mutablevolume .s7mutebutton[selected='true'][state='up'] {
+  background: url('../images/muteon_up.png') no-repeat center;
+}
+
+.videoplayer .s7fullscreenbutton[selected='false'][state='up'] {
+  background: url('../images/fullscreen_up.png') no-repeat center;
+  height: 40px;
+  top: 0;
+}
+
+.videoplayer .s7fullscreenbutton[selected='false'][state='down'],
+.videoplayer .s7fullscreenbutton[selected='false'][state='over'] {
+  background: url('../images/fullscreen_over.png') no-repeat center;
+  height: 40px;
+  top: 0;
+}
+
+.videoplayer .s7fullscreenbutton[selected='true'][state='up'] {
+  background: url('../images/minscreen_up.png') no-repeat center;
+}
+
+.videoplayer .s7fullscreenbutton[selected='true'][state='down'],
+.videoplayer .s7fullscreenbutton[selected='true'][state='over'] {
+  background: url('../images/minscreen_over.png') no-repeat center;
+}
+
+.videoplayer .s7playpausebutton[selected='false'][state='up'] {
+  background: url('../images/pause_up.png') no-repeat center;
+}
+
+.videoplayer .s7playpausebutton[selected='false'][state='down'],
+.videoplayer .s7playpausebutton[selected='false'][state='over'] {
+  background: url('../images/pause_over.png') no-repeat center;
+}
+
+.videoplayer .s7playpausebutton[selected='true'][state='up'] {
+  background: url('../images/play_up.png') no-repeat center;
+}
+
+.videoplayer .s7playpausebutton[selected='true'][state='down'],
+.videoplayer .s7playpausebutton[selected='true'][state='over'] {
+  background: url('../images/play_over.png') no-repeat center;
+}
+
+.videoplayer .s7videotime {
+  color: #999999;
+  border-right: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  float: left;
+  font-size: 10px;
+  height: 32px;
+  line-height: 33px;
+  padding-left: 10px;
+  position: static;
+  width: 15%;
+}
+
+.videoplayer .s7playpausebutton {
+  border-right: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  float: left;
+  height:40px;
+  position: static;
+  width:10%;
+}
+
+.videoplayer .s7track {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  left: 21px !important;
+  margin-top: 17px;
+  position: static;
+  height: 6px;
+}
+
+.videoplayer .s7mutablevolume .s7verticalvolume .s7knob {
+  left: 17px !important;
+}
+
+.videoplayer .s7mutablevolume .s7verticalvolume .s7track {
+  top:9px;
+}
+
+.videoplayer .s7trackloaded, .s7trackplayed {
+  height: 6px;
+  left: 20px;
+  top:17px;
+}
+
+.videoplayer .s7trackplayed {
+  background: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.videoplayer .s7videoscrubber {
+  border-left: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgba(0,0,0,.2);
+  float: left;
+  height: 40px;
+  padding-left: 20px;
+  position: relative;
+  width:45%;
+}
+
+.videoplayer .s7fullscreenbutton {
+  border-left: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgba(0,0,0,.2);
+  float: left;
+  height: 100%;
+  position: static;
+  width: 10%;
+}
+
+.videoplayer .s7videoscrubber .s7knob {
+  background: transparent;
+  width: 1px;
+}
+
+/* SDKS7 Video Player Component End */
+
+/* ===========================================================================================================
+
+Full bleed video player Component START
+============================================================================================================= */
+.fullbleedvideo .video-detail {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width:100%;
+    height:100%;
+}
+
+.fullbleedvideo .video-detail object {
+  float:left;
+  width:100%;
+}
+
+.fullbleedvideo #s7VideoElement{
+}
+
+.fullbleedvideo .s7container { 
+  margin-bottom: 18px;
+  overflow: visible; 
+}
+
+.fullbleedvideo .s7videoplayer {
+    opacity: 1;
+    position: absolute;
+}
+
+.fullbleedvideo #videoplayerid {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+/*.fullbleedvideo .s7iconeffect {
+  left:39% !important;
+}*/
+
+.fullbleedvideo #video_detail_desc {
+  float: left;
+  font-size:12px;
+  line-height:15px;
+  text-align:justify;
+  width:100%;
+}
+
+.fullbleedvideo #video_detail_Title {
+  float: left;
+  font-size:12px;
+  line-height:15px;
+  text-align:justify;
+  width: 100%;
+}
+
+.fullbleedvideo .s7controlbar {
+  background-color: #404040;
+  border-radius: 10px 10px 10px 10px;
+  top: 85%;
+  height: 40px;
+  margin: 0 auto;
+  position: relative;
+  width: 466px;
+  /*width: 80%;*/
+}
+
+.fullbleedvideo .s7mutablevolume {
+  border-left: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgba(0,0,0,.2);
+  border-right: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  height: 40px;
+  float: left;
+  position: relative;
+  width: 10%;
+}
+
+.fullbleedvideo .s7mutebutton {
+  width:100%;
+}
+
+.fullbleedvideo .s7mutablevolume .s7verticalvolume {
+  background: #404040;
+  width:100%;
+}
+
+.fullbleedvideo .s7mutablevolume .s7mutebutton[selected='false'][state='up'] {
+  background: url('../images/muteoff_up.png') no-repeat center;
+  height: 100% !important;
+  width:100% !important;
+}
+
+.fullbleedvideo .s7mutablevolume .s7mutebutton[selected='false'][state='over'],
+.fullbleedvideo .s7mutablevolume .s7mutebutton[selected='false'][state='down']{
+  background: url('../images/muteoff_over.png') no-repeat center;
+  height: 100% !important;
+  width:100% !important;
+}
+
+.fullbleedvideo .s7mutablevolume .s7mutebutton[selected='true'][state='over'],
+.fullbleedvideo .s7mutablevolume .s7mutebutton[selected='true'][state='up'] {
+  background: url('../images/muteon_up.png') no-repeat center;
+}
+
+.fullbleedvideo .s7fullscreenbutton[selected='false'][state='up'] {
+  background: url('../images/fullscreen_up.png') no-repeat center;
+  height: 40px;
+  top: 0;
+}
+
+.fullbleedvideo .s7fullscreenbutton[selected='false'][state='down'],
+.fullbleedvideo .s7fullscreenbutton[selected='false'][state='over'] {
+  background: url('../images/fullscreen_over.png') no-repeat center;
+  height: 40px;
+  top: 0;
+}
+
+.fullbleedvideo .s7fullscreenbutton[selected='true'][state='up'] {
+  background: url('../images/minscreen_up.png') no-repeat center;
+}
+
+.fullbleedvideo .s7fullscreenbutton[selected='true'][state='down'],
+.fullbleedvideo .s7fullscreenbutton[selected='true'][state='over'] {
+  background: url('../images/minscreen_over.png') no-repeat center;
+}
+
+.fullbleedvideo .s7playpausebutton[selected='false'][state='up'] {
+  background: url('../images/pause_up.png') no-repeat center;
+}
+
+.fullbleedvideo .s7playpausebutton[selected='false'][state='down'],
+.fullbleedvideo .s7playpausebutton[selected='false'][state='over'] {
+  background: url('../images/pause_over.png') no-repeat center;
+}
+
+.fullbleedvideo .s7playpausebutton[selected='true'][state='up'] {
+  background: url('../images/play_up.png') no-repeat center;
+}
+
+.fullbleedvideo .s7playpausebutton[selected='true'][state='down'],
+.fullbleedvideo .s7playpausebutton[selected='true'][state='over'] {
+  background: url('../images/play_over.png') no-repeat center;
+}
+
+.fullbleedvideo .s7videotime {
+  color: #999999;
+  border-right: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  float: left;
+  font-size: 10px;
+  height: 32px;
+  line-height: 33px;
+  padding-left: 10px;
+  position: static;
+  width: 15%;
+}
+
+.fullbleedvideo .s7playpausebutton {
+  border-right: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  float: left;
+  height:40px;
+  position: static;
+  width:10%;
+}
+
+.fullbleedvideo .s7track {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  left: 21px !important;
+  margin-top: 17px;
+  position: static;
+  height: 6px;
+}
+
+.fullbleedvideo .s7mutablevolume .s7verticalvolume .s7knob {
+  left: 17px !important;
+}
+
+.fullbleedvideo .s7mutablevolume .s7verticalvolume .s7track {
+  top:9px;
+}
+
+.fullbleedvideo .s7trackloaded, .s7trackplayed {
+  height: 6px;
+  left: 20px;
+  top:17px;
+}
+
+.fullbleedvideo .s7trackplayed {
+  background: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.fullbleedvideo .s7videoscrubber {
+  border-left: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgba(0,0,0,.2);
+  float: left;
+  height: 40px;
+  padding-left: 20px;
+  position: relative;
+  width:45%;
+}
+
+.fullbleedvideo .s7fullscreenbutton {
+  border-left: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgba(0,0,0,.2);
+  float: left;
+  height: 100%;
+  position: static;
+  width: 10%;
+}
+
+.fullbleedvideo .s7videoscrubber .s7knob {
+  background: transparent;
+  width: 1px;
+}
+
+
+/* Full Bleed Video Player Component End */
+
+/* ===========================================================================================================
+
+	M.30.0 - Video LightBox Module - START
+============================================================================================================= */
+/* Video Plauer */
+#fancybox-content .s7videoviewer .s7videoplayer {
+    position: static !important;
+}
+
+/* General Styles */
+#fancybox-content .s7videoviewer .s7controlbar {
+    background: #404040;
+    border-radius: 10px 10px 10px 10px;
+    bottom: 50px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    width: 466px;
+    display: none;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7track {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    left: 20px !important;
+    margin-top: 17px;
+    position: static;
+    height: 6px;
+    width: 100% !important;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7trackloaded, 
+#fancybox-content .s7videoviewer .s7controlbar .s7trackplayed {
+    height: 6px;
+    left: 20px;
+    top:17px;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7trackplayed {
+    background: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* Play button */
+#fancybox-content .s7videoviewer .s7controlbar .s7playpausebutton {
+    border-right: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    float: left;
+    height:40px;
+    position: static;
+    width:10%;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7playpausebutton[selected='false'][state='up'] {
+    background: url('../images/pause_up.png') no-repeat center;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7playpausebutton[selected='false'][state='down'],
+#fancybox-content .s7videoviewer .s7controlbar .s7playpausebutton[selected='false'][state='over'] {
+    background: url('../images/pause_over.png') no-repeat center;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7playpausebutton[selected='true'][state='up'] {
+    background: url('../images/play_up.png') no-repeat center;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7playpausebutton[selected='true'][state='down'],
+#fancybox-content .s7videoviewer .s7controlbar .s7playpausebutton[selected='true'][state='over'] {
+    background: url('../images/play_over.png') no-repeat center;
+}
+
+/* Video Scrubber */
+#fancybox-content .s7videoviewer .s7controlbar .s7videoscrubber {
+    border-left: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgba(0,0,0,.2);
+    float: left;
+    height: 40px;
+    padding-left: 20px;
+    position: relative;
+    width:215px !important;
+    background: transparent;
+    top:0;
+    left:0;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7videoscrubber .s7knob {
+    background: transparent;
+    width: 1px;
+}
+
+/* Video Time */
+#fancybox-content .s7videoviewer .s7controlbar .s7videotime {
+    color: #999999;
+    border-right: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    float: left;
+    font-size: 10px;
+    height: 32px;
+    line-height: 33px;
+    padding-left: 10px;
+    position: static;
+    width: 15%;
+}
+
+
+/* Volume */
+#fancybox-content .s7videoviewer .s7controlbar .s7mutablevolume {
+    border-left: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgba(0,0,0,.2);
+    border-right: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    height: 40px;
+    float: left;
+    position: relative;
+    width: 10%;
+    top: 0;
+    right: 0;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7mutebutton {
+    height: 100% !important;
+    width:100% !important;    
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7mutablevolume .s7mutebutton[selected='false'][state='up'] {
+    background: url('../images/muteoff_up.png') no-repeat center;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7mutablevolume .s7mutebutton[selected='false'][state='over'],
+#fancybox-content .s7videoviewer .s7controlbar .s7mutablevolume .s7mutebutton[selected='false'][state='down']{
+    background: url('../images/muteoff_over.png') no-repeat center;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7mutablevolume .s7mutebutton[selected='true'][state='up'] {
+    background: url('../images/muteon_up.png') no-repeat center;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7mutablevolume .s7mutebutton[selected='true'][state='over'],
+#fancybox-content .s7videoviewer .s7controlbar .s7mutablevolume .s7mutebutton[selected='true'][state='down'] {
+    background: url('../images/muteon_over.png') no-repeat center;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7mutablevolume .s7verticalvolume {
+    background: #404040;
+    width:100%;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7mutablevolume .s7verticalvolume .s7knob {
+    left: 17px !important;
+    position: absolute;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7mutablevolume .s7verticalvolume .s7track {
+    top:0;
+    position:absolute;
+    width: 8px !important;
+    height: 66px;
+    background: #737373;
+}
+
+/* Full Screen */
+#fancybox-content .s7videoviewer .s7controlbar .s7fullscreenbutton {
+    border-left: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgba(0,0,0,.2);
+    float: left;
+    height: 100%;
+    position: static;
+    width: 10%;
+    /* hide the button. Temporary fix for DPPHX-2098. No full screen button for ANY browser. 
+    If IE can't have a full screen button, NO ONE can have one. */
+    display: none;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7fullscreenbutton[selected='false'][state='up'] {
+    background: url('../images/fullscreen_up.png') no-repeat center;
+    height: 40px;
+    top: 0;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7fullscreenbutton[selected='false'][state='down'],
+#fancybox-content .s7videoviewer .s7controlbar .s7fullscreenbutton[selected='false'][state='over'] {
+    background: url('../images/fullscreen_over.png') no-repeat center;
+    height: 40px;
+    top: 0;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7fullscreenbutton[selected='true'][state='up'] {
+    background: url('../images/minscreen_up.png') no-repeat center;
+}
+
+#fancybox-content .s7videoviewer .s7controlbar .s7fullscreenbutton[selected='true'][state='down'],
+#fancybox-content .s7videoviewer .s7controlbar .s7fullscreenbutton[selected='true'][state='over'] {
+    background: url('../images/minscreen_over.png') no-repeat center;
+}
+
+
+/*
+div#html5-elem-data-box{
+    height: auto !important;
+}
+div#html5-elem-data-box #html5-text {
+  font-family: 'Meta-NormalNormal' !important;
+  font-size: 1.125em !important;
+  color: #474747 !important;
+  line-height: 1.08333em;
+  padding: 0 25px 0 0 !important;
+  display: inline !important;
+  width : auto !important;
+  float:none!important;
+}
+
+div#html5-elem-data-box #short_description {
+  padding: 10px 8px 20px;
+  color: #6e6e6e;
+  font-size: .75em;
+  line-height: 1.8em;
+}
+
+div#html5-lightbox-overlay{
+    opacity: 0.6 !important;
+}
+
+#html5-close{
+	margin-right: -1.7% !important;
+	margin-top: -62.3%;
+}
+*/
+
+/* M.30.0 - Video LightBox Module - END */
+
+/* ============================================================================================================
+    MIXED MEDIA GALLERY STYLES
+============================================================================================================ */
+.mediagallery {
+    /* DO NOT USE. Will take up space if media gallery is empty */
+}
+
+#multimedia-container {
+    position: relative;
+    padding: 37px 6.3636364% 27px;
+    width: 87.272727%;
+    margin-bottom: 40px;
+    min-height: 450px;
+}
+
+#multimedia-container #s7mixedmedia {
+    width: 630px;
+    height: 355px;
+    position: relative;
+}
+
+#multimedia-container .topmenu {
+    padding:10px 0 1px;
+    width:100%;
+    font-family: ff-meta-web-pro, Segoe UI, Arial, sans-serif;
+    height:auto;
+    text-transform:uppercase;
+}
+
+#multimedia-container h2 {
+    color: #808080;
+    font-family: ff-meta-web-pro, Segoe UI, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/* UL */
+.mixedmedia {
+    list-style: none outside none;
+}
+
+/* Gallery Menu LI's */
+#multimedia-container .mixedmedia li {
+    color: #808080;
+    cursor: pointer;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 20px;
+    text-transform: uppercase;
+    margin: 0 8px 18px 0;
+}
+
+#multimedia-container .mixedmedia li a {
+    text-decoration:none;
+    float:left;
+    color:#9a9a9a;
+}
+
+#multimedia-container .mixedmedia li a:hover {
+    color:#C6001E;
+}
+
+#multimedia-container .mixedmedia .active a{
+    color:#C6001E;
+    text-decoration:underline;
+}
+
+/* Responsive Menu Buttons */
+.mobile-mixedmedia {
+    display: none;
+}
+
+/* S7Container >> Has inherited properties from the S7 Video Player */
+#multimedia-container .s7container {
+    float: left;
+    top:5px;
+}
+
+/***** MMG Zoom View ******/
+/*
+#multimedia-container .s7container .s7zoomview {
+    width: 630px;
+    height: 315px;
+    float: left;
+}
+*/
+
+/* IconEffect */
+#multimedia-container .s7container .s7zoomview .s7iconeffect {
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/***** MMG VIDEO PLAYER *****/
+/*
+#multimedia-container .s7videoplayer {
+    float: left;
+    width: 630px !important;
+    height: 355px !important;
+}
+*/
+
+#multimedia-container .s7controlbar {
+  background-color: #404040;
+  border-radius: 10px 10px 10px 10px;
+  top: 85%;
+  left: 0;
+  height: 40px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Play button Uncomment this what you need should you override any style */
+#multimedia-container .s7controlbar .s7playpausebutton[selected='false'][state='up'] {
+    background: url('../images/pause_up.png') no-repeat center;
+}
+
+#multimedia-container .s7controlbar .s7playpausebutton[selected='false'][state='down'],
+#multimedia-container .s7controlbar .s7playpausebutton[selected='false'][state='over'] {
+    background: url('../images/pause_over.png') no-repeat center;
+}
+
+#multimedia-container .s7controlbar .s7playpausebutton[selected='true'][state='up'] {
+    background: url('../images/play_up.png') no-repeat center;
+}
+
+#multimedia-container .s7controlbar .s7playpausebutton[selected='true'][state='down'],
+#multimedia-container .s7controlbar .s7playpausebutton[selected='true'][state='over'] {
+    background: url('../images/play_over.png') no-repeat center;
+}
+
+#multimedia-container .s7controlbar .s7playpausebutton {
+    border-right: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    float: left;
+    height:40px;
+    position: static;
+    width:10%;
+}
+
+/* Video Scrubber */
+#multimedia-container .s7controlbar .s7videoscrubber {
+    border-left: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgba(0,0,0,.2);
+    float: left;
+    height: 40px;
+    padding-left: 20px;
+    position: relative;
+    width:45%;
+}
+
+#multimedia-container .s7controlbar .s7videoscrubber .s7track {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    left: 21px !important;
+    margin-top: 17px;
+    position: static;
+    height: 6px;
+}
+
+#multimedia-container .s7controlbar .s7videoscrubber .s7trackloaded, 
+#multimedia-container .s7controlbar .s7videoscrubber .s7trackplayed {
+    height: 6px;
+    left: 20px;
+    top:17px;
+}
+
+#multimedia-container .s7controlbar .s7videoscrubber .s7trackplayed {
+    background: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#multimedia-container .s7controlbar .s7videoscrubber .s7knob {
+    background: transparent;
+    width: 1px;
+}
+
+#multimedia-container .s7controlbar .s7videoscrubber .s7videotime {
+    color: #999999;
+    border-right: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    float: left;
+    font-size: 10px;
+    height: 32px;
+    line-height: 33px;
+    padding-left: 10px;
+    position: static;
+    width: 15%;
+}
+
+/* Video Time */
+#multimedia-container .s7controlbar .s7videotime {
+    color: #999999;
+    border-right: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    float: left;
+    font-size: 10px;
+    height: 32px;
+    line-height: 33px;
+    padding-left: 10px;
+    position: static;
+    width: 15%;
+}
+
+/* Volume Buton */
+#multimedia-container .s7controlbar .s7mutablevolume {
+    border-left: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgba(0,0,0,.2);
+    border-right: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    height: 40px;
+    float: left;
+    position: relative;
+    width: 10%;
+}
+
+#multimedia-container .s7controlbar .s7mutablevolume .s7mutebutton {
+    height: 100% !important;
+    width:100% !important;
+}
+
+#multimedia-container .s7controlbar .s7mutablevolume .s7mutebutton[selected='false'][state='up'] {
+    background: url('../images/muteoff_up.png') no-repeat center;    
+}
+
+#multimedia-container .s7controlbar .s7mutablevolume .s7mutebutton[selected='false'][state='over'],
+#multimedia-container .s7controlbar .s7mutablevolume .s7mutebutton[selected='false'][state='down']{
+    background: url('../images/muteoff_over.png') no-repeat center;
+}
+
+#multimedia-container .s7controlbar .s7mutablevolume .s7mutebutton[selected='true'][state='up'] {
+    background: url('../images/muteon_up.png') no-repeat center;
+}
+
+#multimedia-container .s7controlbar .s7mutablevolume .s7mutebutton[selected='true'][state='over'],
+#multimedia-container .s7controlbar .s7mutablevolume .s7mutebutton[selected='true'][state='down'] {
+    background: url('../images/muteon_over.png') no-repeat center;
+}
+
+#multimedia-container .s7controlbar .s7mutablevolume .s7verticalvolume {
+    background: #404040;
+    width:100%;
+}
+
+#multimedia-container .s7controlbar .s7mutablevolume .s7verticalvolume .s7knob {
+    left: 40% !important;
+}
+
+#multimedia-container .s7controlbar .s7mutablevolume .s7verticalvolume .s7track {
+    top:17px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    left: 45% !important;
+}
+
+#multimedia-container .s7controlbar .s7fullscreenbutton {
+    border-left: 1px solid rgb(0, 0, 0);
+    border-left: 1px solid rgba(0,0,0,.2);
+    float: left;
+    height: 100%;
+    position: static;
+    width: 10%;
+}
+#multimedia-container .s7controlbar .s7fullscreenbutton[selected='false'][state='up'] {
+    background: url('../images/fullscreen_up.png') no-repeat center;
+    height: 40px;
+    top: 0;
+}
+
+#multimedia-container .s7controlbar .s7fullscreenbutton[selected='false'][state='down'],
+#multimedia-container .s7controlbar .s7fullscreenbutton[selected='false'][state='over'] {
+    background: url('../images/fullscreen_over.png') no-repeat center;
+    height: 40px;
+    top: 0;
+}
+
+#multimedia-container .s7controlbar .s7fullscreenbutton[selected='true'][state='up'] {
+    background: url('../images/minscreen_up.png') no-repeat center;
+}
+
+#multimedia-container .s7controlbar .s7fullscreenbutton[selected='true'][state='down'],
+#multimedia-container .s7controlbar .s7fullscreenbutton[selected='true'][state='over'] {
+    background: url('../images/minscreen_over.png') no-repeat center;
+}
+
+/******* S7 SWATCHES *******/
+#multimedia-container .s7swatches .s7thumb[state="selected"] {
+    border-radius: 0 0 0 0;
+    background-color: #ccc;
+    opacity: 0.40;
+    background: #000000;
+    border: none;
+}
+#multimedia-container .s7swatches .s7thumb[state="default"] {
+    background-color: #eaeaea;
+}
+
+#multimedia-container .s7swatches .s7thumb .s7thumboverlay {
+    border-radius: 0 0 0 0;
+    height: 100%;
+    opacity: 0.51;
+}
+
+#multimedia-container .s7swatches {
+    left: 65%;
+    width: 39%;
+    height: 380px;
+    background: none;
+    border:none;
+    background-color: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+}
+
+#multimedia-container .s7swatches .s7thumb {
+    width: 164px;
+    height: 82px;
+}
+
+#multimedia-container .s7swatches .s7scrollleftbutton, 
+#multimedia-container .s7swatches .s7scrollrightbutton {
+        border: 1px solid #F6F6F6;
+        bottom:25px;
+        box-shadow: 1px 1px 1px #CCCCCC;
+        color: #808080;
+        cursor:pointer;
+        display: inline-block;
+        font-family:ff-meta-web-pro, Segoe UI,Arial,Sans-Serif;
+        font-size:12px;
+        font-weight:bold;
+        height:22px;
+        line-height:19px;
+        margin-top: -10px;
+        text-indent:0;
+        text-transform: uppercase;
+    }
+
+#multimedia-container .s7swatches .s7scrollleftbutton {
+    background: #fff url("../images/left-arrow-grey.png") no-repeat scroll 5px 5px;
+    -moz-border-radius: 10px 0 0 10px;
+    -webkit-border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
+    padding: 2px 5px 0 5px;
+    left: 319px!important;
+    top: 385px!important;
+}
+
+#multimedia-container .s7swatches .s7scrollleftbutton:hover {
+    background: #808080 url("../images/left-arrow-grey-hover.png") no-repeat scroll 5px 5px;
+    border: 1px solid #808080;
+    color: #FFFFFF;
+}
+
+#multimedia-container .s7swatches .s7scrollrightbutton {
+    background: #fff url("../images/right-arrow-grey.png") no-repeat scroll 11px 5px;
+    -moz-border-radius: 0 10px 10px 0;
+    -webkit-border-radius: 0 10px 10px 0;
+    border-radius: 0 10px 10px 0;
+    padding: 2px 0 0 9px;
+    left: 352px!important;
+    top: 385px!important;
+    width:21px;
+}
+
+#multimedia-container .s7swatches .s7scrollrightbutton:hover {
+    background: #808080 url("../images/right-arrow-grey-hover.png") no-repeat scroll 11px 5px;
+    border: 1px solid #808080;
+    color: #FFFFFF;
+}
+
+/* Video Description */
+#mmg-title-description {
+    text-align: justify;
+    width: 60%;
+    line-height: 19px;
+    clear:both;
+    position: relative;
+    top: 20px;
+}
+
+#mmg-title-description .heading {
+    font-family: ff-meta-web-pro, Segoe UI, Arial, sans-serif;
+    font-size:14px;
+}
+
+#mmg-title-description .paratext {
+    font-family: ff-meta-web-pro, Segoe UI, Arial, sans-serif;
+    font-size:12px;
+}
+
+/* Prev - Next */
+.mixed-media-gallery-prev-next {
+    display: none;
+}
+
+/* Swatch counter */
+#multimedia-container .s7swatches .totalItems {
+    position: absolute;
+    left: 43px;
+    top: 381px;
+    font-family: ff-meta-web-pro, Segoe UI, Arial, sans-serif;
+    font-size: 14px;    
+}
+
+#multimedia-container .s7swatches > div:first-child {
+    top: 0 !important;
+}
+
+#multimedia-container .s7swatches .s7scrollrightbutton[state='disabled'] {
+    background: #E5E4E2 url("../images/right-arrow-grey-hover.png") no-repeat scroll 11px 5px;
+    border: 1px solid #E5E4E2;
+    cursor:auto;
+
+}
+
+#multimedia-container .s7swatches .s7scrollleftbutton[state='disabled'] {
+    background: #E5E4E2 url("../images/left-arrow-grey-hover.png") no-repeat scroll 5px 5px;
+    border: 1px solid #E5E4E2;
+    cursor:auto;
+}
+
+/******* TOOLTIPS ******/
+.s7tooltip {
+    display: none !important;
+}
+
+/* Hide the zoom viewer icons as per Jaime request */
+.s7zoomview .s7iconeffect[media-type='standard'] {
+    display:none;
+}
+
+.s7zoomview .s7iconeffect[media-type='multitouch'] {
+    display: none;
+}
+
+/* IPAD LANDSCAPE BREAKPoiNT */
+@media screen and (max-width:1024px) {
+	.videoplayer #s7VideoElement{
+		left: 0 !important;
+	}
+	.videoplayer .s7mutablevolume .s7verticalvolume .s7knob {
+		left: 14px !important;
+	}
+	.videoplayer .s7track {
+		left: 18px !important;
+	}
+    
+    #multimedia-container {
+        min-height: 381px;
+    }
+
+	#multimedia-container .s7swatches {
+        height: 320px;    
+    }
+    
+    #multimedia-container .s7swatches .s7thumb {
+        width: 132px;
+        height: 66px;
+    }
+    
+    #multimedia-container .s7swatches .s7scrollleftbutton {
+        left: 249px!important;
+        top: 325px!important;
+    }
+    
+    #multimedia-container .s7swatches .s7scrollrightbutton {
+        left: 282px!important;
+        top: 325px!important;
+    }
+    
+    #multimedia-container .s7swatches .totalItems {
+        left: 36px;
+        top: 320px;
+    }
+}
+
+/* TABLET CSS GOES HERE (768px)*/
+@media screen and (max-width:768px) {
+	
+	.videoplayer #s7VideoElement{
+		left: 0 !important;
+	}
+	
+	.videoplayer .s7mutablevolume .s7verticalvolume .s7knob {
+		left: 17px !important;
+	}
+	
+	.videoplayer .s7track {
+		left: 21px !important;
+	}
+
+    #multimedia-container {
+        min-height: 307px;
+    }
+	
+    #multimedia-container .s7swatches {
+        height: 250px;    
+    }
+    
+    #multimedia-container .s7swatches .s7thumb {
+        width: 94px;
+        height: 47px;
+    }
+    
+    #multimedia-container .s7swatches .s7scrollleftbutton {
+        left: 168px!important;
+        top: 245px!important;
+    }
+    
+    #multimedia-container .s7swatches .s7scrollrightbutton {
+        left: 201px!important;
+        top: 245px!important;
+    }
+    
+    #multimedia-container .s7swatches .totalItems {
+        left: 31px;
+        top: 240px;
+    }
+}
+
+/* SMALL TABLET CSS GOES HERE (600px)*/
+ @media screen and (max-width:600px) {
+    #html5-close img {
+        height: 17px !important;
+        width: 17px !important;
+    }
+    /* =============================================================================
+   SDKS7 VIDEO PLAYER COMPONENT
+   ========================================================================== */
+    .videoplayer .s7container { /*Make it specific for the video player as this will afect the MMG 8*/
+        position: absolute;
+        width: 95%;
+        height: 336px;
+        overflow: visible;
+        left: 0 !important;
+    }
+     
+    .fullbleedvideo #cont .s7videoplayer {
+        top: 0;
+    } 
+    #cont .s7videoplayer {
+        top: -5px;
+        width: 95%;
+        height: 95%;
+        left: 0;
+    }
+    
+    .videoplayer .s7controlbar {
+        width: 85%;
+    }
+    .videoplayer .s7videoscrubber {
+		padding-left: 8px;
+		width: 40%;
+    }
+    
+    .videoplayer .s7trackloaded, .videoplayer .s7trackplayed {
+    	left: 9px;
+    }
+    
+    .videoplayer .s7videotime {
+		width: 20%;
+	}
+    
+    .videoplayer .s7fullscreenbutton[selected='false'][state='up'] {
+		width: 12%;
+	}
+	
+	.videoplayer #s7VideoElement{
+		left: 0 !important;
+	}
+	
+	.videoplayer .s7mutablevolume .s7verticalvolume .s7knob {
+		left: 13px !important;
+	}
+	
+	.videoplayer .s7track {
+		left: 17px !important;
+	}
+    
+    /* positioning VideoControlBar and its children components */
+   /* .s7controlbar {
+        bottom: 31px;
+        left: 6%;
+        width: 474px;
+    }
+    .s7mutablevolume {
+        right: 52px;
+    }
+    .s7videotime {
+        right: 93px;
+    }
+    .s7playpausebutton {
+        top: 2px;
+        left: 18px;
+    }
+    .s7videoscrubber {
+        top: 2px;
+        left: 60px;
+    }
+    .s7fullscreenbutton {
+        top: 2px;
+        right: 10px;
+    }*/
+   
+    /* =============================================================================
+   SDKS7 VIDEO PLAYER COMPONENT END
+   ========================================================================== */
+   
+
+    /* ===========================================================================================================
+   MIXED MEDIA GALLERY COMPONENT START
+   ============================================================================================================= */
+    
+    .mixedmedia,
+    #multimedia-container .s7swatches .s7scrollleftbutton,
+    #multimedia-container .s7swatches .s7scrollrightbutton,
+    #multimedia-container .s7swatches .totalItems,
+    #multimedia-container .s7swatches {
+        display: none;
+    }
+
+    #multimedia-container {
+        min-height: 309px;
+    }
+
+    .mobile-mixedmedia {
+        display: block;
+        margin-bottom: 18px;
+        font-size: 12px;
+    }
+
+    /*prev-next*/
+    .mixed-media-gallery-prev-next {
+        display: block;
+        margin: 20px auto;
+        position: absolute;
+        left: 42.5%;
+        z-index: 100;
+    }
+    
+    .mixed-media-gallery-prev-next .mixed-media-previous,
+    .mixed-media-gallery-prev-next .mixed-media-next {
+        border: 1px solid #F6F6F6;
+        bottom:25px;
+        box-shadow: 1px 1px 1px #CCCCCC;
+        color: #808080;
+        cursor:pointer;
+        display: inline-block;
+        height:22px;
+        width:21px;
+    }
+
+    .mixed-media-gallery-prev-next .mixed-media-previous {
+        background: #fff url("../images/left-arrow-grey.png") no-repeat scroll 5px 5px;
+        -moz-border-radius: 10px 0 0 10px;
+        -webkit-border-radius: 10px 0 0 10px;
+        border-radius: 10px 0 0 10px;
+        padding: 2px 5px 0 5px;
+        
+    }
+
+    .mixed-media-gallery-prev-next .mixed-media-next {
+        background: #fff url("../images/right-arrow-grey.png") no-repeat scroll 11px 5px;
+        -moz-border-radius: 0 10px 10px 0;
+        -webkit-border-radius: 0 10px 10px 0;
+        border-radius: 0 10px 10px 0;
+        padding: 2px 0 0 9px;
+    }
+
+    .mixed-media-gallery-prev-next .mixed-media-previous.inactive {
+        background: #E4E4E4 url("../images/left-arrow-grey.png") no-repeat scroll 5px 5px;
+    }
+
+    .mixed-media-gallery-prev-next .mixed-media-next.inactive {
+        background: #E4E4E4 url("../images/right-arrow-grey.png") no-repeat scroll 11px 5px;
+    }
+    
+    .mixed-media-gallery-prev-next .mixed-media-previous.inactive:hover {
+        cursor:default;
+        background: #E4E4E4 url("../images/left-arrow-grey.png") no-repeat scroll 5px 5px;
+        border: 1px solid #F6F6F6;
+    }
+
+    .mixed-media-gallery-prev-next .mixed-media-next.inactive:hover {
+        cursor:default;
+        background: #E4E4E4 url("../images/right-arrow-grey.png") no-repeat scroll 11px 5px;
+        border: 1px solid #F6F6F6;
+    }
+
+    .mixed-media-gallery-prev-next .mixed-media-previous:hover {
+        background: #808080 url("../images/left-arrow-grey-hover.png") no-repeat scroll 5px 5px;
+        border: 1px solid #808080;
+        color: #FFFFFF;
+    }
+    
+    .mixed-media-gallery-prev-next .mixed-media-next:hover {
+        background: #808080 url("../images/right-arrow-grey-hover.png") no-repeat scroll 11px 5px;
+        border: 1px solid #808080;
+        color: #FFFFFF;
+    }
+
+    #mmg-title-description {
+        margin-bottom: 15px;
+    }
+    
+    #multimedia-container .mobile-mixedmedia a {
+        color:#C6001E;
+        font-weight: bold;
+        text-decoration:underline;
+    }
+    /* ===========================================================================================================
+
+  Navigation Buttons - Media Gallary Menu - END
+============================================================================================================= */
+    /***mixed media gallery component-end***/
+}
+
+/* MOBILE CSS GOES IN HERE (480px)*/
+ @media screen and (max-width:480px), screen and (max-device-width:480px) {
+    #html5-close img {
+        height: 15px !important;
+        width: 15px !important;
+    }
+    /* =============================================================================
+       SCENE 7 - SDKS7 VIDEO PLAYER COMPONENT
+    ========================================================================== */
+    .videoplayer .s7container {
+        position: absolute;
+        width: 95%;
+        height:255px!important;
+        overflow: visible;
+        top:-25px;
+        left: 0px !important;
+    }
+    #videoplayerid {
+        width: 95%;
+    }
+    #cont .s7videoplayer {
+        top: -10px;
+        width: 95%;
+        left: 0;
+    }
+    .contentdetailheadline h1 {
+        padding-bottom: 32px;
+    }
+    
+    .videoplayer .s7controlbar {
+        width: 100%;
+    }
+    .videoplayer .s7videoscrubber {
+		padding-left: 8px;
+		width: 40%;
+    }
+    
+    .videoplayer .s7videotime {
+		width: 20%;
+	}
+	
+	.videoplayer #s7VideoElement{
+		left: 0 !important;
+	}
+	
+	.videoplayer .s7fullscreenbutton[selected='false'][state='up'] {
+		width: 10%;
+	}
+	
+	.videoplayer .s7mutablevolume .s7verticalvolume .s7knob {
+		left: 11px !important;
+	}
+	
+	.videoplayer .s7track {
+		left: 15px !important;
+	}
+    /*.s7controlbar {
+        bottom: 26px;
+        left: 4%;
+        width: 388px;
+    }
+    .s7mutablevolume {
+        right: 38px;
+    }
+    .s7videotime {
+        right: 65px;
+    }
+    .s7playpausebutton {
+        top: 2px;
+        left: 5px;
+    }
+    .s7videoscrubber {
+        top: 2px;
+        left: 34px;
+    }
+    .s7fullscreenbutton {
+        top: 2px;
+        right: 10px;
+    }*/
+    /* =============================================================================
+        SDKS7 VIDEO PLAYER COMPONENT END
+       ========================================================================== */
+    /***mixed media gallery component-end***/
+}

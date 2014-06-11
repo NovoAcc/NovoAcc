@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Carousel Navigation Tool"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Template path"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+            	<tooltitle
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title to display above the Carousel"
+                    fieldLabel="Tool title"
+                    name="./tooltitle"
+                    xtype="textfield"/>
+                <templatepath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path where the theme template is. Please be sure to activate the source template. Otherwise the tool will not show."
+                    fieldLabel="Template"
+                    name="./templatePath"
+                    xtype="pathfield"/>
+            </items>
+        </title>
+    </items>
+</jcr:root>

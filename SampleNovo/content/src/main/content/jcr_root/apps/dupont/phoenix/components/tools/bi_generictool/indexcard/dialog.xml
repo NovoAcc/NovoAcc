@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="BI Residential Index Card"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Index Card"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title for the Index Card "
+                    fieldLabel="Title"
+                    name="./indexCardTitle"
+                    xtype="textfield"/>
+                <utilitylinks
+                    jcr:primaryType="cq:Widget"
+                    title="Utility Links"
+                    xtype="dialogfieldset">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <bbcarditem5
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="The title for the utility link 1."
+                            fieldLabel="Utility Link Title 1"
+                            name="./bbcarditem5Title"
+                            xtype="textfield"/>
+                        <bbcard5bgcolor
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}false"
+                            fieldDescription="The background color for utility link 1."
+                            fieldLabel="Background Color"
+                            name="./bbcard5bgcolor"
+                            showHexValue="true"
+                            xtype="colorfield"/>
+                        <bbcarditem6
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="The title for the utility link 2."
+                            fieldLabel="Utility Link Title 2"
+                            name="./bbcarditem6Title"
+                            xtype="textfield"/>
+                        <bbcard6bgcolor
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}false"
+                            fieldDescription="The background color for utility link 2."
+                            fieldLabel="Background Color"
+                            name="./bbcard6bgcolor"
+                            showHexValue="true"
+                            xtype="colorfield"/>
+                    </items>
+                </utilitylinks>
+            </items>
+        </title>
+        <landingSurface1
+            jcr:primaryType="cq:Widget"
+            title="Landing Surface 1"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title for the Landing Surface 1 "
+                    fieldLabel="Title"
+                    name="./landingSurface1Title"
+                    xtype="textfield"/>
+                <bbcarditem1
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title for the Baseball card Item 1 "
+                    fieldLabel="Link Title 1"
+                    name="./bbcarditem1Title"
+                    xtype="textfield"/>
+                <bbcarditem2
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title for the Baseball card Item 2"
+                    fieldLabel="Link Title 2"
+                    name="./bbcarditem2Title"
+                    xtype="textfield"/>
+                <resType
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./landingimage1/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+            </items>
+        </landingSurface1>
+        <landingimage1
+            jcr:primaryType="cq:Widget"
+            allowUpload="{Boolean}false"
+            ddGroups="[media]"
+            fileNameParameter="./landingimage1/fileName"
+            fileReferenceParameter="./landingimage1/fileReference"
+            height="{Long}400"
+            name="./landingimage1/file"
+            renditionSuffix="/_jcr_content/renditions/original"
+            requestSuffix="/landingimage1.img.png"
+            title="Landing Surface Image 1"
+            type="Image"
+            width="{Long}100"
+            xtype="html5smartimage"/>
+        <landingSurface2
+            jcr:primaryType="cq:Widget"
+            title="Landing Surface 2"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title for the Landing Surface 2"
+                    fieldLabel="Title"
+                    name="./landingSurface2Title"
+                    xtype="textfield"/>
+                <bbcarditem3
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title for the Baseball card Item 3"
+                    fieldLabel="Link Title 1"
+                    name="./bbcarditem3Title"
+                    xtype="textfield"/>
+                <bbcarditem4
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title for the Baseball card Item 4"
+                    fieldLabel="Link Title 2"
+                    name="./bbcarditem4Title"
+                    xtype="textfield"/>
+                <resType
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./landingimage2/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+            </items>
+        </landingSurface2>
+        <landingimage2
+            jcr:primaryType="cq:Widget"
+            allowUpload="{Boolean}false"
+            ddGroups="[media]"
+            fileNameParameter="./landingimage2/fileName"
+            fileReferenceParameter="./landingimage2/fileReference"
+            height="{Long}400"
+            name="./landingimage2/file"
+            renditionSuffix="/_jcr_content/renditions/original"
+            requestSuffix="/landingimage2.img.png"
+            title="Landing Surface Image 2"
+            type="Image"
+            width="{Long}100"
+            xtype="html5smartimage"/>
+    </items>
+</jcr:root>

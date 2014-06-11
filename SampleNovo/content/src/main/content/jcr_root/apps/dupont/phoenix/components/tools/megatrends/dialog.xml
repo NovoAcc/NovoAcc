@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Tools – Megatrends Map"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        helpPath="en/cq/current/wcm/default_components.html#MegatrendsMap"
+        title="Tools – Megatrends Map"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <list
+                jcr:primaryType="cq:Widget"
+                title="General"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <linkTitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        fieldLabel="Link Title"
+                        name="./linkTitle"
+                        xtype="textfield"/>
+                    <globalChallenges 
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Global Challenges Folder"
+                        name="./globalChallengesPath"
+                        xtype="pathfield"/>
+                    <mapbuilder
+                   	 	jcr:primaryType="cq:Widget"
+                        fieldLabel="Map Country Builder"
+                        name="./mapbuilder"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                text="Default"
+                                value="default"/>
+                            <nodeid
+                                jcr:primaryType="nt:unstructured"
+                                text="China"
+                                value="china"/>
+                        </options>
+                    </mapbuilder>
+                    <mapParams
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="filter"
+                        fieldLabel="Map Parameters"
+                        name="./mapParamName"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <filter
+                                jcr:primaryType="nt:unstructured"
+                                text="Filter"
+                                value="filter"/>
+                            <nodeid
+                                jcr:primaryType="nt:unstructured"
+                                text="Node Id"
+                                value="nodeid"/>
+                        </options>
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            loadcontent="function(field,rec,path){                           var panel = field.findParentByType('panel');             var filterSet = panel.findByType('dialogfieldset')[0];            var nodeIdSet = panel.findByType('dialogfieldset')[1];            var nodeId = nodeIdSet.find('fieldLabel','Node Id')[0];            var filter = filterSet.find('fieldLabel','Filter')[0];            var showSet = field.getValue();            if (showSet == 'filter') {             nodeId.allowBlank = true;                filterSet.show();                nodeIdSet.hide();            } else if (showSet == 'nodeid'){             nodeId.allowBlank = false;                filterSet.hide();                nodeIdSet.show();            }            panel.doLayout();                          }"
+                            selectionchanged="function(field,value){                           var panel = field.findParentByType('panel');                           var tabPanel = field.findParentByType('tabpanel');            var filterSet = panel.findByType('dialogfieldset')[0];            var nodeIdSet = panel.findByType('dialogfieldset')[1];            var nodeId = nodeIdSet.find('fieldLabel','Node Id')[0];            var filter = filterSet.find('fieldLabel','Filter')[0];            var showSet = field.getValue();            if (showSet == 'filter') {             nodeId.allowBlank = true;                filterSet.show();                nodeIdSet.hide();            } else if (showSet == 'nodeid'){             nodeId.allowBlank = false;                filterSet.hide();                nodeIdSet.show();            }            tabPanel.doLayout();}"/>
+                    </mapParams>
+                    <filterfieldset
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        hidden="{Boolean}true"
+                        title="Select Filter"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <mapFilter
+                                jcr:primaryType="cq:Widget"
+                                defaultValue="food"
+                                fieldLabel="Filter"
+                                name="./filter"
+                                type="radio"
+                                xtype="selection">
+                                <options jcr:primaryType="cq:WidgetCollection">
+                                    <food
+                                        jcr:primaryType="nt:unstructured"
+                                        checked="{Boolean}true"
+                                        text="Food"
+                                        value="food"/>
+                                    <energy
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Energy"
+                                        value="energy"/>
+                                    <protection
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Protection"
+                                        value="protection"/>
+                                </options>
+                            </mapFilter>
+                        </items>
+                    </filterfieldset>
+                    <nodeidfieldset
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        hidden="{Boolean}true"
+                        title="Node"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <linkTitle
+                                jcr:primaryType="cq:Widget"
+                                allowBlank="false"
+                                fieldLabel="Node Id"
+                                name="./nodeId"
+                                xtype="textfield"/>
+                        </items>
+                    </nodeidfieldset>
+                    <conditions
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Corporate Functions"
+                        name="./functions"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="nt:unstructured"
+                            xtype="textfield"/>
+                    </conditions>
+                </items>
+            </list>
+        </items>
+    </items>
+</jcr:root>

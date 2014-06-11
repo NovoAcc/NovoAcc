@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Panel"
+    title="Arguments">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <arguments
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}false"
+            collapsible="{Boolean}false"
+            title="Process Arguments"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <activateall
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Activate images from selected page and all sub pages."
+                    fieldLabel="Activate images from selected page and all sub pages"
+                    name="./metaData/activatePageAndSubPages"
+                    type="checkbox"
+                    xtype="selection"/>
+                <redoactivations
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Ignore published status while activating images to scene7."
+                    fieldLabel="Redo Image Activations."
+                    name="./metaData/redoActivations"
+                    type="checkbox"
+                    xtype="selection"/>
+                <configuration
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Configuration"
+                    flex="{Long}1"
+                    name="metaData/configPath"
+                    rootPath="/etc/cloudservices/scene7"
+                    xtype="cloudservicescombo"/>
+            </items>
+        </arguments>
+    </items>
+</jcr:root>

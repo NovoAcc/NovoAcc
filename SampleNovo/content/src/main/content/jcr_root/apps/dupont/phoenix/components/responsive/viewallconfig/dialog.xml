@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="600"
+    title="View All Facet Configuration"
+    width="800"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tabhlm
+                jcr:primaryType="cq:Widget"
+                path="/bin/facet-configuration.infinity.json"
+                xtype="cqinclude"/>
+        </items>
+    </items>
+</jcr:root>

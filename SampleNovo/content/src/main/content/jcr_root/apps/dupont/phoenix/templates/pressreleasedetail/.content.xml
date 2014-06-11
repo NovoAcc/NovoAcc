@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Press Release Detail Template -T.5.4 "
+    jcr:primaryType="cq:Template"
+    jcr:title="Press Release Detail Template"
+    allowedPaths="/content(/.*)?"
+    ranking="{Long}130">
+    <jcr:content
+    	contentType="pressrelease"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="dupont/phoenix/components/pages/pressreleasedetail">
+       	<linklistdynamic-pressreleases
+            contentType="pressrelease"
+        	jcr:primaryType="nt:unstructured"
+			sling:resourceType="dupont/phoenix/components/linklistdynamic"/>
+        <linklistdynamic-products
+        	contentType="product"
+        	jcr:primaryType="nt:unstructured"
+			sling:resourceType="dupont/phoenix/components/linklistdynamic"/>			        
+        <bodycopy
+        	jcr:primaryType="nt:unstructured"
+			sling:resourceType="dupont/phoenix/components/bodycopy"/>
+	</jcr:content>
+</jcr:root>

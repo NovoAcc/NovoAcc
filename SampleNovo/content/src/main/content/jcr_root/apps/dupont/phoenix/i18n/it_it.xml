@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:language="it_it"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="nt:unstructured"
+    sling:basename="[DuPontAppResources]">
+    <industries
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Settori"/>
+    <products-and-services-menu
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Prodotti e servizi"/>
+    <our-approach
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Scienza e società"/>
+    <Close
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Chiudi"/>
+    <Views
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Views"
+        sling:message="Visualizza"/>
+    <Add_x0020_Item
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Add Item"/>
+    <Videos
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Video"/>
+    <SearchProducts
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Cerca prodotti, utilizzi e applicazioni"/>
+    <Additional_x0020_Information
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Informazioni ulteriori"/>
+    <Product_x0020_Specification
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Schede informative del prodotto"/>
+    <Product_x0020_Information
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Informazioni sul prodotto"/>
+    <ViewProducts
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Visualizza prodotti con"/>
+    <Print
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Stampa"/>
+    <ProductNameKeyword
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Nome prodotto/Parola chiave o MSDS"/>
+    <SelectCountryLanguage
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Selezionare un valore paese/lingua valido"/>
+    <ProductNameSynonym
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Immettere Nome prodotto/Sinonimo o Numero MSDS"/>
+    <GlobalChallenges
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Scopri come DuPont affronta queste sfide globali"/>
+    <Additional_x0020_Links
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="ULTERIORI COLLEGAMENTI"/>
+    <Quick_x0020_Links
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Link Utili"/>
+    <Curated_x0020_Links
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Collegamenti curati"/>
+    <RELATED
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="CORRELATI"/>
+    <Helpful_x0020_Links_
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Helpful Links:"
+        sling:message="Link:"/>
+    <Country_x0020_Selector
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Italia - Italiano"/>
+    <More_x0020_in
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Altro in"/>
+    <Connect_x0020_with_x0020_Dupont_
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Connect with Dupont:"
+        sling:message="Contatta Dupont:"/>
+    <Featured_x0020_Brands
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Marchi in primo piano"/>
+    <Featured_x0020_Products
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Prodotti in primo piano"/>
+    <Overview
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Panoramica"/>
+    <Contact_x0020_Us
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Contatti"/>
+    <Tool
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Strumento"/>
+    <Contact_x0020_Us0
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="CONTACT US"
+        sling:message="CONTATTI"/>
+    <RELATED_x0020_STORIES
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="ARTICOLI CORRELATI"/>
+    <RELATED_x0020_PRODUCTS
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="RELATED PRODUCTS"
+        sling:message="Prodotti correlati"/>
+    <OTHER_x0020_NEWS_x0020_RELEASES
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="OTHER NEWS RELEASES"
+        sling:message="ALTRE NEWS"/>
+    <OTHER_x0020_VIDEOS
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="OTHER VIDEOS"
+        sling:message="ALTRI VIDEO"/>
+    <OTHER_x0020_PRESS_x0020_RELEASES
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="OTHER PRESS RELEASES"
+        sling:message="ALTRO COMUNICATO STAMPA"/>
+    <OTHER_x0020_CASE_x0020_STUDIES
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="OTHER CASE STUDIES"
+        sling:message="OTHER CASE STUDIES"/>
+    <OTHER_x0020_CASE_x0020_STUDIES0
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="OTHER CASE STUDIES"
+        sling:message="ALTRI CASI DI STUDIO"/>
+    <Featured
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="In primo piano"/>
+    <Media
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Media"
+        sling:message="Media"/>
+    <Search
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Cerca"/>
+    <Email
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Email"
+        sling:message="E-mail"/>
+    <Enter_x0020_Contacts_x0020_Detail
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Enter Contacts Detail"
+        sling:message="Immettere dati di contatto"/>
+    <Product_x0020_Name_x0020___x0020_Keyword_x0020_or_x0020_MSDS
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Product Name / Keyword or MSDS"
+        sling:message="Nome prodotto/Parola chiave o MSDS"/>
+    <MSDS_x0020_Finder
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="MSDS Finder"
+        sling:message="Trova MSDS (scheda informativa sulla sicurezza)"/>
+    <Select_x0020_Country_Language
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Select Country/Language"
+        sling:message="Seleziona paese/lingua"/>
+    <Please_x0020_select_x0020_a_x0020_valid_x0020_country_language
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Please select a valid country/language"
+        sling:message="Selezionare un valore paese/lingua valido"/>
+    <Please_x0020_type_x0020_a_x0020_Product_x0020_Name_Synonym_x0020_or_x0020_MSDS_x0020_Number
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Please type a Product Name/Synonym or MSDS Number"
+        sling:message="Immettere Nome prodotto/Sinonimo o Numero MSDS"/>
+    <Disclaimer
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Disclaimer"
+        sling:message="Clausola di esonero"/>
+    <Search_x0020_Products_x002c_Uses_x0020__x0026__x0020_Applications
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Search Products,Uses &amp; Applications"
+        sling:message="Cerca"/>
+    <View_x0020_Media
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="View Media"
+        sling:message="Visualizza media"/>
+    <January
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="January"
+        sling:message="Gennaio"/>
+    <February
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="February"
+        sling:message="Febbraio"/>
+    <March
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="March"
+        sling:message="Marzo"/>
+    <April
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="April"
+        sling:message="Aprile"/>
+    <May
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="May"
+        sling:message="Maggio"/>
+    <June
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="June"
+        sling:message="Giugno"/>
+    <July
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="July"
+        sling:message="Luglio"/>
+    <August
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="August"
+        sling:message="Agosto"/>
+    <September
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="September"
+        sling:message="Settembre"/>
+    <October
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="October"
+        sling:message="Ottobre"/>
+    <November
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="November"
+        sling:message="Novembre"/>
+    <December
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="December"
+        sling:message="Dicembre"/>
+    <DuPontNews
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="DuPontNews"
+        sling:message="News DuPont"/>
+    <View_x0020_All
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="View All"/>
+    <Share
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Condividi"/>
+    <View_x0020_All0
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="View All"
+        sling:message="View All"/>
+    <Show_x0020_All
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Mostra tutto"/>
+    <Show_x0020_Less
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Mostra meno"/>
+    <LearnMore
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Maggiori informazioni"/>
+    <IAgree
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Accetto"/>
+    <did-not-match-any-documents
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="non corrisponde ad alcun documento"/>
+    <Including-results-for
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Comprende i risultati per"/>
+    <Make-sure-that-all-words-are-spelled-correctly
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Assicurarsi che tutte le parole siano state digitate correttamente"/>
+    <No-pages-were-found-containing
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Non sono state trovate pagine contenenti"/>
+    <of
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="di"/>
+    <results
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="risultati"/>
+    <Suggestions
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Suggerimenti"/>
+    <Try-different-keywords
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Provare a utilizzare parole chiave diverse"/>
+    <Try-more-general-keywords
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Provare a utilizzare parole chiave più generiche"/>
+    <View-per-page
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Vista per pagina"/>
+    <You_x0020_search
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Cerchi"/>
+    <You-Searched-for
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Hai cercato"/>
+    <Contacts
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Contatti"/>
+    <Search1
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="SEARCH"
+        sling:message="Cerca"/>
+    <Next
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Successivo"/>
+    <Prev
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Precedente"/>
+    <CHALLENGE
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="CHALLENGE"/>
+    <SCIENCE
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="SCIENZA"/>
+    <THE_SCIENCE
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="LA SCIENZA"/>
+    <Previous
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Precedente"/>
+    <Your_x0020_search
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="La tua ricerca"/>
+    <Applying_x0020_science_x0020_through_x0020_global_x0020_collaboration
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Applicazione della scienza attraverso la collaborazione a livello globale"/>
+    <Science_x0020_and_x0020_Society
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Scienza e società"/>
+    <Map_x0020_This_x0020_Story
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Localizza questa storia sulla mappa"/>
+    <inclusive-Innovation
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="inclusive-innovation"
+        sling:message="Scienza e società"/>
+    <show-categories
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Show categories in this group"
+        sling:message="Mostra categorie in questo gruppo"/>
+    <hide-categories
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Hide categories in this group"
+        sling:message="Nascondi categorie in questo gruppo"/>
+    <items
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="items"/>
+    <Choose
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Choose One"/>
+    <View_x0020_All_x0020_Product_x0020_Categories
+    	jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="View All Product Categories"/>
+	<MENU
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="MENU"/>
+    <only-show-me
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="ONLY SHOW ME"/>
+    <more
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="more"/>
+	<filter-by
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Filter By"/>
+    <show-more
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Show More"/>
+    <view
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="VIEW"/>
+    <select-your-filter
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Select your filters"/>
+    <add-filter
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="Add filters"/>
+    <all-content-type
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="All Content Types"/>
+    <viewmorelink
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="View more in DuPont"/>
+    <dupontlinks
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="DUPONT LINKS"/>
+    <featured
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="FEATURED:"/>
+    <No-Result
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message=" No results founds"/>
+    <productsandservicescc
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="PRODUCTS &amp; SERVICES"/>          
+    <ViewAllVideos
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="View All Videos"/>
+    <ViewAllImages
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="View All Images"/>
+    <ViewAllAudios
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="View All Audios"/>
+    <back
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:message="back"/>
+</jcr:root>

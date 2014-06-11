@@ -1,0 +1,46 @@
+  <!-- Responsive Global Navigation -->
+	   <div class="mobile-menu">
+	   		<a class="n1 mobile-menu-item menu-option">Menu</a>
+	   		<a class="n2 mobile-menu-item search-option">Search</a>
+	   		<a class="n3 mobile-menu-item language-option" href="#">Language</a>
+	   </div>
+	   <div class="menu-container">
+	   		<div class="search-container">
+				<div class="mobile-search-wrapper">
+					<input class="mobile-search" value="Search Products, etc..." onblur="if (this.value=='')this.value=this.defaultValue;" onfocus="if (this.value==this.defaultValue) this.value='';">
+					<button type="button">Submit</button>
+				</div>
+		   		<label><input type="checkbox"></input><p>MSDS only</p></label>
+		   		<br clear="all"/>
+		   	</div>
+		   	<h2 class="top-inset">featured brands</h2>
+		   	<div class="brands">
+		   		<ul>
+		   			<li><a href="#">Corian&reg;</a></li>
+		   			<li><a href="#">Nomex&reg;</a></li>
+		   			<li><a href="#">Sorona&reg;</a></li>
+		   			<li><a href="#">Danisco&reg;</a></li>
+		   			<li><a href="#">Pioneer&reg;</a></li>
+		   		</ul>
+		   		<ul>
+		   			<li><a href="#">Teflon&reg;</a></li>
+		   			<li><a href="#">Kevlar&reg;</a></li>
+		   			<li><a href="#">SentryGlas&reg;</a></li>
+		   			<li><a href="#">Tyvek&reg;</a></li>
+		   		</ul>
+		   	</div>
+		   	<ul class="mobile-sub-nav">
+		   		<li><a href="#">Product Finder</a></li>
+		   		<li><a href="#">Industries</a></li>
+		   		<li><a href="#">Products &amp; Services</a></li>
+		   	</ul>
+		   	<h2>inclusive innovation</h2>
+		   	<div class="brands">
+		   		<ul class="full-width">
+			   		<li><a href="#">Science</a></li>
+			   		<li><a href="#">Sustainability</a></li>
+			   		<li><a href="#">Global Challenges</a></li>
+			   	</ul>
+		   	</div>
+	   </div>
+	   <!-- End Responsive Global Navigation -->

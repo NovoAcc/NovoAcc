@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Text"
+    title="Root Page"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <rootpage
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Select the root node for the landing section"
+            fieldLabel="Root page"
+            name="./rootlandingpage"
+            xtype="pathfield"/>
+        <description
+            jcr:primaryType="cq:Widget"
+            defaultValue="true"
+            fieldDescription="This will show the short description of the page"
+            fieldLabel="Show the short description"
+            inputValue="true"
+            name="./childdescription"
+            type="checkbox"
+            xtype="selection"/>
+        <icon
+            jcr:primaryType="cq:Widget"
+            fieldDescription="This will show the icon added in the site config dialog for the page."
+            fieldLabel="Show the page icon."
+            inputValue="true"
+            name="./childicon"
+            type="checkbox"
+            xtype="selection"/>
+        <showhide
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Enable the view more / view less functionality for the subpages of each child page."
+            fieldLabel="Show/Hide functionality"
+            inputValue="true"
+            name="./showhide"
+            type="checkbox"
+            xtype="selection"/>
+    </items>
+</jcr:root>

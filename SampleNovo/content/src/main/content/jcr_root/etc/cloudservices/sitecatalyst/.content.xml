@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/design/cloudservices"
+        cq:template="/libs/cq/cloudserviceconfigs/templates/servicepage"
+        jcr:description="Actionable Web Analytics"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Adobe SiteCatalyst"
+        sling:resourceType="cq/cloudserviceconfigs/components/servicepage"
+        componentReference="cq/analytics/components/sitecatalyst"
+        connectedWhen="username"
+        description="Adobe® SiteCatalyst® provides marketers with actionable, real-time web analytics intelligence about digital strategies and marketing initiatives."
+        descriptionExtended="Adobe SiteCatalyst  helps marketers quickly identify the most profitable paths through a website, segment traffic to spot high-value web visitors, determine where visitors are navigating away from the site, and identify critical success metrics for online marketing campaigns. Adobe SiteCatalyst  is part of the Adobe Digital Marketing Suite of applications for online business optimizations."
+        inclusionRank="{Long}200"
+        pageReportUrl="https://sitecatalyst.omniture.com/sc15/reports/index.html?a=Report.Standard&amp;switch_accnt={REPORTSUITE}&amp;r=Report.PageSummary&amp;ssSession={SESSION}&amp;jpj={JPJ}&amp;rp=newpage|{PAGEID};page_type|;"
+        ranking="30"
+        selectableChildren="[/libs/cq/analytics/templates/framework]"
+        serviceAdminUrl="https://my.omniture.com"
+        serviceUrl="http://www.omniture.com/offer/170?s_osc=22549"
+        showOnDashboard="{Boolean}true"
+        summaryPanelPath="/libs/cq/analytics/components/sitecatalystpage/panel"
+        thumbnailPath="/libs/cq/analytics/templates/sitecatalyst/thumbnail.png"/>
+    <defaults
+        jcr:primaryType="nt:unstructured"
+        charSet="UTF-8"
+        currencyCode="USD"
+        linkDownloadFileTypes="exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls"
+        linkExternalFilters="''"
+        linkInternalFilters="'javascript:,'+window.location.hostname"
+        linkLeaveQueryString="{Boolean}false"
+        linkTrackEvents="None"
+        linkTrackVars="None"
+        trackDownloadLinks="{Boolean}true"
+        trackExternalLinks="{Boolean}true"
+        trackInlineStats="true"/>
+    <statistics jcr:primaryType="nt:unstructured">
+        <configurations
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Configurations"
+            total="{Long}1"/>
+        <frameworks
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Frameworks"
+            total="{Long}1"/>
+    </statistics>
+ </jcr:root>

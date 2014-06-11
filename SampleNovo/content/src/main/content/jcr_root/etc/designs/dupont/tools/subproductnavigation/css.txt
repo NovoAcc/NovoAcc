@@ -1,0 +1,4 @@
+#base=source/css
+
+#bi-color-selector.css
+#jquery_bicolor_skin.css

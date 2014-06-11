@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Baseball Card"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Main Information"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title for the Baseball Card "
+                    fieldLabel="Title"
+                    name="./baseballCardTitle"
+                    xtype="textfield"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Short description of the baseball card. If use as description is selected, only this text will be rendered."
+                    fieldLabel="Short Description"
+                    name="./baseballCardShortDescription"
+                    xtype="textarea"/>
+                <solutionlinks
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Curated Link list"
+                    fieldLabel="Links"
+                    name="./baseballCardLinks"
+                    width="1000"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        limit="5"
+                        xtype="multilinklistcurated"/>
+                </solutionlinks>
+                <imagerestype
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./image/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+                <thumbnailrestype
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./thumbnail/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+                <iconrestype
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./icon/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+                <scienceimagerestype
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./scienceImage/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+            </items>
+        </title>
+        <thumbnail
+            jcr:primaryType="cq:Widget"
+            allowUpload="{Boolean}false"
+            ddGroups="[media]"
+            fileNameParameter="./thumbnail/fileName"
+            fileReferenceParameter="./thumbnail/fileReference"
+            height="{Long}400"
+            name="./thumbnail/file"
+            renditionSuffix="/_jcr_content/renditions/original"
+            requestSuffix="/thumbnail.img.png"
+            title="Thumbnail"
+            type="Image"
+            width="{Long}100"
+            xtype="html5smartimage"/>
+        <thumbnailadvanced
+            jcr:primaryType="cq:Widget"
+            title="Thumbnail Advanced"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./thumbnail/jcr:title"
+                    xtype="textfield"/>
+                <alt
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="(leave empty to use the title defined above)"
+                    fieldLabel="Alt Text"
+                    name="./thumbnail/alt"
+                    xtype="textfield"/>
+                <linkURL
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Drop files or pages from the Content Finder"
+                    fieldLabel="Link to"
+                    name="./thumbnail/linkURL"
+                    xtype="pathfield"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    name="./thumbnail/jcr:description"
+                    xtype="textarea"/>
+                <size
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Size"
+                    heightParameter="./thumbnail/height"
+                    widthParameter="./thumbnail/width"
+                    xtype="sizefield"/>
+            </items>
+        </thumbnailadvanced>
+        <image
+            jcr:primaryType="cq:Widget"
+            allowUpload="{Boolean}false"
+            ddGroups="[media]"
+            fileNameParameter="./image/fileName"
+            fileReferenceParameter="./image/fileReference"
+            height="{Long}400"
+            name="./image/file"
+            renditionSuffix="/_jcr_content/renditions/original"
+            requestSuffix="/image.img.png"
+            title="Image"
+            type="Image"
+            width="{Long}100"
+            xtype="html5smartimage"/>
+        <imageadvanced
+            jcr:primaryType="cq:Widget"
+            title="Image Advanced"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./image/jcr:title"
+                    xtype="textfield"/>
+                <alt
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="(leave empty to use the title defined above)"
+                    fieldLabel="Alt Text"
+                    name="./image/alt"
+                    xtype="textfield"/>
+                <linkURL
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Drop files or pages from the Content Finder"
+                    fieldLabel="Link to"
+                    name="./image/linkURL"
+                    xtype="pathfield"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Description"
+                    name="./image/jcr:description"
+                    xtype="textarea"/>
+                <size
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Size"
+                    heightParameter="./image/height"
+                    widthParameter="./image/width"
+                    xtype="sizefield"/>
+            </items>
+        </imageadvanced>
+        <biography
+            jcr:primaryType="cq:Widget"
+            title="Biography Information"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <bioname
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The name "
+                    fieldLabel="Name"
+                    name="./baseballCardBioName"
+                    xtype="textfield"/>
+                <bioposition
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The position"
+                    fieldLabel="Position"
+                    name="./baseballCardBioPosition"
+                    xtype="textfield"/>
+                <bioorganization
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Organization"
+                    fieldLabel="Organization"
+                    name="./baseballCardBioOrganization"
+                    xtype="textfield"/>
+                <biotitle
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title for the biography "
+                    fieldLabel="Biography title"
+                    name="./baseballCardBioTitle"
+                    xtype="textfield"/>
+                <biodescription
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Short description of the biography. "
+                    fieldLabel="Biography Short Description"
+                    name="./baseballCardShortBioDescription"
+                    xtype="textarea"/>
+                <biolink
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Biography Link"
+                    fieldLabel="Biography Link"
+                    name="./baseballCardShortBiolink"
+                    xtype="pathfield"/>
+                <biopresentationlinktext
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Presentation Link Text"
+                    fieldLabel="Presentation Link Text"
+                    name="./baseballCardPresentationLinkText"
+                    xtype="textfield"/>
+                <biopresentationlink
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Presentation Link"
+                    fieldLabel="Presentation Link"
+                    name="./baseballCardPresentationLink"
+                    xtype="pathfield"/>
+                <biopresentationdescription
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The text for the presentation link"
+                    fieldLabel="Presentation Description"
+                    name="./baseballCardBioPresentationDescription"
+                    xtype="textfield"/>
+            </items>
+        </biography>
+        <relatedsolution
+            jcr:primaryType="cq:Widget"
+            title="Secondary Expert Solution"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <hassubarea
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Display Sub Area"
+                    fieldLabel="Display Sub Area"
+                    name="./baseballCardHasSubArea"
+                    type="checkbox"
+                    xtype="selection"/>
+                <primarycolor
+                    jcr:primaryType="cq:Widget"
+                    border="{Boolean}false"
+                    colors="[B23C00,C75300,A66200,786F1E,505D1C,404010,185E5D,278184,2F5680,003A51,3E2A67,470041,74004C,744E3D,52300C,411C00,61564E,505B5E]"
+                    fieldLabel="Primary Color"
+                    name="./baseballCardPrimaryColor"
+                    showHexValue="true"
+                    xtype="colorfield"/>
+                <secondarycolor
+                    jcr:primaryType="cq:Widget"
+                    border="{Boolean}false"
+                    colors="[B23C00,C75300,A66200,786F1E,505D1C,404010,185E5D,278184,2F5680,003A51,3E2A67,470041,74004C,744E3D,52300C,411C00,61564E,505B5E]"
+                    fieldLabel="Secondary Color"
+                    name="./baseballCardSecondaryColor"
+                    showHexValue="true"
+                    xtype="colorfield"/>
+                <relatedtitle
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title for the secondary expert solution "
+                    fieldLabel="Title"
+                    name="./baseballCardRelatedTitle"
+                    xtype="textfield"/>
+                <relateddescription
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Description of the secondary expert solution. "
+                    fieldLabel="Description"
+                    name="./baseballCardRelatedDescription"
+                    xtype="textarea"/>
+                <relatedlinktext
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Link text"
+                    fieldLabel="Link Text"
+                    name="./baseballCardRelatedLinkText"
+                    xtype="textfield"/>
+                <relatedlink
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Link"
+                    fieldLabel="Link"
+                    name="./baseballCardRelatedLink"
+                    xtype="pathfield"/>
+            </items>
+        </relatedsolution>
+        <linkedin
+            jcr:primaryType="cq:Widget"
+            title="LinkedIn Area"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <haslinkedin
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Display LinkedIn Area"
+                    fieldLabel="Display LinkedIn Area"
+                    name="./baseballCardHasLinkedin"
+                    type="checkbox"
+                    xtype="selection"/>
+                <linkedinlinktext
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Link text"
+                    fieldLabel="Link Text"
+                    name="./baseballCardLinkedinLinkText"
+                    xtype="textfield"/>
+                <linkedinlink
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="LinkedIn Link"
+                    fieldLabel="Related Link"
+                    name="./baseballCardLinkedinLink"
+                    xtype="pathfield"/>
+            </items>
+        </linkedin>
+    </items>
+</jcr:root>

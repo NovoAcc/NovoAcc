@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="M.9.0 – Body Copy"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            title="Before Inline Call Out"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <firstParagraph
+                    jcr:primaryType="cq:Widget"
+                    hideLabel="{Boolean}true"
+                    name="./firstParagraph"
+                    xtype="richtext">
+                    <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/dupont/phoenix/components/bodycopy/rteplugins.infinity.json"
+                            xtype="cqinclude"/>
+                </firstParagraph>
+            </items>
+        </tab1>
+        <tab2
+            jcr:primaryType="cq:Widget"
+            title="After Inline Call Out"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <bodyCopyText
+                    jcr:primaryType="cq:Widget"
+                    hideLabel="{Boolean}true"
+                    name="./bodyCopyText"
+                    xtype="richtext">
+                    <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/dupont/phoenix/components/bodycopy/rteplugins.infinity.json"
+                            xtype="cqinclude"/>
+                </bodyCopyText>
+                <imageCaption
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Image Caption"
+                    name="./image/imageCaption"
+                    xtype="textfield"/>
+            </items>
+        </tab2>
+    </items>
+</jcr:root>

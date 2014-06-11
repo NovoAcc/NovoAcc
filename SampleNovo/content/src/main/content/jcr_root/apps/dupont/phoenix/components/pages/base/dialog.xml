@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="{Long}600"
+    title="Page Properties"
+    width="{Long}850"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs jcr:primaryType="cq:TabPanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tags
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/dupont/phoenix/components/pages/base/tab_tags.infinity.json"
+                    xtype="cqinclude"/>
+                <basic
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/dupont/phoenix/components/pages/base/tab_basic.infinity.json"
+                    xtype="cqinclude"/>
+                <advanced
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/dupont/phoenix/components/pages/base/tab_advanced.infinity.json"
+                    xtype="cqinclude"/>
+                <thumbnail
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/dupont/phoenix/components/pages/base/tab_thumbnail.infinity.json"
+                    xtype="cqinclude"/>
+                <thumbnailadvanced
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/dupont/phoenix/components/pages/base/tab_thumbnailadvanced.infinity.json"
+                    xtype="cqinclude"/>
+                <iconimage
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/dupont/phoenix/components/pages/base/tab_iconimage.infinity.json"
+                    xtype="cqinclude"/>
+                <image
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_image.infinity.json"
+                    xtype="cqinclude"/>
+                <metadata
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/dupont/phoenix/components/pages/base/tab_metadata.infinity.json"
+                    xtype="cqinclude"/>
+                <cloudservices
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_cloudservices.infinity.json"
+                    xtype="cqinclude"/>
+                <blueprint
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_blueprint.infinity.json"
+                    xtype="cqinclude"/>
+                <livecopy
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_livecopy.infinity.json"
+                    xtype="cqinclude"/>
+                <Analytics
+                    jcr:primaryType="cq:Widget"
+                    path="/apps/dupont/phoenix/components/pages/base/tab_analytics.infinity.json"
+                    xtype="cqinclude"/>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

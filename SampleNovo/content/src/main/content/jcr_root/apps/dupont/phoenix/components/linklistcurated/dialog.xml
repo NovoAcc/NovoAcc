@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="M.10.0a – Link List (Curated)"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            title="General"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listtitle
+                    jcr:primaryType="cq:Widget"
+                    defaultValue=""
+                    fieldLabel="Link List Module Title"
+                    name="./listTitle"
+                    xtype="textfield"/>
+                <shortdesc
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Short Description"
+                    fieldSubLabel="Short Description is only displayed if number of links curated is 3 or less."
+                    name="./shortDesc"
+                    xtype="textfield"/>
+                <display
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Hide Link List (Curated)?"
+                    name="./hide"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </tab1>
+        <tab2
+            jcr:primaryType="cq:Panel"
+            title="Link List Items">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <links
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="A maximum of five links can be displayed."
+                    fieldLabel="Link List"
+                    name="./links"
+                    width="1000"
+                    xtype="custommultifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        limit="5"
+                        xtype="multilinklistcurated"/>
+                </links>
+            </items>
+        </tab2>
+    </items>
+</jcr:root>

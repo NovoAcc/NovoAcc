@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="Industry Template - T.2.1"
+    jcr:primaryType="cq:Template"
+    jcr:title="Industry Template"
+    allowedPaths="[/content(/.*)?]"
+    ranking="{Long}20">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="dupont/phoenix/components/pages/industry"
+        contentType="industry"
+        isCurated="true">
+        <featuredb
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/featuredb">
+            <selectedtool
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dupont/phoenix/components/linklistcurated"
+                isCurated="true"/>
+        </featuredb>
+        <hlm-articles
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/hlm"
+            contentType="article"/>
+        <hlm-casestudies
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/hlm"
+            contentType="casestudy"/>
+        <hlm-brands
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/hlm"
+            contentType="brand"
+            recommendedContentTypes="brand,productcat"/>
+        <hlm-event
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/hlm"
+            contentType="event"/>
+        <hlm-usesapplications
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/hlm"
+            contentType="usesapplication"/>
+        <viewallcontent jcr:primaryType="nt:unstructured">
+            <querybuilder
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dupont/phoenix/components/viewall/querybuilder">
+                <left jcr:primaryType="nt:unstructured">
+                    <options
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="dupont/phoenix/components/viewall/predicates/options"/>
+                </left>
+            </querybuilder>
+        </viewallcontent>
+        <introbodytext
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/introbodytext"
+            hideInlineCallout="{Boolean}true"/>
+    </jcr:content>
+</jcr:root>

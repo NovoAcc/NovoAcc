@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Panel"
+    title="Configure Social Media Channel">
+    <items jcr:primaryType="cq:WidgetCollection">
+       <socialmediachannellist
+        	jcr:primaryType="cq:Widget"
+           	fieldLabel="Location for Social Media List"
+            defaultValue="/etc/designs/dupont/phoenix/socialmediachannels"
+            value="/etc/designs/dupont/phoenix/socialmediachannels"
+           	name="./../../siteconfig/socialmedia/socialmediachannellist"
+           	xtype="pathfield">
+       </socialmediachannellist>
+       
+       <sharemedia
+           jcr:primaryType="cq:Widget"
+           fieldLabel="Share Overlay"
+           fieldSubLabel="on Pages"
+           name="./../../siteconfig/socialmedia/sharemedia"
+           xtype="multifield">
+           <fieldConfig
+				jcr:primaryType="nt:unstructured"
+				options="/etc/designs/dupont/phoenix/socialmediachannels.displayoptions.json"
+				type="select"
+				xtype="selection"/>
+       </sharemedia>
+    
+		<socialchannels
+		    jcr:primaryType="cq:Widget"
+		    fieldLabel="Agnostic Footer"
+		    fieldSubLabel="site wide"
+		    name="./../../siteconfig/socialmedia/socialchannels"
+		    xtype="multifield">
+			<fieldConfig
+				jcr:primaryType="nt:unstructured"
+				options="/etc/designs/dupont/phoenix/socialmediachannels.displayoptions.json"
+				xtype="customsocialchannel"/>
+		</socialchannels>           
+       
+	</items>
+</jcr:root>

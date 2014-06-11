@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2014-03-12T02:52:02.536-04:00"
+        cq:lastModifiedBy="abbhamid"
+        cq:template="/apps/dupont/phoenixadmin/templates/tagimporttemplate"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Import Tags"
+        sling:resourceType="dupont/phoenixadmin/components/pages/tagimporttemplate">
+        <utilityheadline
+            jcr:lastModified="{Date}2014-03-12T02:52:02.509-04:00"
+            jcr:lastModifiedBy="abbhamid"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/utilityheadline"
+            pageTitle="Tag Import"/>
+    </jcr:content>
+</jcr:root>

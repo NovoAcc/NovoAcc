@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/default"
+        cq:lastModified="{Date}2013-10-10T14:12:05.823-05:00"
+        cq:lastModifiedBy="rsengar"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:description="Upgrade BrightCove based video players to S7 based video player. Also, this workflow upgrades image and video media galleries to mixed media galleries."
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Media Upgrade Workflow"
+        sling:resourceType="cq/workflow/components/pages/model">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <responsiveupgrade
+                jcr:created="{Date}2013-05-16T04:48:30.579Z"
+                jcr:createdBy="rsengar"
+                jcr:description="Upgrade existing video player to S7 based video player. Upgrade video and image galleries to mixed media galleries."
+                jcr:lastModified="{Date}2013-10-10T14:12:05.814-05:00"
+                jcr:lastModifiedBy="rsengar"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Media Upgrade (Video Player and Media Galleries)"
+                sling:resourceType="dupont/phoenix/components/responsive/workflow/responsiveupgrade"
+                PROCESS="com.dupont.phoenix.workflow.impl.process.ResponsivePageUpgrade"
+                PROCESS_AUTO_ADVANCE="true">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    galleryType="videoimage"
+                    PROCESS="com.dupont.phoenix.workflow.impl.process.ResponsivePageUpgrade"
+                    PROCESS_AUTO_ADVANCE="true"
+                    upgradePageAndSubPages="true"
+                    upgradeType="media"/>
+            </responsiveupgrade>
+        </flow>
+        <model/>
+        <image
+            jcr:lastModified="{Date}2013-10-07T21:24:08.204-04:00"
+            jcr:lastModifiedBy="rsengar"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,5 @@
+/* overriding CSS */
+sup{
+	text-transform: lowercase;
+	vertical-align: sub !important;
+}

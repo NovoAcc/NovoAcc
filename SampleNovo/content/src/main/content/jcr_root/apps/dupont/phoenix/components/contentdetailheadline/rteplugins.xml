@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+	xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="nt:unstructured">
+	<links jcr:primaryType="nt:unstructured" features="[]" />
+		
+	<edit jcr:primaryType="nt:unstructured" defaultPasteMode="wordhtml"
+		features="[paste-plaintext]" >
+        <htmlPasteRules
+        jcr:primaryType="nt:unstructured">  
+        <allowBasics
+            jcr:primaryType="nt:unstructured"
+            bold="{Boolean}false"
+            italic="{Boolean}false"
+            underline="{Boolean}false"
+            anchor="{Boolean}false"
+            image="{Boolean}false"/>      
+        </htmlPasteRules>
+    </edit>
+	<paraformat jcr:primaryType="nt:unstructured" features="[]" />
+	<format jcr:primaryType="nt:unstructured" features="[]" />
+
+	<undo jcr:primaryType="nt:unstructured" features="[]" maxUndoSteps="50" />
+	<lists
+        jcr:primaryType="nt:unstructured"
+	    features="[]"/>
+	<justify
+        jcr:primaryType="nt:unstructured"
+	    features="[]"/>
+	<subsuperscript
+    	jcr:primaryType="nt:unstructured"
+        features="[superscript,subscript]"/>
+    
+</jcr:root>

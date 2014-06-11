@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Text"
+    title="Text"
+    xtype="tabpanel">
+    <items
+        jcr:primaryType="cq:WidgetCollection"
+        xtype="tabpanel">
+        <tab1
+            jcr:primaryType="cq:Panel"
+            title="Byline">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <pagetitle
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Byline"
+                    fieldSubLabel="Byline"
+                    name="./byline"
+                    xtype="textfield"/>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

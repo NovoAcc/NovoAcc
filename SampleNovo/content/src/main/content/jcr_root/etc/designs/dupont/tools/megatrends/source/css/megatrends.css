@@ -1,0 +1,85 @@
+
+.fancybox-inner {
+    height:600px !important;
+}
+.clear {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    clear: both;
+    float: none;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+#filter_food_label, #filter_fuel_label, #filter_protection_label {
+    color: #fff;
+    display: inline-block;
+}
+#map {
+	width:960px; 
+	height:600px;
+}
+.filters {
+    background: url("/etc/designs/dupont/tools/megatrends/source/images/bglegend.png") repeat scroll left top transparent;
+    width:240px;
+	color: #ffffff;
+    font-family: Arial,Sans-Serif;
+    font-size: 12px;
+    padding: 15px 20px;
+    z-index: 1;
+	top:-140px;
+	left:640px;
+	position: relative;
+}
+.filters ul {
+	margin: 0px;
+	list-style-type: none;
+	list-style-image: none;
+	list-style-position: outside;
+        color: #fff;
+}
+.filters img {
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.filterstitle{
+	font-weight: 700;
+    font-family: ff-meta-web-pro, Sans-Serif;
+    font-weight: 12px;
+}
+#locationContent {
+	width:380px
+}
+#locationContent .right {
+    width: 220px;
+	float: right;
+}
+#locationContent .left {
+    margin-right: 20px;
+    width: 140px;
+    float: left;
+}
+#locationContent .category {
+font-family: Trebuchet MS,Arial,Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+#locationContent .desc {
+    color: #424242;
+    font-family: Georgia,Arial,Sans-Serif;
+    font-size: 11px;
+    line-height: 18px;
+    margin: 8px 0 12px;
+}
+#locationContent .link a {
+    color: #F5120F;
+    display: block;
+    font-family: ff-meta-web-pro, Sans-Serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}

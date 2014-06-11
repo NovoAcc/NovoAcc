@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="A component to display an Video from scene7 with a title, short description and some metadata specifications."
+    jcr:primaryType="cq:Component"
+    jcr:title="Media Center Video Detail"
+    sling:resourceSuperType="foundation/components/parbase"
+    allowedParents="[*/parsys]"
+    componentGroup=".hidden"/>

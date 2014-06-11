@@ -1,0 +1,6 @@
+#base=source
+
+# cq localization for ext
+
+widgets/wcm/NotificationInbox.js    
+ 

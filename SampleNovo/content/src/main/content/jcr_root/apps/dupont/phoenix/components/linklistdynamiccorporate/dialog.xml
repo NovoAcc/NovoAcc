@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Text"
+    title="M.10.0c – Link List (Dynamic, Corporate)"
+    xtype="dialog">
+    <listeners
+        jcr:primaryType="nt:unstructured"
+        loadContent="function(dialog){Dupont.contentTypes.loadSelectionOptions(dialog);return true;}"/>
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Widget"
+                anchor="100%"
+                title="General"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <Title_x0020_of_x0020_the_x0020_Linked_x0020_List
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Link List Module Title"
+                        name="./listTitle"
+                        xtype="textfield"/>
+                    <contenttype
+                        jcr:primaryType="cq:Widget"
+                        path="/apps/dupont/phoenix/components/linklistdynamiccorporate/contenttypes.infinity.json"
+                        xtype="cqinclude"/>
+                    <showhide
+                        jcr:primaryType="cq:Widget"
+                        description="Once checked, this component will not be displayed to users."
+                        fieldLabel="Hide Link List (Dynamic, Corporate)?"
+                        name="./hide"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

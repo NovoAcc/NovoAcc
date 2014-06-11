@@ -1,0 +1,9 @@
+/* overriding CSS */
+sup {
+    text-transform: lowercase;
+    vertical-align: sub !important;
+}
+
+.footer-helpful-links ul li {
+    text-transform: inherit;
+}

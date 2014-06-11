@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    name="./jcr:title"
+    title="Full Bleed Image Properties"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+        
+            <image
+			   jcr:primaryType="cq:Widget"
+		       path="/apps/dupont/phoenix/components/hero/herobase/tab_hero_image.infinity.json"
+               xtype="cqinclude"/>
+                    
+             <tab2
+                jcr:primaryType="cq:Panel"
+                title="Image properties">
+                <items jcr:primaryType="cq:WidgetCollection">                   
+                    <title
+			            jcr:primaryType="cq:Widget"
+			            fieldLabel="Title"
+			            name="./jcr:title"
+			            xtype="textfield"/>
+			        <alt
+			            jcr:primaryType="cq:Widget"
+			            fieldDescription="(leave empty to use the title defined above)"
+			            fieldLabel="Alt Text"
+			            name="./alt"
+			            xtype="textfield"/>
+			        <description
+			            jcr:primaryType="cq:Widget"
+			            fieldLabel="Description"
+			            name="./jcr:description"
+			            xtype="textarea"/>
+			        
+			     
+                </items>
+            </tab2>
+            
+             
+             
+              <tab3
+                jcr:primaryType="cq:Panel"
+                title="Title and Caption">
+                <items jcr:primaryType="cq:WidgetCollection">                  
+			        
+                        <imageTitleTop
+			            jcr:primaryType="cq:Widget"
+			            fieldLabel="Image Title"
+			            fieldDescription="Image title will be diaplayed above the image"
+			            name="./imageTitleTop"
+			            xtype="textfield"/>
+                    
+			         <imageCaption
+			            jcr:primaryType="cq:Widget"
+			            fieldLabel="Image Caption"
+			            fieldDescription="Image caption will be diaplayed underneath the image"
+			            name="./imageCaption"
+			            xtype="textfield"/>
+                </items>
+            </tab3>
+
+            
+        </items>
+    </items>
+</jcr:root>

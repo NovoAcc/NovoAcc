@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Tab_x0020_1
+                jcr:primaryType="cq:Panel"
+                title="Hero Callout">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <heroheadline
+                    	jcr:primaryType="cq:Widget"
+                        fieldLabel="Hero Headline"
+                        name="./heroAltHeadline"
+                        xtype="textfield"/>
+                    <linkURL
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="URL to callout Story"
+                        name="./linkURL"
+                        xtype="pathfield"/>
+                     
+                </items>
+            </Tab_x0020_1>
+            <image
+                jcr:primaryType="cq:Widget"
+				allowUpload="{Boolean}false"
+                ddGroups="[media]"
+                fieldLabel="Hero Image"
+                fileNameParameter="./fileName"
+                fileReferenceParameter="./fileReference"
+                name="./heroImage"
+                requestSuffix=".img.png"
+                title="Hero Image"
+                xtype="html5smartimage"/>
+            <Alt_x0020_Text
+                jcr:primaryType="cq:Panel"
+                title="Alt Text">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <alt
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription=""
+                        fieldLabel="Alt Text"
+                        name="./alt"
+                        xtype="textfield"/>
+                </items>
+            </Alt_x0020_Text>
+        </items>
+    </items>
+</jcr:root>

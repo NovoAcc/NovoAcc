@@ -1,0 +1,80 @@
+/*
+    YOU SHOULD BE ASHAMED OF USING THIS FILE. SHAME ON YOU.
+    The hottest places in hell are reserved for those who in great moral crises maintain this file.
+        - Dante Alighieri, The Divine Comedy (of CSS)
+*/
+
+
+/* =============================================================================
+   HELPERS
+   ~ Starting with helpers since there are a few overrides happening here.
+   Will attempt to target and remove each of these and figure out a cleaner
+   solution for each instance.
+   ========================================================================== */
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+.no-margin-right {
+  margin-right: 0 !important;
+}
+
+.noleftpadding,
+.no-padding-left {
+  padding-left: 0 !important;
+}
+
+.no-padding-top {
+  padding-top: 0 !important;
+}
+
+.block {
+  display: block !important;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.relative-position {
+  position: relative !important;
+}
+
+
+/*=========================mixmedia css============================
+
+.s7swatches {
+    top: -38px!important;
+    left: 58%!important;
+    width: 380px!important;
+    height: 380px!important;
+    background: none!important;
+    border:none!important;
+    background-color: none!important;
+    -moz-box-shadow: none!important;
+    -webkit-box-shadow:none!important;
+    box-shadow: none!important;
+}
+
+.s7swatches .s7thumb {
+   width: 118px!important;
+   height: 69px!important;
+}
+
+.s7swatches .s7scrollleftbutton {
+  left: 274px!important;
+  top: 362px!important;
+
+}
+
+.s7swatches .s7scrollrightbutton {
+  left: 298px!important ;
+  top: 362px!important ;
+}
+
+*/

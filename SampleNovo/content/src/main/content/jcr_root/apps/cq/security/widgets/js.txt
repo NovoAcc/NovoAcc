@@ -1,0 +1,6 @@
+#base=source
+
+# CQ 
+
+widgets/security/AuthorizableList.js
+

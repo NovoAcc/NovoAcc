@@ -1,0 +1,618 @@
+/*
+#DSSViewPane html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/*font: inherit;*/
+	/* vertical-align: baseline; */
+}
+*/
+
+@charset "utf-8";
+
+/*/// SNIPPETS ///*/
+.clr {
+	clear:both;
+}
+/* override default drupal style */
+.field-item a {
+	text-indent: 0;
+	text-transform: none;
+}
+
+/*/// CONSULTANT GRID ///*/
+.grid-container {
+	position:relative;
+	}
+.consultant-grid-1 {
+	width:956px;
+	height:360px;
+	padding:1px 1px 1px 1px;
+	border:1px solid #d5d5d5;
+	overflow:hidden;
+}
+
+/*/// GRID QUOTE ///*/
+.sqr-quote-grid-1 {	
+	width:236px;
+	height:240px;
+	background: url(/etc/designs/dupont/tools/dss/source/images/bg-top-left-box.jpg) no-repeat;
+	color:#404041;
+	float:left;
+}
+.sqr-quote-grid-1 p {	
+	font: bold 27px/35px ff-meta-web-pro,"Myriad Pro",Arial,Sans-Serif;
+	padding:50px 25px;
+}
+.sqr-quote-grid-1 p#ch-dss-title {	
+	font: bold 25px/35px ff-meta-web-pro,"Myriad Pro",Arial,Sans-Serif;
+	padding:50px 25px;
+}
+
+/*/// GRID IMGS ///*/
+.sqr-xpt-1 {
+	width:240px;
+	height:120px;
+	float:left
+}
+.sqr-xpt-2 {
+	width:120px;
+	height:120px;
+	float:left
+}
+
+/*/// GRID BOXES ///*/
+.sqr-1 {
+	width:120px;
+	height:120px;
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-sqr-1.jpg) repeat-x;
+	color:#e5d1b5;
+	float:left;
+	position:relative;
+}
+.sqr-xpt-1-special {
+	width:236px;
+	height:120px;
+	float:left
+}
+.sqr-2 {
+	width:120px;
+	height:120px;
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-sqr-2.jpg) repeat-x;
+	color:#e5d1b5;
+	float:left;
+	position:relative;
+}
+.sqr-3 {
+	width:120px;
+	height:120px;
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-sqr-3.jpg) repeat-x;
+	color:#efceb6;
+	float:left;
+	position:relative;
+}
+.sqr-4 {
+	width:120px;
+	height:120px;
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-sqr-4.jpg) repeat-x;
+	color:#e8c4b2;
+	float:left;
+	position:relative;
+}
+.sqr-5 {
+	width:120px;
+	height:120px;
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-sqr-5.jpg) repeat-x;
+	color:#c7bcb1;
+	float:left;
+	position:relative;
+}
+.sqr-6 {
+	width:120px;
+	height:120px;
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-sqr-3.jpg) repeat-x;
+	color:#efceb6;
+	float:left;
+	position:relative;
+}
+.sqr-7 {
+	width:120px;
+	height:120px;
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-sqr-2.jpg) repeat-x;
+	color:#e5d1b5;
+	float:left;
+	position:relative;
+}
+.sqr-8 {
+	width:120px;
+	height:120px;
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-sqr-4.jpg) repeat-x;
+	color:#e8c4b2;
+	float:left;
+	position:relative;
+}
+.sqr-p {	
+	font:bold 13px/18px ff-meta-web-pro,"Myriad Pro",Arial,Sans-Serif;
+	text-transform:uppercase;
+	padding:8px 12px 12px 12px;
+	margin:0;
+}
+.sqr-1-hover {
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-sqr-1-hover.jpg) repeat-x;
+}
+.sqr-2-hover {
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-sqr-2-hover.jpg) repeat-x;
+}
+.sqr-3-hover {
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-sqr-3-hover.jpg) repeat-x;
+}
+.sqr-4-hover {
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-sqr-4-hover.jpg) repeat-x;
+}
+.sqr-5-hover {
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-sqr-5-hover.jpg) repeat-x;
+}
+.sqr-6-hover {
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-sqr-3-hover.jpg) repeat-x;
+}
+.sqr-7-hover {
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-sqr-2-hover.jpg) repeat-x;
+}
+.sqr-8-hover {
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-sqr-4-hover.jpg) repeat-x;
+}
+
+
+/*/// SOLUTION PAGE ///*/
+.solution-page {
+	width:958px; /* width:960px; */
+	height:361px;
+	border:1px solid #d6d6d6;
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-solutions-page.jpg) no-repeat;
+	overflow:hidden;
+}
+.solution-page li {
+	list-style:none;
+}
+.general-info {
+	width:480px;
+	height:362px;
+	float:left;
+	position:relative;
+}
+.general-info h1 {
+	font: normal 30px/31px ff-meta-web-pro,"Myriad Pro", Arial,Sans-Serif;
+	margin:20px 30px 13px 30px;
+}
+.general-info p {
+	font: normal 13px/18px Arial, Helvetica, sans-serif;
+	color:#6e6e6e;
+	margin:0 30px 6px 30px;
+}
+.general-info ul li {
+	background:url(/etc/designs/dupont/tools/dss/source/images/right-arrow-grey.png) no-repeat 0px 10px;
+	font: bold 12px ff-meta-web-pro,"Myriad Pro", Arial, Helvetica, sans-serif;
+	color:#808080;
+	text-transform:uppercase;
+	border-bottom:1px solid #eaeaea;
+	padding:10px 0 10px 21px;
+	margin:0 30px 0px 30px;
+}
+.general-info ul li a:hover {
+	color:#b2b2b2;
+	}
+.general-info ul li.last a:hover {
+	color:#b2b2b2;
+	}
+.general-info ul li.last {
+	border-bottom:none;
+}
+.general-info a {
+	text-decoration:none;
+	color:#808080;
+	text-transform: uppercase;
+}
+
+.expert-shot {
+	width:240px;
+	height:362px;
+	float:left;
+	position:relative;
+	font:normal 12px ff-meta-web-pro,"Myriad Pro", Arial,Sans-Serif;
+	color:#fafafa;
+}
+.expert-shot-herriot {
+	background:url(/etc/designs/dupont/tools/dss/source/images/simon-herriot-big.jpg) no-repeat;	
+}
+.expert-shot-krzywicki {
+	background:url(/etc/designs/dupont/tools/dss/source/images/robert-krzywicki-big.jpg) no-repeat;
+}
+.expert-shot-pankow {
+	background:url(/etc/designs/dupont/tools/dss/source/images/laurie-pankow-big.jpg) no-repeat;	
+}
+.expert-shot-vassallo {
+	background:url(/etc/designs/dupont/tools/dss/source/images/davide-vassallo-big.jpg) no-repeat;	
+}
+.expert-shot-ramabhadran {
+	background:url(/etc/designs/dupont/tools/dss/source/images/srinivasan-ramabhadran-big.jpg) no-repeat;
+}
+.expert-shot-forsythe {
+	background:url(/etc/designs/dupont/tools/dss/source/images/garrett-forsythe-big.jpg) no-repeat;
+}
+.expert-shot-smith {
+	background:url(/etc/designs/dupont/tools/dss/source/images/christopher-smith-big.jpg) no-repeat;
+}
+.expert-shot h3 {
+	position:absolute;
+	bottom:50px;
+	left:18px;
+	text-transform:uppercase;
+	font:bold 13px ff-meta-web-pro,"Myriad Pro", Arial,Sans-Serif;
+	margin:0;
+}
+.expert-shot p {
+	position:absolute;
+	bottom:18px;
+	left:18px;
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:15px;
+}
+.expert-info {
+	width:238px; /* width:240px; */
+	height:362px;
+	float:left;
+	position:relative;
+}
+.expert-info a.menu {
+	float:right;
+	height:23px;
+	text-decoration:none;
+	background:url(/etc/designs/dupont/tools/dss/source/images/menu-icon.png) no-repeat 40px 5px;
+	font: bold 12px ff-meta-web-pro,"Myriad Pro",Arial,Sans-Serif;
+	color:#808080;	
+	padding:9px 30px 0px 0px;
+	text-align:right;
+	text-transform: uppercase;
+}
+.expert-info a.menu:hover {
+	color: #b2b2b2;
+}
+.expert-info a.menu-ch {
+	background:url(/etc/designs/dupont/tools/dss/source/images/menu-icon.png) no-repeat 35px 5px;
+}
+
+
+.expert-info h2 {
+	text-decoration:none;
+	font:normal 17px/21px ff-meta-web-pro,"Myriad Pro",Arial,Sans-Serif;
+	color:#333333;	
+	margin:41px 10px 13px 20px;
+}
+.expert-info p {
+	font:normal 12px/16px Arial, Helvetica, sans-serif;
+	color:#6e6e6e;	
+	margin:0px 20px 16px 20px;
+}
+.expert-info a.fullbio {
+	background:url(/etc/designs/dupont/tools/dss/source/images/right-arrow-grey.png) no-repeat 0px 0px;
+	font: bold 12px ff-meta-web-pro,"Myriad Pro", Arial,Sans-Serif;
+	color:#808080;
+	text-transform:uppercase;
+	text-decoration:none;
+	padding:0px 0 10px 21px;
+	margin:0 20px 20px 0;
+	float:left;
+}
+.expert-info a.fullbio:hover {
+	color:#b2b2b2;
+	}
+.expert-presentation {
+	height:81px;
+	position:absolute;
+	bottom:2px;
+	right:1px;
+	left:0;
+	background-color:#898989;
+}
+.expert-presentation a {
+	display:block;
+	text-decoration:none;
+	font:bold 12px ff-meta-web-pro,"Myriad Pro", Arial, Helvetica, sans-serif;
+	color:#fafafa;
+	text-transform:uppercase;
+	padding:15px 0 2px 18px;
+}
+.expert-presentation a img {
+	margin-left:5px;
+	vertical-align: bottom;
+	padding-bottom: 3px;
+}
+.expert-presentation p {
+	font:italic 12px Arial, Helvetica, sans-serif;
+	color:#fafafa;
+	padding:0px 0 0 0px;
+}
+.expert-solution-bottom {
+	width:480px;
+	height:81px;
+	position:absolute;
+	bottom:2px;
+	left:1px;
+}
+.expert-solution-bottom-bg-1 {
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-solution-1.jpg) repeat-x;
+}
+.expert-solution-bottom-bg-2 {
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-solution-2.jpg) repeat-x;
+}
+.expert-solution-bottom-bg-3 {
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-solution-3.jpg) repeat-x;
+}
+.expert-solution-bottom-bg-4 {
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-solution-4.jpg) repeat-x;
+}
+.expert-solution-bottom-bg-5 {
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-solution-5.jpg) repeat-x;
+}
+
+.expert-solution-bottom p.related-expert-solution {
+	font:normal 15px ff-meta-web-pro,"Myriad Pro", Arial,Sans-Serif;
+	color:#fafafa;
+	padding-top:12px;
+	text-transform:none;
+}
+.expert-solution-bottom p.solution-title {
+	font:bold 20px ff-meta-web-pro,"Myriad Pro",Arial,Sans-Serif;
+	color:#fafafa;
+	/*margin-top: -5px;*/
+	text-transform:none;
+}
+.expert-solution-bottom a {
+	display:block;
+	height:81px;
+}
+.plus-icon {
+	position:absolute;
+	right:17px;
+	top:15px;
+}
+
+/*/// general snippets ///*/
+
+#DSSViewPane {
+	height:364px;
+	width: 960px;
+	margin: 0 auto 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.expert-pane {
+	width: 960px;
+	height: 400px;
+}
+
+
+.consultant-grid-1 p {
+	margin: 0;
+}
+
+
+.general-info h1.color-1 {
+	color:#52300c;
+}
+.general-info h1.color-2 {
+	color:#b23c00;
+}
+.general-info h1.color-3 {
+	color:#c75300;
+}
+.general-info h1.color-4 {
+	color:#a66200;
+}
+.general-info h1.color-5 {
+	color:#744e3d;
+}
+#DSSViewPane .right-arrow {
+	float:left;
+	position:absolute;
+	right:11px;
+	bottom:10px;
+}
+.expert-solution-top {
+	width:480px;
+	height:81px;
+	background:url(/etc/designs/dupont/tools/dss/source/images/bg-solution-4.jpg) repeat-x;
+	position:absolute;
+	top:2px;
+	left:0px;
+}
+.expert-solution-top p.related-expert-solution {
+	font:normal 15px ff-meta-web-pro,"Myriad Pro", Arial, Helvetica, sans-serif;
+	color:#fafafa;
+	padding-top:15px;
+}
+.expert-solution-top p.solution-title {
+	font:bold 20px ff-meta-web-pro,"Myriad Pro", Arial, Helvetica, sans-serif;
+	color:#fafafa;
+}
+.expert-solution-top a {
+	display:block;
+	height:81px;
+}
+.general-info-bottom {
+	width:480px;
+	position:absolute;
+	bottom:15px;
+}
+.general-info-bottom h1 {
+	font: normal 28px Arial, Helvetica, sans-serif;
+	color:#52300c;
+	margin:0px 30px 10px 30px;
+}
+
+/*/// CONSULTANT GRID TITLE ///*/
+#ToolCallout {
+	position:relative;
+	width:960px;
+	margin:0;
+	padding:0;
+	margin:20px 0 20px;
+}
+.grid-top {
+	width:960px;
+	margin:23px Auto 20px Auto;
+	padding:0 0 20px 0;
+}
+.grid-title {
+	font: normal 14px ff-meta-web-pro,"Myriad Pro",Arial,Sans-Serif;
+	color:#474747;
+	text-transform:uppercase;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+/*/// GRID GREY DOTS ///*/
+
+.greydots a {
+background: url(/etc/designs/dupont/tools/dss/source/images/grid-indicator.png) no-repeat scroll 0 0 transparent;
+display: inline-block;
+height: 15px;
+width: 15px;
+margin: 0 0 0 5px;
+}
+.greydots a.selected, .greydots a.hover {
+background: url(/etc/designs/dupont/tools/dss/source/images/grid-indicator-current.png) no-repeat scroll 0 0 transparent;
+}
+.greydots {
+height: 15px;
+padding: 0px 0;
+float: right;
+}
+ul#ExpertGrid li {
+	list-style:none;
+}
+
+p.grid-title {
+	margin:0;
+}
+
+.highlight-1 {
+	font:bold Arial, Helvetica, sans-serif;
+	color:black;
+	background-color:#36C;
+}
+.solution-2 {
+	margin:0;
+	padding:0;
+}
+/*.content-sol-2 {
+	margin-top:190px;	
+}
+.content-sol-2 h1 {
+	margin-top:190px;	
+}*/
+.general-info-2 {
+	width:480px;
+	height:362px;
+	position:relative;
+	margin-top:97px;
+}
+.general-info-2 h1 {
+	font: normal 30px/31px ff-meta-web-pro,"Myriad Pro", Arial,Sans-Serif;
+	margin:30px 30px 13px 30px;
+	padding-top:95px;
+}
+.general-info-2 p {
+	font: normal 13px/18px Arial, Helvetica, sans-serif;
+	color:#6e6e6e;
+	margin:0 30px 6px 30px;
+}
+.general-info-2 ul li {
+	background:url(/etc/designs/dupont/tools/dss/source/images/right-arrow-grey.png) no-repeat 0px 10px;
+	font: bold 12px ff-meta-web-pro,"Myriad Pro", Arial, Helvetica, sans-serif;
+	color:#808080;
+	text-transform:uppercase;
+	border-bottom:1px solid #eaeaea;
+	padding:10px 0 10px 21px;
+	margin:0 30px 0px 30px;
+}
+.general-info-2 ul li a:hover {
+	color:#b2b2b2;
+	}
+.general-info-2 ul li.last a:hover {
+	color:#b2b2b2;
+	}
+.general-info-2 ul li.last {
+	border-bottom:none;
+}
+.general-info-2 a {
+	text-decoration:none;
+	color:#808080;
+}
+
+.general-info-2-ch { 
+margin-top: 84px
+}
+
+.expert-solution-top-2 {
+	width:480px;
+	height:81px;
+	position:absolute;
+	top:0px;
+	left:1px;
+}
+.expert-solution-top-2 p.related-expert-solution {
+	font:normal 15px ff-meta-web-pro,"Myriad Pro", Arial, Helvetica, sans-serif;
+	color:#fafafa;
+	padding-top:15px;
+	text-transform: none;
+}
+.expert-solution-top-2 p.solution-title {
+	font:bold 20px ff-meta-web-pro,"Myriad Pro", Arial, Helvetica, sans-serif;
+	color:#fafafa;
+	text-transform: none;
+}
+
+.expert-solution-top-2 p.solution-title.srini {
+	font-size: 18px;
+}
+.expert-solution-top-2 a {
+	display:block;
+	height:81px;
+}
+.expert:hover{
+  cursor: pointer; 
+}
+.expert-2-img:hover{
+cursor: default;
+}
+.second-grid-placeholder {
+	 width:960px;
+	 height:410px;
+	 background-color: #339;
+	 color:#FFF;
+	 font-size:28px;
+}
+#openhtml-area {
+	overflow:visible;
+}
+
+
+.primary-solution-1 {
+	height: 258px;
+}

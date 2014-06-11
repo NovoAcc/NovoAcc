@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/cloudservices/sitecatalyst"
+        cq:template="/libs/cq/analytics/templates/sitecatalyst"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:lastModifiedBy="cqdevdeploy"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Global SiteCatalyst Configuration"
+        sling:resourceType="cq/analytics/components/sitecatalystpage"
+        company="Dupont"
+        server="https://api2.omniture.com/admin/1.2/rest/"/>
+</jcr:root>

@@ -1,0 +1,160 @@
+*:first-child+html .group {
+	min-height: 1px;
+}
+#row-with-callout-wrapper {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+#nav-tabs-wrapper {
+	position: relative;
+	bottom: -20px;
+	height: 40px;
+}
+
+/* Global Navigation - No Box shadow available */
+.menu-dropdown-content {
+	border:1px solid #cccccc;
+}
+
+/* Content Detail - Breadcrumbs */
+.content-detail-header .breadcrumb {
+	margin-top:45px;
+	padding-top:0;
+}
+.share-button {
+	margin-top:1px;
+	padding-top:5px;
+}
+.share-btn {
+	padding-left:18px;
+	padding-top:10px;
+}
+
+/* Content Tabs - Debugging */
+ .footer_agnostic {
+ 	position:relative;
+ }
+ #footer-right-col {
+ 	height:100%;
+ 	position:absolute;
+ }
+#nav-tabs-wrapper ul li {
+	float:left;
+}
+
+/* Main Navigation - Snap into place */
+#nav-tabs-wrapper {
+	bottom:0;
+}
+
+/* Vertical Link List Module */
+.vertical_list_module {
+	padding-bottom:30px;
+	padding-top:30px;
+}
+.vertical_list_module ul li:last-child {
+	padding-bottom:30px;
+}
+/* Content Tabs - Remove border-right from last LI */
+#nav-tabs-2>li + li {
+	border-right:none;
+}
+#nav-tabs-3>li + li + li {
+	border-right:none;
+}
+#nav-tabs-4>li + li + li + li {
+	border-right:none;
+}
+#nav-tabs-5>li + li + li + li + li {
+	border-right:none;
+}
+#nav-tabs-6>li + li + li + li + li + li {
+	border-right:none;
+}
+
+/* Content Tabs - Add border-radius on last LI */
+#nav-tabs-2>li + li.selected {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#nav-tabs-3>li + li + li.selected {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#nav-tabs-4>li + li + li + li.selected {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#nav-tabs-5>li + li + li + li + li.selected {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#nav-tabs-6>li + li + li + li + li + li.selected {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* View Container */
+.view_container {
+	padding-bottom:30px;
+	width:100%;
+}
+.view_container .row_results {
+	width:100%;
+}
+
+/* MSDS Finder */
+#msds-finder {
+	clear:both;
+	float:left;
+}
+.msds-finder-box {
+	line-height:28px;
+}
+.msds-finder-title {
+	padding-top:5px;
+}
+.msds-search-link {
+	width:100px;
+}
+
+/* Image Galleries */
+.gallery-row {
+	float:left;
+}
+/* HLM */
+.horizontal_list_module_2-3_col .carousel_data {
+    top:20px;
+}
+
+/* BI Residential */
+.detail-image-content {
+	position:relative !important;
+}
+
+.detail-image-link-item {
+	height: 21px !important;
+}
+
+.menu-link {
+	top: -24px !important;
+	position: absolute !important;
+}
+/* Footer More in*/
+#footer-left-col h4 {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 30px 0 17px 0;
+  clear:both;
+  margin-top:-45px;
+}
+
+#nav-tabs-2 li,
+#nav-tabs-2 li a {
+  width: 479px;
+}
+
+.agnostic-footer-utility-links{
+	clear: both;
+}

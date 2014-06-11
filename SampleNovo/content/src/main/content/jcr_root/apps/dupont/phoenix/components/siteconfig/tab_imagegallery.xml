@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Panel"
+    title="Image Media Gallery">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <imageGalleryFolderPath
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Path to Image Media Gallery"
+            name="./../../siteconfig/imagegallery/imageGalleryFolderPath"
+            xtype="pathfield"/>
+        <scene7Config
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Scene7 Config Path"
+            name="./../../siteconfig/imagegallery/scene7Config"
+            rootPath="etc/cloudservices/scene7"
+            defaultValue="/etc/cloudservices/scene7/dupont"
+            value="/etc/cloudservices/scene7/dupont"
+            xtype="pathfield"/>
+    </items>
+</jcr:root>

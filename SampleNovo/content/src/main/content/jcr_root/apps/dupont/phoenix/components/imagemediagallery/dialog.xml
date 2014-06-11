@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="M.16.0 – Media Gallery (Image)"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="General">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <imageGallery
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="A maximum of four image sets can be displayed."
+                        fieldLabel="Image Set"
+                        name="./selectedGallery"
+                        width="1000"
+                        xtype="custommultifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            fieldDescription="Select Image Gallery (Set Image Gallery node in site config to see All available Image Gallery)."
+                            fieldLabel="Select Gallery(Set Image Gallery node in site config to see All available Image Gallery)."
+                            limit="4"
+                            optionsProvider="Dupont.imageGalleryOptions"
+                            allowBlank="{Boolean}false"
+                            type="select"
+                            xtype="selection"/>
+                    </imageGallery>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

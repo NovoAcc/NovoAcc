@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Full Bleed Video Player"
+     xtype="tabpanel">
+   
+   			 <items jcr:primaryType="cq:WidgetCollection">
+        
+		         <Video
+		                jcr:primaryType="cq:Panel"
+		                title="Video">
+		            <items jcr:primaryType="cq:WidgetCollection">   
+				        <fileReference
+				            jcr:primaryType="cq:Widget"
+				            fieldLabel="Video File Path:"
+				            name="./fileReference"
+				            xtype="pathfield"/>
+				            <videodesc
+				             jcr:primaryType="cq:Widget"
+				             fieldLabel="Description"
+				             name="./desc"
+				             xtype="textfield"/>
+				            
+				            <titleText
+				             jcr:primaryType="cq:Widget"
+				             fieldLabel="Title"
+				             name="./titleText"
+				             description="The text that is displayed on top of the image"
+				             xtype="textfield"/>
+				            
+				             <image1ResType
+		                        jcr:primaryType="cq:Widget"
+		                        ignoreData="{Boolean}true"
+		                        name="./image/sling:resourceType"
+		                        value="foundation/components/image"
+		                        xtype="hidden"/>
+				          
+		            </items>
+		         </Video>
+		        
+		           
+		       <tab2
+                jcr:primaryType="cq:Widget"
+                cropParameter="./image/imageCrop"
+                ddGroups="[media]"
+                fileNameParameter="./image/fileName"
+                fileReferenceParameter="./image/fileReference"
+                mapParameter="./image/imageMap"
+                name="./image/file"
+                requestSuffix="/image.img.png"
+                rotateParameter="./image/imageRotate"
+                title="Image"
+                uploadUrl="/tmp/upload/*"
+                xtype="html5smartimage">
+            </tab2>
+             
+              
+         </items>
+    
+</jcr:root>

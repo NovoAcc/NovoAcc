@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Widget"
+    allowBlank="{Boolean}false" 
+    fieldLabel="Content Type"
+    name="./contenttype"
+    type="select"
+    xtype="selection">
+    <options jcr:primaryType="cq:WidgetCollection">
+        <mediavideo
+            jcr:primaryType="nt:unstructured"
+            text="Media Video Detail page"
+            value="mediavideo"/> 
+        <mediaimage
+            jcr:primaryType="nt:unstructured"
+            text="Media Image Detail page"
+            value="mediaimage"/>
+        <pdf
+            jcr:primaryType="nt:unstructured"
+            text="PDF File"
+            value="pdf"/>
+    </options>
+    <listeners
+        jcr:primaryType="nt:unstructured"
+        loadcontent="function(field,rec,path){Dupont.featuredy.initFeaturedy(field, rec, path);}"
+        selectionchanged="function(field, value) {Dupont.featuredy.showHidePDFTitleDisc(this, field);}"/>
+</jcr:root>

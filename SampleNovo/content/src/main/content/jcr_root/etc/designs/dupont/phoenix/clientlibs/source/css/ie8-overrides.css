@@ -1,0 +1,181 @@
+*:first-child+html .group {
+  min-height: 1px;
+}
+.msds-finder-box {
+	padding-left:5px;
+}
+ul.row-4col li {
+	margin-right: 29px;
+}
+
+/* Global Navigation - No Box shadow available */
+.menu-dropdown-content {
+  border:1px solid #cccccc;
+}
+
+.menu-dropdown .sub_menu li {
+  float:left;
+  margin-right:9px;
+}
+.header-top-bar {
+  display:block;
+}
+
+/* Content Tabs */
+#nav-tabs-2>li + li {
+	border-right:none;
+}
+#nav-tabs-3>li + li + li {
+	border-right:none;
+}
+#nav-tabs-4>li + li + li + li {
+	border-right:none;
+}
+#nav-tabs-5>li + li + li + li + li {
+	border-right:none;
+}
+#nav-tabs-6>li + li + li + li + li + li {
+	border-right:none;
+}
+
+/* Content Tabs - Add border-radius on last LI */
+#nav-tabs-2>li + li.selected {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#nav-tabs-3>li + li + li.selected {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#nav-tabs-4>li + li + li + li.selected {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#nav-tabs-5>li + li + li + li + li.selected {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#nav-tabs-6>li + li + li + li + li + li.selected {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* MSDS Finder */
+#msds-finder {
+  clear:both;
+  float:left;
+}
+.msds-finder-box {
+  line-height:28px;
+}
+.msds-finder-title {
+  padding-top:5px;
+}
+
+/* GOLBAL NAVIGATION MENU ITEMS */
+
+/* VIDEO PLAYER */
+/* Noo need to override the video player 
+.videoplayer .s7videoplayer {
+  height: 355px;
+  opacity: 1;
+  position: static !important;
+  width: 630px !important;
+}*/
+
+.videoplayer .video-detail {
+    float: left;
+    margin: 30px 0 20px;
+    width:100%;
+    position: relative;
+    z-index:1200;
+}
+
+/* Fancybox full screen stuff */
+#fancybox-content{
+    overflow: visible;    
+}
+
+#fancybox-content > div {
+    overflow: visible !important;
+}
+
+/* Article Detail - Fix for list style image placement */
+.content-body ul li {
+  list-style-position: inside;
+}
+#media-menu-weapper{
+  max-width: 758px;
+}
+
+/* GLOBAL NAVIGATION COLUMNS */
+
+.menu-dropdown .sub_menu li {
+  float:left;
+  margin-right:9px;
+}
+.header-top-bar {
+  display:block;
+}
+
+#bg-container, #main-container, .article-left-column, .videoplayer {
+    position: relative;
+}
+
+.videoplayer .video-detail {
+    float: left;
+    margin: 30px 0 20px;
+    width:100%;
+    position: relative;
+    z-index:1200;
+}
+
+/* No need for this override
+#fancybox-close {
+    top: -18px;
+    right: -18px;
+    z-index: 1201;
+}
+*/
+
+#bg-container, #main-container, .article-left-column, .videoplayer {
+    position: relative;
+}
+
+#multimedia-container .s7videoplayer {
+    float: left;
+    width: 630px;
+    z-index: 1200;
+}
+
+#multimedia-container .s7controlbar {
+    z-index: 1201;
+}
+
+#multimedia-container .s7swatches {
+    top: -38px!important;
+}
+
+#multimedia-container .s7swatches .s7scrollleftbutton {
+    top: 380px!important;
+}
+
+#multimedia-container .s7swatches .s7scrollleftbutton:hover {
+    background: #808080 url("../images/left-arrow-grey-hover.png") no-repeat scroll 5px 4px;
+    border: 1px solid #808080;
+    color: #FFFFFF;
+}
+
+#multimedia-container .s7swatches .s7scrollrightbutton {
+    top: 380px!important;
+}
+
+#multimedia-container .s7swatches .s7scrollrightbutton:hover {
+    background: #808080 url("../images/right-arrow-grey-hover.png") no-repeat scroll 11px 4px;
+    border: 1px solid #808080;
+    color: #FFFFFF;
+}
+
+#multimedia-container .s7swatches .totalItems {
+    top: 375px;
+}

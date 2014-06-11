@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2013-10-09T18:39:20.532Z"
+        cq:lastModifiedBy="admin"
+        cq:template="/apps/dupont/phoenix/templates/base"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Tyvek® for Breather Membranes"
+        sling:alias="eidupont/Tyvek® for Breather Membranes"
+        sling:resourceType="dupont/phoenix/components/pages/base"/>
+</jcr:root>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Panel"
+    title="View All Facets">
+    <items jcr:primaryType="cq:WidgetCollection">
+       <limit
+           jcr:primaryType="cq:Widget"
+           fieldLabel="Number Of Results"
+           fieldSubLabel="Per Page"
+           name="./../../siteconfig/viewallfacets/limit"
+           type="combobox"
+           vtype="digits"
+           xtype="selection">
+           <options jcr:primaryType="cq:WidgetCollection">
+               <o0
+                   jcr:primaryType="nt:unstructured"
+                   value="10"/>
+               <o1
+                   jcr:primaryType="nt:unstructured"
+                   value="20"/>
+               <o2
+                   jcr:primaryType="nt:unstructured"
+                   value="40"/>
+               <o2
+                   jcr:primaryType="nt:unstructured"
+                   value="50"/>
+               <o3
+                   jcr:primaryType="nt:unstructured"
+                   value="100"/>
+           </options>
+       </limit>
+       <collapse
+           jcr:primaryType="cq:Widget"
+           defaultValue="level1"
+           fieldLabel="Collapse Options"
+           name="./../../siteconfig/viewallfacets/collapse"
+           type="radio"
+           xtype="selection">
+           <options jcr:primaryType="cq:WidgetCollection">
+               <o0
+                   jcr:primaryType="nt:unstructured"
+                   text="Collapse All Options"
+                   value="level0"/>
+               <o1
+                   jcr:primaryType="nt:unstructured"
+                   text="Expand Sub Options"
+                   value="level1"/>
+               <o2
+                   jcr:primaryType="nt:unstructured"
+                   text="Expand All"
+                   value="none"/>
+           </options>
+       </collapse>
+       <path
+           jcr:primaryType="cq:Widget"
+           fieldDescription="Samples:&lt;br>/etc/tags/marketing/interest&lt;br>/libs/dam/options/predicates/mimetypes"
+           fieldLabel="Paths for Options"
+           name="./../../siteconfig/viewallfacets/optionsPath"
+           xtype="multifield">
+           <fieldConfig
+               jcr:primaryType="nt:unstructured"
+               predicate="nosystem"
+               rootPath="/etc/tags"
+               xtype="pathfield"/>
+       </path>
+	</items>
+</jcr:root>

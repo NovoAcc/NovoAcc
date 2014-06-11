@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[mix:lockable,rep:AccessControllable,sling:VanityPath]"
+    jcr:primaryType="sling:OrderedFolder"
+    jcr:title="Welcome to Adobe® CQ5"
+    sling:redirect="{Boolean}true"
+    sling:resourceType="cq/core/components/welcome"
+    sling:vanityOrder="{Long}2500"
+    sling:vanityPath="/welcome">
+    <images/>
+    <search/>
+    <resources/>
+    <features/>
+    <welcome.css/>
+    <welcome_ie.css/>
+    <welcome_touch.css/>
+    <docs/>
+    <favicon_0.ico/>
+</jcr:root>

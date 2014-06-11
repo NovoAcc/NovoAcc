@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="M.17.0 – Intro Body Text"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Widget"
+                title="General"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <pagetitle
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="H1 Title"
+                        name="./pageTitle"
+                        xtype="textfield"/>
+                    <leadinlines
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Lead-In Lines"
+                        name="./leadInLines"
+                        xtype="textfield"/>
+                    <introbodytext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Body Copy"
+                        name="./introBodyText"
+                        xtype="richtext">
+                        <rtePlugins
+                            jcr:primaryType="cq:Widget"
+                            path="/apps/dupont/phoenix/components/introbodytext/rteplugins.infinity.json"
+                            xtype="cqinclude"/>
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            beforeloadcontent="function(field,rec,path){field.disableDropping();}"/>
+                    </introbodytext>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

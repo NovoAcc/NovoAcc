@@ -1,0 +1,12 @@
+#base=source/js
+
+jquery.jcarousel.js
+carousel.initialiser.js
+scene7-fancybox.js
+videoViewer.js
+jquery.fancybox-1.3.4.js
+BrightcoveExperiences_all.js
+scripts.js
+responsive.js
+hammer.js
+picturefill.js

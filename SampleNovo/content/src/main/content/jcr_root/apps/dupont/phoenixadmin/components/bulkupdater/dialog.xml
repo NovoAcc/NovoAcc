@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Dialog"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            title="General"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <templatePath
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Template Selector"
+                    name="./templatePath"
+                    xtype="pathfield"/>
+                <pagePath
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Page Path"
+                    name="./pagePath"
+                    xtype="pathfield"/>
+                <oldNodeName
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Old Node Name"
+                    name="./oldName"
+                    xtype="textfield"/>
+                <newNodeName
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="New Node Name"
+                    name="./newName"
+                    xtype="textfield"/>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

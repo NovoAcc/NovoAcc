@@ -1,0 +1,665 @@
+/* Interactive Car */
+#ma_dAuto {
+	height: 498px;
+	width: 628px;
+	overflow:hidden;
+}
+#ma_dAuto #landing {
+	padding: 0px;
+}
+#ma_dAuto #landing #topRow,
+#ma_dAuto #landing #middleRow {
+	height: 145px;
+}
+#ma_dAuto #landing #bottomRow {
+	height: 135px;
+	display: block;
+}
+#ma_dAuto #landing #topRow,
+#ma_dAuto #landing #bottomRow {
+	margin-left: 72px;
+}
+#ma_dAuto #landing .landingButton {
+	display: block;
+	width: 150px;
+	float: left;
+	margin-left: 5px;
+	font-size: 13px;
+	font-weight: bold;
+	height: 128px;
+	cursor: pointer;
+	line-height: 14px;
+}
+#ma_dAuto #landing #middleRow .landingButton {
+	width: 150px;
+	margin-left: 5px;
+	height: 128px;
+}
+.landingButton img {
+	zoom: 1;
+	filter:Alpha(opacity=80);
+	-moz-opacity:0.8;
+	opacity:0.8;
+	text-align: center;
+}
+.landingButton {
+	color: #000;
+	text-align: center;
+}
+.landingButton img:hover {
+	zoom: 1;
+	filter:Alpha(opacity=100);
+	-moz-opacity:1.0;
+	opacity:1.0;
+}
+.landingButton:hover {
+	color: #C6001E;
+}
+.dock-item img {
+	padding: 4px;
+}
+.dock-item span {
+	padding-left: 0px;
+	font-size: 10px;
+	text-align: center;
+	display: block;
+	width: 53px;
+	float: left;
+}
+.nav-container a {
+	display: inline-block;
+	width: 53px;
+	filter:Alpha(opacity=80);
+	-moz-opacity:0.8;
+	opacity:0.8;
+}
+.nav-container a#homeIcon {
+	width: 35px;
+}
+.nav-container a#transmissionIcon {
+	width: 61px;
+}
+.nav-container a:hover {
+	color: #C6001E;
+	filter:Alpha(opacity=100);
+	-moz-opacity:1.0;
+	opacity:1.0;
+}
+a.activeSlide {
+	filter:Alpha(opacity=100);
+	-moz-opacity:1.0;
+	opacity:1.0;
+	color: #C6001E;
+}
+#landing { }
+#contentSlides {
+	display: none;
+}
+.dock-item span { }
+#aftermarketSlide { }
+#bodySlide {
+	display: none;
+}
+#chassisSlide {
+	display: none;
+}
+#hybridSlide {
+	display: none;
+}
+#electricalSlide {
+	display: none;
+}
+#fuelSlide {
+	display: none;
+}
+#interiorSlide {
+	display: none;
+}
+#powertrainSlide {
+	display: none;
+}
+#thermalSlide {
+	display: none;
+}
+#transmissionSlide {
+	display: none;
+}
+#details {
+	position:relative;
+	float: left;
+}
+.slideTitle {
+	position: absolute;
+	left: 28px;
+	top: 27px;
+	font-weight: bold;
+	background-color: #FFF;
+	padding: 3px;
+	font-size: 95%;
+	text-align: left;
+	color: #000;
+}
+.callout {
+	font-size: 13px;
+	line-height: 18px;
+	color: #000;
+	float: left;
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	cursor: pointer;
+	position: absolute;
+	text-align: center;
+}
+.callout:hover {
+	color: #C6001E;
+}
+.visited {
+	color: #317ea5;
+}
+.tooltip {
+	cursor: pointer;
+	display:none;
+	position: absolute;
+	background-color: #FFF;
+	color: #6e6e6e;
+	font-size: 12px;
+	padding: 8px;
+	border: 6px solid #317ea5;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20);
+	-moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20);
+	-webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.20);
+	z-index:90;
+	width: 240px;
+	background-image: url(close_x.jpg);
+	background-repeat: no-repeat;
+	background-position: 236px 3px;
+}
+.tooltip a {
+	color: #992A10;
+	text-decoration: underline;
+}
+.tooltip a:hover {
+	color: #992A10;
+	text-decoration: none;
+}
+.tooltipTitle {
+	font-weight: bold;
+	display: block;
+	padding-bottom: 5px;
+}
+#aftermarket1 {
+	top: 127px;
+	left: 32px;
+}
+#aftermarket2 {
+	top: 320px;
+	left: 472px;
+}
+#aftermarket3 {
+	top: 69px;
+	left: 134px;
+}
+#aftermarket4 {
+	top: 25px;
+	left: 181px;
+}
+#aftermarket5 {
+	top: 292px;
+	left: 498px;
+}
+#aftermarket6 {
+	top: 341px;
+	left: 426px;
+}
+#aftermarket7 {
+	top: 379px;
+	left: 7px;
+}
+#body1 {
+	top: 113px;
+	left: 26px;
+}
+#body2 {
+	top: 89px;
+	left: 76px;
+}
+#body3 {
+	top: 75px;
+	left: 144px;
+}
+#body4 {
+	top: 292px;
+	left: 489px;
+}
+#body5 {
+	top: 292px;
+	left: 498px;
+}
+#body6 {
+	top: 360px;
+	left: 405px;
+}
+#body7 {
+	top: 379px;
+	left: 7px;
+}
+#chassis1 {
+	top: 255px;
+	left: 497px;
+}
+#chassis2 {
+	top: 308px;
+	left: 436px;
+}
+#chassis3 {
+	top: 87px;
+	left: 18px;
+}
+#chassis4 {
+	top: 282px;
+	left: 482px;
+}
+#chassis5 {
+	top: 348px;
+	left: 408px;
+}
+#chassis6 {
+	top: 387px;
+	left: 371px;
+}
+#hybrid1 {
+	top: 122px;
+	left: 29px;
+}
+#hybrid2 {
+	top: 76px;
+	left: 110px;
+}
+#hybrid3 {
+	top: 394px;
+	left: 320px;
+}
+#hybrid4 {
+	top: 29px;
+	left: 310px;
+}
+#hybrid5 {
+	top: 300px;
+	left: 498px;
+}
+#hybrid6 {
+	top: 336px;
+	left: 427px;
+}
+#hybrid7 {
+	top: 388px;
+	left: 12px;
+}
+#electrical1 {
+	top: 59px;
+	left: 34px;
+}
+#electrical2 {
+	top: 136px;
+	left: 17px;
+}
+#electrical3 {
+	top: 321px;
+	left: 434px;
+}
+#electrical4 {
+	top: 385px;
+	left: 10px;
+}
+#electrical5 {
+	top: 276px;
+	left: 496px;
+}
+#electrical6 {
+	top: 371px;
+	left: 414px;
+}
+#fuel1 {
+	top: 91px;
+	left: 31px;
+}
+#fuel2 {
+	top: 294px;
+	left: 449px;
+}
+#fuel3 {
+	top: 293px;
+	left: 467px;
+}
+#interior1 {
+	top: 102px;
+	left: 34px;
+}
+#interior2 {
+	top: 315px;
+	left: 415px;
+}
+#interior3 {
+	top: 64px;
+	left: 99px;
+}
+#interior4 {
+	top: 146px;
+	left: 28px;
+}
+#interior5 {
+	top: 360px;
+	left: 363px;
+}
+#interior6 {
+	top: 265px;
+	left: 527px;
+}
+#interior7 {
+	top: 290px;
+	left: 468px;
+}
+#interior8 {
+	top: 41px;
+	left: 238px;
+}
+#powertrain1 {
+	top: 96px;
+	left: 25px;
+}
+#powertrain2 {
+	top: 399px;
+	left: 19px;
+}
+#powertrain3 {
+	top: 356px;
+	left: 408px;
+}
+#powertrain4 {
+	top: 60px;
+	left: 83px;
+}
+#powertrain5 {
+	top: 260px;
+	left: 504px;
+}
+#powertrain6 {
+	top: 313px;
+	left: 414px;
+}
+#thermal1 {
+	top: 90px;
+	left: 8px;
+}
+#thermal2 {
+	top: 304px;
+	left: 494px;
+}
+#thermal3 {
+	top: 353px;
+	left: 371px;
+}
+#transmission1 {
+	top: 79px;
+	left: 54px;
+}
+#transmission2 {
+	top: 355px;
+	left: 6px;
+}
+#transmission3 {
+	top: 370px;
+	left: 369px;
+}
+#transmission4 {
+	top: 150px;
+	left: 42px;
+}
+#transmission5 {
+	top: 328px;
+	left: 421px;
+}
+#transmission6 {
+	top: 380px;
+	left: 30px;
+}
+#aftermarket1tip {
+	top: 102px;
+	left: 19px;
+}
+#aftermarket2tip {
+	top: 279px;
+	left: 317px;
+}
+#aftermarket3tip {
+	top: 31px;
+	left: 128px;
+}
+#aftermarket4tip {
+	top: 18px;
+	left: 171px;
+}
+#aftermarket5tip {
+	top: 253px;
+	left: 339px;
+}
+#aftermarket6tip {
+	top: 281px;
+	left: 325px;
+}
+#aftermarket7tip {
+	top: 307px;
+	left: 12px;
+}
+#body1tip {
+	top: 108px;
+	left: 19px;
+}
+#body2tip {
+	top: 87px;
+	left: 68px;
+}
+#body3tip {
+	top: 66px;
+	left: 138px;
+}
+#body4tip {
+	top: 228px;
+	left: 352px;
+}
+#body5tip {
+	top: 253px;
+	left: 339px;
+}
+#body6tip {
+	top: 305px;
+	left: 250px;
+}
+#body7tip {
+	top: 307px;
+	left: 12px;
+}
+#chassis1tip {
+	top: 160px;
+	left: 338px;
+}
+#chassis2tip {
+	top: 212px;
+	left: 308px;
+}
+#chassis3tip {
+	top: 73px;
+	left: 13px;
+}
+#chassis4tip {
+	top: 200px;
+	left: 321px;
+}
+#chassis5tip {
+	top: 295px;
+	left: 172px;
+}
+#chassis6tip {
+	top: 291px;
+	left: 194px;
+}
+#hybrid1tip {
+	top: 109px;
+	left: 20px;
+}
+#hybrid2tip {
+	top: 61px;
+	left: 103px;
+}
+#hybrid3tip {
+	top: 280px;
+	left: 204px;
+}
+#hybrid4tip {
+	top: 17px;
+	left: 301px;
+}
+#hybrid5tip {
+	top: 236px;
+	left: 343px;
+}
+#hybrid6tip {
+	top: 285px;
+	left: 326px;
+}
+#hybrid7tip {
+	top: 317px;
+	left: 10px;
+}
+#electrical1tip {
+	top: 51px;
+	left: 33px;
+}
+#electrical2tip {
+	top: 124px;
+	left: 10px;
+}
+#electrical3tip {
+	top: 228px;
+	left: 269px;
+}
+#electrical4tip {
+	top: 174px;
+	left: 8px;
+}
+#electrical5tip {
+	top: 184px;
+	left: 329px;
+}
+#electrical6tip {
+	top: 296px;
+	left: 294px;
+}
+#fuel1tip {
+	top: 64px;
+	left: 17px;
+}
+#fuel2tip {
+	top: 275px;
+	left: 341px;
+}
+#fuel3tip {
+	top: 62px;
+	left: 346px;
+}
+#interior1tip {
+	top: 96px;
+	left: 30px;
+}
+#interior2tip {
+	top: 204px;
+	left: 300px;
+}
+#interior3tip {
+	top: 60px;
+	left: 91px;
+}
+#interior4tip {
+	top: 138px;
+	left: 11px;
+}
+#interior5tip {
+	top: 266px;
+	left: 266px;
+}
+#interior6tip {
+	top: 173px;
+	left: 348px;
+}
+#interior7tip {
+	top: 193px;
+	left: 309px;
+}
+#interior8tip {
+	top: 32px;
+	left: 234px;
+}
+#powertrain1tip {
+	top: 92px;
+	left: 11px;
+}
+#powertrain2tip {
+	top: 316px;
+	left: 15px;
+}
+#powertrain3tip {
+	top: 243px;
+	left: 296px;
+}
+#powertrain4tip {
+	top: 51px;
+	left: 76px;
+}
+#powertrain5tip {
+	top: 166px;
+	left: 338px;
+}
+#powertrain6tip {
+	top: 197px;
+	left: 341px;
+}
+#thermal1tip {
+	top: 70px;
+	left: 5px;
+}
+#thermal2tip {
+	top: 242px;
+	left: 328px;
+}
+#thermal3tip {
+	top: 220px;
+	left: 277px;
+}
+#transmission1tip {
+	top: 63px;
+	left: 47px;
+}
+#transmission2tip {
+	top: 286px;
+	left: 5px;
+}
+#transmission3tip {
+	top: 303px;
+	left: 352px;
+}
+#transmission4tip {
+	top: 139px;
+	left: 18px;
+}
+#transmission5tip {
+	top: 262px;
+	left: 330px;
+}
+#transmission6tip {
+	top: 319px;
+	left: 39px;
+}

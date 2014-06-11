@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/cloudservices/scene7"
+        cq:lastModified="{Date}2013-06-05T14:24:24.984Z"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/dam/templates/scene7"
+        jcr:lastModified="{Date}2013-06-05T14:24:24.975Z"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="DuPont"
+        sling:resourceType="dam/components/scene7/scene7page"
+        adaptiveVideoEncodingPresets="ps|1444955,ps|1444954"
+        adhocFolder="eidupont/CQ5_adhoc"
+        companyHandle="c|86968"
+        companyname="eidupont"
+        defaultConfiguration="{Boolean}true"
+        email="monali.shah@accenture.com"
+        flashTemplatesServer="http://bnr-am.scene7.com/xfl/flash"
+        fxgServer="http://s7sps1agm.scene7.com/is/agm/"
+        importQueueName="Scene7 Import Queue-dupont"
+        importQueueTopic="com/dam/cq/scene7/importer/8dfe339b2badd69a90e81063cf39acf5"
+        password="\{251c3189a00d3516f800db278d79653e8f6d8dc85dc59c8d720c5fdbb9351e3c}"
+        publishServer="http://s7d4.scene7.com/"
+        region="northamerica-enterprise"
+        rootPath="eidupont/demo/dev/2.1/"
+        s7RootPath="eidupont/"
+        syncControl="on"
+        syncEnabled="off"
+        targetPath="/content/dam/eidupont/"
+        userHandle="u|64373|monali.shah@accenture.com">
+        <pollConfig
+            jcr:mixinTypes="[cq:PollConfig]"
+            jcr:primaryType="nt:unstructured"
+            cancelImporter="{Boolean}false"
+            enabled="{Boolean}false"
+            interval="3600"
+            source="scene7:/etc/cloudservices/scene7/dupont/jcr:content"
+            target="/etc/cloudservices/scene7/dupont/jcr:content"/>
+        <presets jcr:primaryType="nt:unstructured">
+            <encoding jcr:primaryType="nt:unstructured"/>
+        </presets>
+    </jcr:content>
+</jcr:root>

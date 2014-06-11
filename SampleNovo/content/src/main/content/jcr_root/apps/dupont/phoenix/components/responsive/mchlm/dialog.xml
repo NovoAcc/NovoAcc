@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#HLM"
+    title="M.5.0 – Horizontal List Module (HLM)"
+    xtype="dialog">
+    <listeners
+        jcr:primaryType="nt:unstructured"
+        beforesubmit="function(dialog){return Dupont.listeners.validateHLMRowCallout(dialog);}"
+        loadContent="function(dialog){Dupont.contentTypes.loadSelectionOptions(dialog);return true;}"/>
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Widget"
+                title="General"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <recommendedcontenttypes
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Recommended Content Types"
+                        name="./recommendedContentTypes"
+                        xtype="hidden"/>
+                    <contenttype
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Content Type"
+                        name="./contentType"
+                        optionsProvider="Dupont.contentTypes.loadMCContentTypes"
+                        type="select"
+                        xtype="selection"/>
+                    <showhide
+                        jcr:primaryType="cq:Widget"
+                        description="Once checked, this component will not be displayed to users."
+                        fieldLabel="Hide HLM"
+                        name="./showHide"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <locked
+                        jcr:primaryType="cq:Widget"
+                        name="./locked"
+                        xtype="hidden"/>
+                    <hiderowcallout
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Boolean}false"
+                        fieldLabel="Hide Row Call Out"
+                        inputValue="{Boolean}true"
+                        name="./showHideRowCallout"
+                        type="checkbox"
+                        xtype="selection">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            selectionchanged="function(field, value, checked) {Dupont.listeners.showHideHLMRowCallout(this, field, checked);}"/>
+                    </hiderowcallout>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Widget"
+                title="Row Call Out"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <tool
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Module"
+                        name="./selectedTool"
+                        optionsProvider="Dupont.hlm.allowedToolsOptions"
+                        type="select"
+                        xtype="selection"/>
+                </items>
+            </tab2>
+        </items>
+    </items>
+</jcr:root>

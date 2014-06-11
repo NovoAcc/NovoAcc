@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    activeTab="{Long}0"
+    title="Custom Widget Testing  Properties"    helpPath="en/cq/current/wcm/default_components.html#Image"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+    <advanced
+        jcr:primaryType="cq:Panel"
+        title="Curated Link List Item Properties">
+      <items jcr:primaryType="cq:WidgetCollection">
+    
+        <curatedlinklistitems
+            jcr:primaryType="cq:Widget"
+            title="Curated Link List Item"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <multi
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Multi-Field"
+                    hideLabel="{Boolean}true"
+                    name="./curatedLinkListItem"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="nt:unstructured"
+                        optionsProvider="Ejst.x3.provideOptions"
+                        xtype="dupontCuratedLinkListItem"/>
+                </multi>
+            </items>
+        </curatedlinklistitems>
+        </items>
+       </advanced>
+    </items>
+</jcr:root>
+

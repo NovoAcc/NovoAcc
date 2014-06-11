@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Panel"
+    title="View All Configurations">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <viewallconfiguration
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Select View All Configuration Page."
+            fieldLabel="View All Configuration Page :"
+            name="./../../siteconfig/viewallconfiguration/viewallconfiguration"
+            rootPath="/etc"
+            width="1000"
+            xtype="pathfield"/>
+        <mcviewallconfiguration
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Select the Media Center View All Configuration Page."
+            fieldLabel="MC View All Configuration Page :"
+            name="./../../siteconfig/viewallconfiguration/mcviewallconfiguration"
+            rootPath="/etc"
+            width="1000"
+            xtype="pathfield"/>
+    </items>
+</jcr:root>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Media Gallery"
+    width="500"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Panel"
+            title="Media Gallery">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <mixmediagallery
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Note : Scene7 configuration path should be set in siteConfig"
+                    fieldLabel="Media Gallery Set"
+                    name="./mixmedia"
+                    xtype="custommultifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        xtype="mediagallerymenumultifield"/>
+                </mixmediagallery>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

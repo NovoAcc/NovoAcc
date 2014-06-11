@@ -1,0 +1,44 @@
+/*
+    These Media Queries were included in Responsive.css
+    Storing here as a backup, but they are not being included.
+*/
+
+/* Desktop ~ Override style.css Styles */
+@media screen and (max-width:1790px){
+
+    .footer-more-in {
+        display:block;
+    }
+
+    .mobile-footer-more-in {
+        display:none;
+    }
+
+    .jcarousel-container .prev {
+        left:0 !important;
+    }
+
+    .jcarousel-container .next {
+        right:0 !important;
+    }
+
+    #header-mbl {
+        display:none;
+    }
+
+    #header-desk {
+        display:block;
+    }
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (max-width:400px), screen and (max-device-width:400px){
+
+    /* Featured Module A */
+    .featureda {
+        float: left;
+        width: 100%;
+    }
+
+}

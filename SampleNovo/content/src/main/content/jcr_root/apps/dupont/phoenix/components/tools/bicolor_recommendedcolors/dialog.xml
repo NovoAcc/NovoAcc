@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Tools – BI Recommended Colors"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        helpPath="en/cq/current/wcm/default_components.html#BIColorSelector"
+        title="Tools – BI Color Selector"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <list
+                jcr:primaryType="cq:Widget"
+                title="General"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <product
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Select Product"
+                        name="./productName"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <corian
+                                jcr:primaryType="nt:unstructured"
+                                text="Corian"
+                                value="corian"/>
+                            <zodiaq
+                                jcr:primaryType="nt:unstructured"
+                                text="Zodiaq"
+                                value="zodiaq"/>
+                        </options>
+                    </product>
+                </items>
+            </list>
+        </items>
+    </items>
+</jcr:root>

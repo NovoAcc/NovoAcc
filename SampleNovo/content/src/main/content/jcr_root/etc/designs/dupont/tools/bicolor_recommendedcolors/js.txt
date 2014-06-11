@@ -1,0 +1,5 @@
+#base=source/js
+
+jquery.random.js
+recommended-colors.js
+jquery.sortable.js

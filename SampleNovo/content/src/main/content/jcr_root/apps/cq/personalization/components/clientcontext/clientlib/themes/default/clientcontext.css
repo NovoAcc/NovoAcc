@@ -1,0 +1,256 @@
+/*
+ * ***********************************************************************
+ * ADOBE CONFIDENTIAL
+ * ___________________
+ *
+ * Copyright 2011 Adobe Systems Incorporated
+ * All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ * ***********************************************************************
+ */
+
+.cq-clientcontext {
+    background-color: #4e514d;
+
+    border: 1px solid #4e514d;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+
+    margin: 4px;
+    width: 440px;
+
+    font-family: Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.cq-clientcontext a,
+.cq-clientcontext a:hover,
+.cq-clientcontext a:visited,
+.cq-clientcontext a:active {
+    color: white;
+}
+
+#cq-clientcontext-edit-box {
+    margin-left: 100px;
+}
+
+#cq-clientcontext-container {
+    display: none; /* hidden by default */
+    text-align: left;
+}
+
+#cq-clientcontext-box {
+    z-index: 9002;
+    opacity: 0.94;
+    -moz-opacity: 0.94;
+    position: fixed;
+    left: 24px;
+    top: 0;
+
+    padding-bottom: 45px;
+    height: 620px;
+}
+
+#cq-clientcontext-box .ui-resizable-se {
+    bottom: 3px;
+    right: 3px;
+}
+
+#cq-clientcontext-box .section {
+    margin: 0;
+    padding: 0;
+}
+
+#cq-clientcontext-box-content {
+    height: 100%;
+    padding: 1px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#cq-clientcontext-box-actions {
+    height: 28px;
+    background-color: #151515;
+    margin: -1px;
+
+    border: 1px solid #151515;
+    border-radius: 8px 8px 0px 0px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+}
+
+#cq-clientcontext-box-actions-container {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#cq-clientcontext-box-actions .cq-clientcontext-box-action {
+    margin-top: 7px;
+    width: 20px;
+    height: 14px;
+
+    /*hack to get a inline block on all browsers*/
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+#cq-clientcontext-box-actions .cq-clientcontext-reset {
+    background-image: url("../../../../../../../../../libs/cq/personalization/components/clientcontext/clientlib/ui/themes/default/icons/reset.png");
+}
+
+#cq-clientcontext-box-actions .cq-clientcontext-load {
+    background-image: url("../../../../../../../../../libs/cq/personalization/components/clientcontext/clientlib/ui/themes/default/icons/load.png");
+    margin-right: 14px;
+}
+
+#cq-clientcontext-box-actions .cq-clientcontext-design {
+    background-image: url("../../../../../../../../../libs/cq/personalization/components/clientcontext/clientlib/ui/themes/default/icons/design.png");
+    margin-right: 11px;
+}
+
+#cq-clientcontext-box-actions .cq-clientcontext-close {
+    background-image: url("../../../../../../../../../libs/cq/personalization/components/clientcontext/clientlib/ui/themes/default/icons/close.png");
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+/*
+ * Stores design
+ */
+.cq-cc-store {
+    color: white;
+    line-height: 16px;
+    height: auto;
+    min-height: 20px;
+    padding: 8px 15px 12px 15px;
+    border-top: 1px solid #151515;
+    margin: -1px;
+}
+
+.cq-cc-thumbnail, .cq-cc-content {
+    float: left;
+}
+
+.cq-cc-content {
+    margin-left: 15px;
+    width: 300px;
+}
+
+.cq-cc-clear {
+    clear: both;
+}
+
+.cq-cc-store-property {
+    /*hack to get a inline block on all browsers*/
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.cq-cc-thumbnail .cq-cc-store-property {
+    min-height: 80px;
+    min-width: 80px;
+}
+
+.cq-cc-store-property-level0, .cq-cc-store-property-level1, .cq-cc-store-property-level2, .cq-cc-store-property-level3 {
+    clear: both;
+}
+
+.cq-cc-content .cq-cc-store-property {
+    margin-right: 8px;
+    margin-top: 4px;
+
+    line-height: 18px;
+    padding: 0 4px;
+
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    background-color: #151515;
+}
+
+.cq-cc-content .cq-cc-store-property.cq-cc-store-property-level1 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cq-cc-content .cq-cc-store-property.cq-cc-store-property-level0,
+.cq-cc-content .cq-cc-store-property.cq-cc-store-property-level1,
+.cq-cc-content .cq-cc-store-property.cq-cc-store-property-level2 {
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+
+    background-color: transparent;
+    margin-top: 0;
+    display: block;
+}
+
+.cq-cc-content .cq-cc-store-property.cq-clientcontext-editing {
+    background-color: white;
+    color: #4e514d;
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.cq-cc-thumbnail .cq-cc-store-property.cq-clientcontext-editing {
+    margin-right: 8px;
+
+    line-height: 18px;
+    padding: 0 4px;
+
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+
+    background-color: white;
+    color: #4e514d;
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.cq-cc-content .cq-cc-store-property.cq-clientcontext-editing div,
+.cq-cc-thumbnail .cq-cc-store-property.cq-clientcontext-editing div {
+    display: inline-block;
+
+    min-width: 2px;
+    vertical-align: top;
+}
+
+.cq-cc-store-property img {
+    vertical-align: middle;
+}
+
+.cq-cc-thumbnail .cq-cc-thumbnail-img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+}

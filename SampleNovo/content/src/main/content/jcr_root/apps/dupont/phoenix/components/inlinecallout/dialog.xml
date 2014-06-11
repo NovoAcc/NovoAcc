@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    title="M.8.0 – Inline Call Out"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        manageTabs="function(tab,noSwitch){Dupont.inlineCallout.manageTabs(tab,this,noSwitch);}"
+        title="M.8.0 – Inline Call Out"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <list
+                jcr:primaryType="cq:Widget"
+                title="General"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <listFrom
+                        jcr:primaryType="cq:Widget"
+                        defaultValue=""
+                        fieldLabel="Call Out Content"
+                        name="./type"
+                        type="select"
+                        xtype="selection">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            selectionchanged="function(field,value){Dupont.inlineCallout.showHideCalloutOptions(field, value);}"/>
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                text=""
+                                value=""/>
+                            <children
+                                jcr:primaryType="nt:unstructured"
+                                text="Image"
+                                value="children"/>
+                            <static
+                                jcr:primaryType="nt:unstructured"
+                                text="Video"
+                                value="static"/>
+                            <contentpage
+                                jcr:primaryType="nt:unstructured"
+                                text="Content Page"
+                                value="contentpage"/>
+                        </options>
+                    </listFrom>
+                    <enableOverlay
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="{Boolean}true"
+                        fieldDescription="Enable to see overlay on screen when 'View Media' link is clicked."
+                        fieldLabel="Enable Overlay"
+                        inputValue="{Boolean}true"
+                        name="./overlay"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <imagedata
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="Image Metadata"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <title
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Title for the Media Type selected"
+                                fieldLabel="Image Title"
+                                name="./mediaTitle"
+                                xtype="textfield"/>
+                            <altText
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="(leave empty to use title defined above)"
+                                fieldLabel="Alt Text"
+                                name="./image/alt"
+                                xtype="textfield"/>
+                            <description
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Short description for the Media Type selected"
+                                fieldLabel="Image Caption"
+                                name="./image/jcr:description"
+                                xtype="textarea"/>
+                            <resType
+                                jcr:primaryType="cq:Widget"
+                                ignoreData="{Boolean}true"
+                                name="./image/sling:resourceType"
+                                value="foundation/components/image"
+                                xtype="hidden"/>
+                        </items>
+                    </imagedata>
+                    <videodata
+                        jcr:primaryType="cq:Widget"
+                        collapsed="{Boolean}false"
+                        collapsible="{Boolean}false"
+                        title="Video Metadata"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <title
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Title for the Media Type selected"
+                                fieldLabel="Video Title"
+                                name="./video/jcr:title"
+                                xtype="textfield"/>
+                            <description
+                                jcr:primaryType="cq:Widget"
+                                fieldDescription="Short description for the Media Type selected"
+                                fieldLabel="Video Caption"
+                                name="./video/jcr:description"
+                                xtype="textarea"/>
+                        </items>
+                    </videodata>
+                </items>
+            </list>
+            <children
+                jcr:primaryType="cq:Widget"
+                allowUpload="{Boolean}false"
+                ddGroups="[media]"
+                fileNameParameter="./image/fileName"
+                fileReferenceParameter="./image/fileReference"
+                height="{Long}400"
+                name="./image/file"
+                renditionSuffix="/_jcr_content/renditions/original"
+                requestSuffix="/image.img.png"
+                title="Call Out Image"
+                type="Image"
+                width="{Long}100"
+                xtype="html5smartimage">
+                <listeners
+                    jcr:primaryType="nt:unstructured"
+                    render="function() { this.findParentByType('tabpanel').hideTabStripItem(1); }"/>
+            </children>
+            <static
+                jcr:primaryType="cq:Widget"
+                title="Page Configuration"
+                xtype="panel">
+                <listeners
+                    jcr:primaryType="nt:unstructured"
+                    render="function() { this.findParentByType('tabpanel').hideTabStripItem(2); }"/>
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <selectedContent
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Path to the Page."
+                        fieldLabel="Page"
+                        name="./selectedContent"
+                        validator="function() {return Dupont.inlineCallout.validateInlineContent(this);}"
+                        xtype="pathfield">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            loadcontent="function(field,rec,path){Dupont.inlineCallout.initInlineCallout(field, rec, path);}"/>
+                    </selectedContent>
+                </items>
+            </static>
+        </items>
+    </items>
+</jcr:root>

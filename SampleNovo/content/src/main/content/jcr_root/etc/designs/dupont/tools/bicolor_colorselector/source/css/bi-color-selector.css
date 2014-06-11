@@ -1,0 +1,507 @@
+.bicolor_colorselector {
+    padding-left:70px;
+    width:960px;
+}
+.mainContent {
+    margin: 0 auto;
+    width: 960px;
+}
+.bicolor_colorselector #BICarousel h3.label {
+    color: #6E6E6E;
+    float: none;
+    font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    margin-bottom: 0;
+    position: relative;
+    text-transform: uppercase;
+    top: 3px;
+}
+.bicolor_colorselector #BICarousel h3.selectedFacets {
+    color: #6E6E6E;
+    font-family: Arial,Segoe UI,Sans-Serif;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.bicolor_colorselector .searchMainContent, .bicolor_colorselector .resultsMainContent {
+    margin: 10px 0;
+    position: relative;
+}
+.bicolor_colorselector .resultsMainContent h2 {
+    margin-bottom: 12px;
+}
+.bicolor_colorselector .searchLeftCol, .bicolor_colorselector .resultsLeftCol {
+    float: left;
+    font-size:12px;
+    margin-right: 50px;
+    width: 195px;
+}
+.bicolor_colorselector .resultsLeftCol li {
+    margin-bottom: 0;
+    margin-top: 12px;
+}
+.bicolor_colorselector .searchRightCol, .bicolor_colorselector .resultsRightCol {
+    float: left;
+    width: 715px;
+}
+.bicolor_colorselector .page-item .selectboxit-container {
+    margin:0 5px;
+}
+.bicolor_colorselector .page-item .selectboxit-container .selectboxit {
+    border:1px solid #f2f2f2;
+    background: #FFFFFF;
+    background: -moz-linear-gradient(top, #fff, #f6f6f6);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f6f6f6));
+    background: -ms-linear-gradient(top, #fff, #f6f6f6);
+    height:25px;
+}
+.bicolor_colorselector .page-item .selectboxit-container .selectboxit-text {
+    line-height:25px;
+    text-transform: capitalize;
+}
+.bicolor_colorselector .page-item .selectboxit-container .ui-icon-triangle-1-s {
+    background-position: -64px -18px;
+}
+.bicolor_colorselector .page-item .selectboxit-container .selectboxit-options {
+    width:auto;
+}
+.bicolor_colorselector .page-item .selectboxit-option .selectboxit-option-anchor {
+    padding: 0px 3px;
+    line-height: 30px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: normal;
+}
+.bicolor_colorselector #ColorThumbnails {
+    border-bottom: 1px solid #EAEAEA;
+    font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif;
+    letter-spacing: normal;
+    margin: 20px 0 30px;
+}
+.bicolor_colorselector .showme, .bicolor_colorselector .onlyshowme {
+    border: 1px solid #EAEAEA;
+    border-radius: 5px 5px 5px 5px;
+    margin: 12px 0 20px;
+    padding: 10px 10px 14px 20px;
+    overflow: visible;
+    width: auto;
+}
+.bicolor_colorselector .showme span, .bicolor_colorselector .facetgroup {
+    background-color: #FFFFFF;
+    font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    margin: 0 0 0 -5px;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+.bicolor_colorselector .showtop {
+    color: #6E6E6E;
+    position: relative;
+    top: -20px;
+}
+.bicolor_colorselector #CollectionsList {
+    margin-top: -17px;
+	float: none;
+	padding: 0;
+	width: auto;
+}
+.bicolor_colorselector #CollectionsList li a {
+    color: #6E6E6E;
+}
+.bicolor_colorselector .collections-link {
+    color: #6E6E6E;
+}
+.bicolor_colorselector .top-pagination {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 12px;
+    height:50px;
+    margin-top: -5px;
+    padding: 0 0 4px;
+}
+.bicolor_colorselector #ColorsCount {
+    color: #000000;
+    float: left;
+    font-size: 14px;
+    margin: 12px 0 0 0;
+    width:17%
+}
+.bicolor_colorselector .top-pagination .page-item {
+    float: left;
+    margin-left: 1%;
+    width:82%;
+}
+.bicolor_colorselector .page-item, .bicolor_colorselector .pane-service-links-service-links {
+    float: left;
+    text-transform: uppercase;
+}
+.bicolor_colorselector .left-item-us {
+    float: left;
+    min-width:65%;
+    width:auto;
+}
+.bicolor_colorselector .left-item {
+    float: left;
+    min-width:50%;
+    width:auto;
+}
+.bicolor_colorselector .right-item-us {
+    float:right;
+    width:35%;
+}
+.bicolor_colorselector .right-item {
+    float:right;
+    width:50%;
+}
+.bicolor_colorselector .searchResultItem, .FAQResultItem {
+    float: left;
+    list-style: none outside none;
+    margin: 25px 0 0;
+    width: 714px;
+}
+.bicolor_colorselector .pagination {
+    border-top: 1px solid #CCCCCC;
+    bottom: -36px;
+    float: left;
+    margin-top: 30px;
+    padding: 10px 0;
+    position: absolute;
+    text-align: center;
+    width: 715px;
+}
+.bicolor_colorselector .color-box {
+    float: left;
+    margin: 20px 30px 25px 0;
+    width: 217px;
+}
+.bicolor_colorselector .last {
+    margin-right: 0;
+}
+.bicolor_colorselector .intro-content {
+    margin: 30px 0;
+}
+.bicolor_colorselector #menu-top-nav {
+    background-image: url("../images/nav-gradient.png");
+    height: 50px;
+    position: relative;
+    z-index: 2;
+}
+.bicolor_colorselector .hidden {
+    display: none;
+}
+.bicolor_colorselector a.color-link img {
+    border: 0 none;
+    margin-bottom: 16px;
+    width: 218px;
+}
+.bicolor_colorselector #collectionDescription {
+    display: none;
+    margin-bottom: -20px;
+    padding-top: 55px;
+}
+.bicolor_colorselector #collectionDescription #descriptionTitle {
+    font-size: 24px;
+}
+.bicolor_colorselector #collectionDescription #description {
+    color: #333333;
+    font-family: Arial, Segoe UI, Sans-Serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+}
+.bicolor_colorselector #noResults {
+    display: none;
+    margin-bottom: -20px;
+    min-height: 230px;
+    padding-top: 55px;
+}
+.bicolor_colorselector #noResults span {
+    color: #6E6E6E;
+    font-size: 12px;
+}
+.bicolor_colorselector #noResults span a {
+    color: #992A10;
+    font-weight: 200;
+    text-decoration: underline;
+}
+.bicolor_colorselector #noResults span a:hover {
+    color: #992A10;
+    font-weight: 200;
+    text-decoration: none;
+}
+.bicolor_colorselector #aBackToTop {
+    clear: both;
+    color: Blue;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 75px;
+}
+.bicolor_colorselector #backToTop {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    font-family: Arial,sans-serif;
+    font-size: 11px;
+    margin: -14px 0 25px;
+}
+.bicolor_colorselector #backToTop img {
+    display: block;
+    float: right;
+    height: 4px;
+    margin: 3px 0 0 7px;
+    width: 7px;
+}
+.bicolor_colorselector .row {
+    border-bottom: 1px solid #EAEAEA;
+    border-top: 1px solid #EAEAEA;
+}
+.bicolor_colorselector .bicolor-hlm-top {
+    /* margin: 27px auto 7px; */
+    width: 960px;
+}
+.bicolor_colorselector .bicolor-title {
+    float: left;
+    text-transform: uppercase;
+}
+.bicolor_colorselector #BIColorLinks {
+    float: right;
+    margin-top: 2px;
+    padding: 0;
+}
+.bicolor_colorselector .three, .bicolor_colorselector .three a img {
+    width: 300px;
+}
+.bicolor_colorselector .four {
+    width: 218px;
+}
+.bicolor_colorselector .three h2, .bicolor_colorselector .four h2 {
+    margin-top: -3px;
+}
+.bicolor_colorselector .bicolor-top-content {
+    color: #474747;
+    float: left;
+    font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif;
+    font-weight: bold;
+    padding: 2px 18px 0;
+    text-transform: uppercase;
+}
+
+.bicolor_colorselector .showme span, .bicolor_colorselector #Filter, .bicolor_colorselector #Sort, .bicolor_colorselector #ShowMe{
+	font-size: 11px;
+}
+
+.bicolor_colorselector #BIColorLinks h4 {
+    float: left;
+    font-family: Arial,Segoe UI,Sans-Serif;
+    font-size: 12px;
+    padding: 0;
+}
+.bicolor_colorselector #BIColorLinks img.cta-arrow {
+    margin-top: 2px;
+}
+.graydots {
+    float: right;
+    margin-left: 20px;
+    margin-top: 4px;
+}
+.graydots a {
+    background: url("../images/grid-indicator.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 15px;
+    margin: 0;
+    width: 15px;
+}
+.graydots a.selected, .graydots a:hover {
+    background: url("../images/grid-indicator-current.png") no-repeat scroll 0 0 transparent;
+}
+.last {
+    margin-right: 0;
+}
+.bicolor-hlm-carousel {
+    margin-bottom: 25px;
+    padding-bottom: 0;
+    position: relative;
+}
+h2 {
+    font-weight: normal;
+    margin-top: 6px;
+}
+h2.bicolor-title {
+    font-family:ff-meta-web-pro,Arial,Sans-Serif;
+    font-size:18px;
+    margin: 2px 0 20px;
+    white-space:nowrap;
+    width:auto;
+}
+#recommendedColors {
+    margin-bottom: 10px;
+    position: relative;
+}
+#RelatedColors H2 {
+    margin: -5px 0 6px;
+}
+#openhtml-area {
+    overflow: visible;
+    padding-bottom: 0;
+    position: relative;
+}
+.collectionArrow {
+    background: url("../images/sprite1.png") repeat scroll -10px -367px transparent;
+    display: inline-block;
+    height: 7px;
+    margin: 0 6px 1px -10px;
+    width: 4px;
+}
+.page-item .ui-selectmenu-status {
+    font-size: 12px;
+    text-transform: none;
+}
+.ui-selectmenu span.ui-selectmenu-status {
+    display: block;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    width: 90px;
+}
+#msdn-select-button span {
+    width: 195px;
+}
+#msdn-select-button span.ui-icon-triangle-1-s {
+    top: 14px;
+    width: 10px;
+}
+a.color-link {
+    font-family:ff-meta-web-pro,Segoe UI,Arial,Sans-Serif;
+}
+/* Add this */
+
+a.color-link:hover {
+    color:#c6001e;
+}
+a.color-link img.bi-cta-arrow {
+    border: medium none;
+    height: 15px;
+    margin: 0;
+    padding: 0 0 0 5px;
+    width: 15px;
+}
+.bi-color-tool {
+	margin: 30px 0 30px 70px;
+	width: 960px;
+}
+.bicolor_colorselector .clear {
+	clear: both;
+}
+.bicolor_colorselector #Filter,
+.bicolor_colorselector #Sort {
+    float:left;
+    margin:5px 1px 0 0;
+    padding-top: 7px;
+}
+.bicolor_colorselector #Filter-us,
+.bicolor_colorselector #Sort-us {
+    float:left;
+    margin:5px 1px 0 0;
+    padding-top: 7px;
+}
+.bicolor_colorselector #Filter-us {
+    width:66px;
+}
+.bicolor_colorselector #Filter {
+    width:80px;
+}
+.bicolor_colorselector #Sort-us {
+    width:55px;
+    word-wrap: break-word;
+}
+.bicolor_colorselector #Sort {
+    width:80px;
+    word-wrap: break-word;
+}
+.bicolor_colorselector .label {
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    color: #474747;
+    font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif;
+    font-weight: 700;
+    font-size: 12px;
+    position: relative;
+    top: 2px;
+}
+
+
+/* Select Box Styles */
+
+.bicolor_colorselector #BICarousel .ui-selectmenu-area {
+    color:#919191;
+    display:inline;
+    float:left;
+    font-family:Arial,Segoe UI,Sans-Serif;
+    font-size:12px;
+    margin:4px 0 0;
+}
+/*
+#BICarousel .ui-selectmenu-area .ui-icon,
+#BICarousel .ui-selectmenu-area .ui-state-default .ui-icon {
+    background: url('../images/down_arrow.png');
+}
+*/
+.bicolor_colorselector #BICarousel .ui-selectmenu-btn {
+    background: #FFFFFF;
+    background: -moz-linear-gradient(top, #fff, #f6f6f6);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f6f6f6));
+    background: -ms-linear-gradient(top, #fff, #f6f6f6);
+    border: 1px solid #f2f2f2;
+    -moz-border-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 1px 1px #ccc;
+    -moz-box-shadow: 1px 1px #ccc;
+    -webkit-box-shadow: 1px 1px #ccc;
+    color:#919191;
+    margin:0 3px;
+}
+.bicolor_colorselector #BICarousel .ui-button-text {
+    padding:4px 0 5px 13px;
+    text-align:left;
+    text-transform:none;
+}
+.bicolor_colorselector #BICarousel .ui-selectmenu-list {
+    background: #ffffff;
+    border: 1px solid #f2f2f2;
+    height:auto;
+    max-height:150px;
+    overflow:auto;
+}
+.bicolor_colorselector #BICarousel .ui-selectmenu-list li {
+    color:#919191;
+    cursor:pointer;
+    line-height:1.4em;
+    padding: 6px 12px 6px 10px;
+    text-transform:none;
+}
+.bicolor_colorselector #BICarousel .ui-selectmenu-list li:hover {
+    background-color:#f1f1f1;
+    color:#c6001e;
+}
+.bicolor_colorselector #BICarousel .ui-selectmenu-list .ui-state-active {
+    background:none;
+    border:none;
+}
+.bicolor_colorselector #BICarousel .ui-state-hover .ui-icon, 
+.bicolor_colorselector #BICarousel .ui-state-active .ui-icon, 
+.bicolor_colorselector #BICarousel .ui-state-focus .ui-icon {
+    background: url(../images/up_arrow.png) no-repeat center center;
+    height:15px;
+    width:8px;
+}
+.bicolor_colorselector #backToTopText {
+    float:left;
+}

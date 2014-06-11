@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="A component to select country/language and enter MSDS product number and interact with external MSDS search provider page."
+    jcr:primaryType="cq:Component"
+    jcr:title="MSDS Search"
+    sling:resourceSuperType="dupont/phoenix/components/MSDSSearch"
+    allowedParents="[*/parsys]"
+    componentGroup=".hidden"/>

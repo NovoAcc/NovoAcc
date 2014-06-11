@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Video"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Title for the Video"
+            fieldLabel="Video Title"
+            name="./title"
+            xtype="textfield"/>
+        <description
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Short description for the Video"
+            fieldLabel="Video Description"
+            name="./description"
+            xtype="textarea"/>
+        <damRef
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Select Video"
+            name="./damRef"
+            xtype="pathfield"/>
+    </items>
+</jcr:root>

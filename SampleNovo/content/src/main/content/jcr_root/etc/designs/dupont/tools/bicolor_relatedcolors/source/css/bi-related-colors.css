@@ -1,0 +1,431 @@
+.bicolor_colorselector {
+    padding-left:70px;
+    width:960px;
+}
+.mainContent {
+    margin: 0 auto;
+    width: 960px;
+}
+#BICarousel h3.label {
+    color: #6E6E6E;
+    float: none;
+    font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    margin-bottom: 0;
+    position: relative;
+    text-transform: uppercase;
+    top: 3px;
+}
+#BICarousel h3.selectedFacets {
+    color: #6E6E6E;
+    font-family: Arial,Segoe UI,Sans-Serif;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.searchMainContent, .resultsMainContent {
+    margin: 10px 0;
+    position: relative;
+}
+.resultsMainContent h2 {
+    margin-bottom: 12px;
+}
+.searchLeftCol, .resultsLeftCol {
+    float: left;
+    font-size:12px;
+    margin-right: 50px;
+    width: 195px;
+}
+.resultsLeftCol li {
+    margin-bottom: 0;
+    margin-top: 7px;
+}
+.searchRightCol, .resultsRightCol {
+    float: left;
+    width: 715px;
+}
+.page-item .selectboxit-container {
+    margin:0 5px;
+}
+.page-item .selectboxit-container .selectboxit {
+    border:1px solid #f2f2f2;
+    background: #FFFFFF;
+    background: -moz-linear-gradient(top, #fff, #f6f6f6);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f6f6f6));
+    background: -ms-linear-gradient(top, #fff, #f6f6f6);
+    height:25px;
+}
+.page-item .selectboxit-container .selectboxit-text {
+    line-height:25px;
+    text-transform: capitalize;
+}
+.page-item .selectboxit-container .ui-icon-triangle-1-s {
+    background-position: -64px -18px;
+}
+.page-item .selectboxit-container .selectboxit-options {
+    width:auto;
+}
+.page-item .selectboxit-option .selectboxit-option-anchor {
+    padding: 0px 3px;
+    line-height: 30px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: normal;
+}
+#ColorThumbnails {
+    border-bottom: 1px solid #EAEAEA;
+    font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif;
+    letter-spacing: normal;
+    margin: 20px 0 30px;
+}
+.showme, .onlyshowme {
+    border: 1px solid #EAEAEA;
+    border-radius: 5px 5px 5px 5px;
+    margin: 12px 0 20px;
+    padding: 10px 10px 14px 20px;
+}
+.showme span, .facetgroup {
+    background-color: #FFFFFF;
+    font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    margin: 0 0 0 -5px;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+.showtop {
+    color: #6E6E6E;
+    position: relative;
+    top: -20px;
+}
+#CollectionsList {
+    margin-top: -17px;
+}
+#CollectionsList li a {
+    color: #6E6E6E;
+}
+.collections-link {
+    color: #6E6E6E;
+}
+.top-pagination {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 12px;
+    margin-top: -5px;
+    padding: 0 0 4px;
+}
+#ColorsCount {
+    color: #000000;
+    float: left;
+    font-size: 14px;
+    margin: 7px 0 0;
+}
+.top-pagination .page-item {
+    float: right;
+    margin-left: 20px;
+    width: 78%;
+}
+.page-item, .pane-service-links-service-links {
+    float: left;
+    text-transform: uppercase;
+}
+.left-item {
+    float: left;
+}
+.right-item {
+    float: right;
+}
+.searchResultItem, .FAQResultItem {
+    float: left;
+    list-style: none outside none;
+    margin: 25px 0 0;
+    width: 714px;
+}
+.pagination {
+    border-top: 1px solid #CCCCCC;
+    bottom: -36px;
+    float: left;
+    margin-top: 30px;
+    padding: 10px 0;
+    position: absolute;
+    text-align: center;
+    width: 715px;
+}
+.color-box {
+    float: left;
+    margin: 20px 30px 25px 0;
+    width: 217px;
+}
+.last {
+    margin-right: 0;
+}
+.intro-content {
+    margin: 30px 0;
+}
+#menu-top-nav {
+    background-image: url("/etc/designs/dupont/tools/bicolor_colorselector/source/images/nav-gradient.png");
+    height: 50px;
+    position: relative;
+    z-index: 2;
+}
+.hidden {
+    display: none;
+}
+a.color-link:hover {
+    color:#c6001e;
+}
+a.color-link img {
+    border: 0 none;
+    margin-bottom: 16px;
+    width: 218px;
+}
+#collectionDescription {
+    display: none;
+    margin-bottom: -20px;
+    padding-top: 55px;
+}
+#collectionDescription #descriptionTitle {
+    font-size: 24px;
+}
+#collectionDescription #description {
+    color: #333333;
+    font-family: Arial, Segoe UI, Sans-Serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+}
+#noResults {
+    display: none;
+    margin-bottom: -20px;
+    min-height: 230px;
+    padding-top: 55px;
+}
+#noResults span {
+    color: #6E6E6E;
+    font-size: 12px;
+}
+#noResults span a {
+    color: #992A10;
+    font-weight: 200;
+    text-decoration: underline;
+}
+#noResults span a:hover {
+    color: #992A10;
+    font-weight: 200;
+    text-decoration: none;
+}
+#aBackToTop {
+    clear: both;
+    color: Blue;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 75px;
+}
+#backToTop {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    font-family: Arial,sans-serif;
+    font-size: 11px;
+    margin: -14px 0 25px;
+}
+#backToTop img {
+    display: block;
+    float: right;
+    height: 4px;
+    margin: 7px 0 0 7px;
+    width: 7px;
+}
+.row {
+    border-bottom: 1px solid #EAEAEA;
+    border-top: 1px solid #EAEAEA;
+}
+.bicolor-hlm-top {
+    /* margin: 27px auto 7px; */
+    width: 960px;
+}
+.bicolor-title {
+    float: left;
+    text-transform: uppercase;
+}
+#BIColorLinks {
+    float: right;
+    margin-top: 2px;
+    padding: 0;
+}
+.three, .three a img {
+    width: 300px;
+}
+.four {
+    width: 218px;
+}
+.three h2, .four h2 {
+    margin-top: -3px;
+}
+.bicolor-top-content {
+    color: #474747;
+    display:inline;
+    font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif;
+    font-size:12px;
+    font-weight: bold;
+    padding: 2px 18px 0;
+    text-transform: uppercase;
+}
+#BIColorLinks h4 {
+    display: inline;
+    font-family: Arial,Segoe UI,Sans-Serif;
+    font-size: 12px;
+    padding: 0;
+}
+#BIColorLinks img.cta-arrow {
+    margin-top: 2px;
+}
+.graydots {
+    float: right;
+    margin-left: 20px;
+    margin-top: 4px;
+}
+.graydots a {
+    background: url("/etc/designs/dupont/tools/bicolor_colorselector/source/images/grid-indicator.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 15px;
+    margin: 0;
+    width: 15px;
+}
+.graydots a.selected, .graydots a:hover {
+    background: url("/etc/designs/dupont/tools/bicolor_colorselector/source/images/grid-indicator-current.png") no-repeat scroll 0 0 transparent;
+}
+.last {
+    margin-right: 0;
+}
+.bicolor-hlm-carousel {
+    margin-bottom: 25px;
+    padding-bottom: 0;
+    position: relative;
+    overflow: hidden;
+}
+h2 {
+    font-weight: normal;
+    margin-top: 6px;
+}
+h2.bicolor-title {
+    font-family:ff-meta-web-pro,Arial,Sans-Serif;
+    font-size:18px;
+    margin: 2px 0 20px;
+    white-space:nowrap;
+    width:auto;
+}
+#recommendedColors {
+    margin-bottom: 10px;
+    position: relative;
+}
+#RelatedColors H2 {
+    margin: -5px 0 6px;
+}
+
+#RelatedColors {
+    position: relative;
+    overflow: hidden;
+
+}
+#openhtml-area {
+    overflow: visible;
+    padding-bottom: 0;
+    position: relative;
+}
+.collectionArrow {
+    background: url("/etc/designs/dupont/tools/bicolor_colorselector/source/images/sprite1.png") repeat scroll -10px -367px transparent;
+    display: inline-block;
+    height: 7px;
+    margin: 0 6px 1px -10px;
+    width: 4px;
+}
+.page-item .ui-selectmenu-status {
+    font-size: 12px;
+    text-transform: none;
+}
+.ui-selectmenu span.ui-selectmenu-status {
+    display: block;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    width: 90px;
+}
+#msdn-select-button span {
+    width: 195px;
+}
+#msdn-select-button span.ui-icon-triangle-1-s {
+    top: 14px;
+    width: 10px;
+}
+a.color-link {
+    font-family:ff-meta-web-pro,Segoe UI,Arial,Sans-Serif;
+}
+a.color-link img.bi-cta-arrow {
+    border: medium none;
+    height: 15px;
+    margin: 0;
+    padding: 0 0 0 5px;
+    width: 15px;
+}
+.bi-color-tool {
+	margin: 30px 0 30px 0px;
+	width: 960px;
+}
+.clear {
+	clear: both;
+}
+#Filter,
+#Sort {
+    float:left;
+    padding-right: 8px;
+    margin-right:1px;
+    padding-top: 7px;
+    white-space:nowrap;
+    width:auto;
+}
+.label {
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    color: #474747;
+    font-family: ff-meta-web-pro,Segoe UI,Arial,Sans-Serif;
+    font-weight: 700;
+    font-size: 12px;
+    position: relative;
+    top: 2px;
+}
+
+.bi-color-tool .jcarousel-next-horizontal, .bi-color-tool .jcarousel-prev-horizontal{
+	display: none;
+}
+
+.bi-color-tool .jcarousel-next-horizontal {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 28px;
+    height: 54px;
+    cursor: pointer;
+    background: transparent url(/etc/designs/dupont/tools/bicolor_relatedcolors/source/images/carousel-arrow-next.png) no-repeat 0 0;
+}
+
+.bi-color-tool .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 66px;
+    left: 0px;
+    width: 28px;
+    height: 54px;
+    cursor: pointer;
+    background: transparent url(/etc/designs/dupont/tools/bicolor_relatedcolors/source/images/carousel-arrow-prev.png) no-repeat 0 0;
+}
+
+.bi-color-tool .jcarousel-next-horizontal:hover, .bi-color-tool .jcarousel-next-horizontal:focus {
+	background: transparent url(/etc/designs/dupont/tools/bicolor_relatedcolors/source/images/carousel-arrow-next-hover.png) no-repeat 0 0;
+}
+
+.bi-color-tool .jcarousel-prev-horizontal:hover, .bi-color-tool .jcarousel-prev-horizontal:focus {
+    background: transparent url(/etc/designs/dupont/tools/bicolor_relatedcolors/source/images/carousel-arrow-prev-hover.png) no-repeat 0 0;
+}
+.bi-color-tool{
+    position:relative;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Article Detail Template - T.5.1"
+    jcr:primaryType="cq:Template"
+    jcr:title="Responsive Article Detail Template"
+    allowedPaths="[/content(/.*)?]"
+    ranking="{Long}330">
+    <jcr:content
+    	contentType="article"    
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="dupont/phoenix/components/responsive/pages/articledetail">
+        <linklistdynamic-articles
+        	contentType="article"
+        	jcr:primaryType="nt:unstructured"
+			sling:resourceType="dupont/phoenix/components/linklistdynamic"/>
+        <linklistdynamic-products
+        	contentType="product"
+        	jcr:primaryType="nt:unstructured"
+			sling:resourceType="dupont/phoenix/components/linklistdynamic"/>        	
+        <bodycopy
+        	jcr:primaryType="nt:unstructured"
+			showByline="{Boolean}true"
+			sling:resourceType="dupont/phoenix/components/bodycopy"/>        	
+	</jcr:content>        
+</jcr:root>

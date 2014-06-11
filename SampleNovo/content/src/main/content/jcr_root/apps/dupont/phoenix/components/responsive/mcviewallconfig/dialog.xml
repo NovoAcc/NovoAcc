@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="600"
+    title="MC View All Facet Configuration"
+    width="800"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab_tags
+                jcr:primaryType="cq:Panel"
+                title="Media Center View All Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <corporate
+                        jcr:primaryType="cq:Widget"
+                        cls="cq-propsdialog-tags"
+                        fieldDescription="Select the Parent Tags for Taxonomy Configuration"
+                        fieldLabel="Corporate"
+                        name="./corporate"
+                        xtype="tags">
+                        <namespaces jcr:primaryType="cq:WidgetCollection">
+                            <ns1
+                                jcr:primaryType="nt:unstructured"
+                                maximum="100"
+                                name="DuPont"/>
+                        </namespaces>
+                    </corporate>
+                    <business
+                        jcr:primaryType="cq:Widget"
+                        cls="cq-propsdialog-tags"
+                        fieldDescription="Select the Parent Tags for Taxonomy Configuration"
+                        fieldLabel="Business"
+                        name="./business"
+                        xtype="tags">
+                        <namespaces jcr:primaryType="cq:WidgetCollection">
+                            <ns1
+                                jcr:primaryType="nt:unstructured"
+                                maximum="100"
+                                name="DuPont"/>
+                         </namespaces>
+                    </business>
+                </items>
+            </tab_tags>
+        </items>
+    </items>
+</jcr:root>

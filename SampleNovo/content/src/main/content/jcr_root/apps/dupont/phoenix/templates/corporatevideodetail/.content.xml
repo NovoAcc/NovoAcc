@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Corporate Video Detail Template - T.7.4b"
+    jcr:primaryType="cq:Template"
+    jcr:title="Corporate Video Detail Template"
+    allowedPaths="/content(/.*)?"
+    ranking="{Long}200">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="/apps/dupont/phoenix/components/pages/corporatevideodetail"
+		videoPlayerUpgraded="{Boolean}true"
+        contentType="corporatecontentvideodetail">
+        <bodycopy
+        	jcr:primaryType="nt:unstructured"
+			showByline="{Boolean}true"
+			hideCopyImage="{Boolean}true"
+			sling:resourceType="dupont/phoenix/components/bodycopy"/>
+	</jcr:content>
+</jcr:root>

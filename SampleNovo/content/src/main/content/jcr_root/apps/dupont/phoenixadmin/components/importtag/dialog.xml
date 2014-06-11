@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Dialog"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tab1
+            jcr:primaryType="cq:Widget"
+            title="General"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <filePath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Example: /content/dam/assets/DuPont_Tags_Import.xlsx"
+                    fieldLabel="File Path (DAM):"
+                    name="./filePath"
+                    xtype="pathfield"/>
+                <hideComponent
+                    jcr:primaryType="cq:Widget"
+                    description="Once checked, this component will not be displayed to users."
+                    fieldLabel="Hide Component"
+                    name="./hideComponent"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </tab1>
+    </items>
+</jcr:root>

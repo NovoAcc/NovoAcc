@@ -1,0 +1,14 @@
+#fancybox-content{
+    overflow: visible;    
+}
+
+#fancybox-content > div {
+    overflow: visible !important;    
+}
+
+#fancybox-close {
+    top: -18px;
+    right: -18px;
+    z-index: 1201;
+
+}

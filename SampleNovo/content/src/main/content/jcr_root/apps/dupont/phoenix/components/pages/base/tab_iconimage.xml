@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Widget"
+    allowUpload="{Boolean}false"
+    ddGroups="[media]"
+    fileNameParameter="./iconimage/fileName"
+    fileReferenceParameter="./iconimage/fileReference"
+    name="./iconimage/file"
+    renditionSuffix="/_jcr_content/renditions/original"
+    requestSuffix="/iconimage.img.png"
+    title="Icon"
+    type="Image"
+    xtype="html5smartimage"/>

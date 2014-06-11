@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="Sub Product and Service Detail Template - T.4.1.1"
+    jcr:primaryType="cq:Template"
+    jcr:title="Responsive Sub Product and Service Detail Template"
+    allowedPaths="[/content(/.*)?]"
+    ranking="{Long}310">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="dupont/phoenix/components/responsive/pages/subproductservicedetail"
+        contentType="subproduct"
+        isCurated="true">
+        <featuredb
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/responsive/featuredb">
+            <selectedtool
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dupont/phoenix/components/linklistcurated"
+                isCurated="true"/>
+        </featuredb>
+        <hlm-casestudies
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/responsive/hlm"
+            contentType="casestudy"/>
+        <hlm-articles
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/responsive/hlm"
+            contentType="article"/>
+        <hlm-usesapplications
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/responsive/hlm"
+            contentType="usesapplication"/>
+        <hlm-products
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/responsive/hlm"
+            contentType="product"
+            recommendedContentTypes="product,brand"/>
+        <hlm-industries
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="dupont/phoenix/components/responsive/hlm"
+            contentType="industry"
+            recommendedContentTypes="industry,subindustry"/>
+        <viewallcontent jcr:primaryType="nt:unstructured">
+            <querybuilder
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dupont/phoenix/components/viewall/querybuilder">
+                <left jcr:primaryType="nt:unstructured">
+                    <options
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="dupont/phoenix/components/viewall/predicates/options"/>
+                </left>
+            </querybuilder>
+        </viewallcontent>
+    </jcr:content>
+</jcr:root>
